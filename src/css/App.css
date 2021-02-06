@@ -1,0 +1,27 @@
+.hero img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+.hero h1, .hero .img-caption {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero h1 {
+  text-align: center;
+  top: 250px;
+  left: 250px;
+}
+
+.hero .img-caption {
+  bottom: 100px;
+  left: 30px;
+}
+
+
+
+
+
+
