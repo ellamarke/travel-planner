@@ -20,3 +20,7 @@
   .home-search {
     grid-row: 2;
   }
+
+  .home-dropdown {
+      grid-row: 3;
+  }
