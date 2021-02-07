@@ -5,9 +5,9 @@ import WhereNext from "./WhereNext";
 import ArticleHero from "./ArticleHero";
 import ArticleCarousel from "./ArticleCarousel";
 
-function Container() {
+function HomePage() {
   return (
-    <div className="container">
+    <div className="home-page">
       <Hero />
       <HomeSearch />
       <WhereNext />
@@ -17,4 +17,4 @@ function Container() {
   );
 }
 
-export default Container;
+export default HomePage;

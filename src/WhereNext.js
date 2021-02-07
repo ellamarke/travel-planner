@@ -1,24 +1,43 @@
-import "./css/App.css";
+import "./css/WhereNext.css";
 import "./css/Layout.css";
+import React, { useState } from "react";
 
-function WhereNext() {
+export function WhereNext() {
+  const [placeTitle, setPlaceTitle] = useState("Great Lakes");
+  const places = [
+    "Great Lakes",
+    "Misty Mountains",
+    "Crumbling Temples",
+    "Dark Jungles",
+    "Desert Cities",
+  ];
+
   return (
     <div className="where-next">
       <h2>Find somewhere new</h2>
+
       <div className="dropdown-sentence">
         <h1>I want to see</h1>
-        <div className="place-dropdown">
-          <button className="dropdown-button">
-            <h1>Great Lakes</h1>
-          </button>
-          <div className="dropdown-content">
-            <a href="#">Misty Mountains</a>
-            <a href="#">Crumbling Temples</a>
-            <a href="#">Dark Jungles</a>
-            <a href="#">Desert Cities</a>
+
+        <div className="dd-wrapper">
+          <div className="dd-header">
+            <button className="dd-header-title">
+              <h1>{placeTitle}</h1>
+            </button>
+          </div>
+
+          <div className="dd-list">
+            <ul>
+              {places
+                .filter((place) => place != placeTitle)
+                .map((place) => (
+                  <li onClick={() => setPlaceTitle(place)}>{place}</li>
+                ))}
+            </ul>
           </div>
         </div>
       </div>
+
       <button className="go">Let's explore!</button>
     </div>
   );

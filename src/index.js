@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./css/index.css";
-import Container from "./Container";
+import HomePage from "./HomePage";
 import reportWebVitals from "./reportWebVitals";
+import { Component } from "react";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Container />
+    <HomePage />
   </React.StrictMode>,
   document.getElementById("root")
 );
