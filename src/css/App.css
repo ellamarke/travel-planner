@@ -3,7 +3,7 @@
 .hero img {
   position: relative;
   z-index: -1;
-  width: 100%;
+  width: 100vw;
 }
 
 .hero h1, .hero .img-caption {
@@ -25,35 +25,49 @@
 
 /* Home Search */
 
+.home-search {
+  width: 100vw;
+  background-color: pink;
+}
+
 .home-search h2 {
   margin-top: 50px;
   text-transform: uppercase;
-  align-self: center;
   text-align: center;
 }
 
 .home-search h1 {
-  margin-left: 200px;
+  text-align: center;
   margin-top: 50px;
 }
 
 .home-search .search-bar-main {
-  margin-left: 200px;
+  margin-left: 270px;
   margin-top: 60px;
   margin-bottom: 100px;
+
   width: 800px;
   padding: 20px 50px;
   font-size: 50px;
 }
 
-
 /* Where Next */
 
 .where-next {
+  width: 100vw;
+  background-color: rgb(236, 251, 255);
+}
+
+.where-next h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.dropdown-sentence {
   display: flex;
-  padding-bottom: 300px;
+  margin-left: 300px;
   margin-top: 60px;
-  margin-left: 200px;
 }
 
 .dropdown-button {
@@ -93,7 +107,10 @@
 .go {
   font-size: 40px;
   padding: 20px;
-  margin-top: 350px;
+  margin-top: 300px;
+  margin-left: 600px;
+  margin-bottom: 60px;
+  
 }
 
 
@@ -102,6 +119,7 @@
 .article-hero {
   display: flex;
   width: 100vw;
+  background-color: pink;
 }
 
 .article-name {
@@ -112,8 +130,13 @@
   width: 700px;
 }
 
+.article-text {
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
 .tags {
-  margin-top: 150px;
+  margin-top: 70px;
   display: flex;
 }
 
@@ -122,15 +145,11 @@
   margin-left: 50px;
 }
 
-.article-text {
-  margin-left: 50px;
-}
-
 .content-tag {
   font-size: 20px;
   text-transform: uppercase;
   padding: 10px;
-  background-color: gray;
+  background-color: white;
   border-radius: 15px;
   width: fit-content;
 }
@@ -140,16 +159,17 @@
 
 .article-carousel {
   display: flex;
+  background-color: rgb(236, 251, 255);
 }
 
+.article-card {
+  margin: 100px;
+  overflow-x: hidden;
+}
 
 .article-card img {
   width: 500px;
-}
-
-.article-card .card-name {
-  font-size: 30px;
-  margin: 0;
+  position: relative;
 }
 
 .card-caption {
@@ -161,10 +181,6 @@
   font-size: 20px;
 }
 
-.article-card img {
-  position: relative;
-}
-
 .card-bottom {
   display: flex;
   border: solid 2px grey;
@@ -172,11 +188,11 @@
   width: 460px;
 }
 
+.article-card .card-name {
+  font-size: 30px;
+}
+
 .card-bottom img {
   width: 30px;
   margin-left: 200px;
-}
-
-.article-card {
-  margin: 100px;
 }
