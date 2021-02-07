@@ -16,6 +16,7 @@ function WhereNext() {
           <a href="#">Desert Cities</a>
         </div>
       </div>
+      <button className="go">Let's explore!</button>
     </div>
   );
 }

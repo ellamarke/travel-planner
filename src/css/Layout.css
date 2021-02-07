@@ -5,6 +5,7 @@
 * {
     padding: 0;
     margin: 0;
+    max-width: none;
   }
   
   .container {
@@ -23,4 +24,12 @@
 
   .home-dropdown {
       grid-row: 3;
+  }
+
+  .article-hero {
+    grid-row: 4;
+  }
+
+  .article-carousel {
+    grid-row: 5;
   }

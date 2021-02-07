@@ -1,3 +1,5 @@
+/* Hero */
+
 .hero img {
   position: relative;
   z-index: -1;
@@ -21,6 +23,15 @@
 }
 
 
+/* Home Search */
+
+.home-search h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+}
+
 .home-search h1 {
   margin-left: 200px;
   margin-top: 50px;
@@ -28,18 +39,21 @@
 
 .home-search .search-bar-main {
   margin-left: 200px;
-  margin-top: 50px;
-  margin-bottom: 200px;
+  margin-top: 60px;
+  margin-bottom: 100px;
   width: 800px;
   padding: 20px 50px;
   font-size: 50px;
 }
 
 
+/* Where Next */
 
 .where-next {
   display: flex;
   padding-bottom: 300px;
+  margin-top: 60px;
+  margin-left: 200px;
 }
 
 .dropdown-button {
@@ -47,10 +61,11 @@
   cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* Positioning the dropdown content */
 .place-dropdown {
   position: relative;
   display: inline-block;
+  margin-left: 20px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -70,8 +85,98 @@
   display: block;
 }
 
-
 /* Show the dropdown menu on hover */
 .place-dropdown:hover .dropdown-content {
   display: block;
+}
+
+.go {
+  font-size: 40px;
+  padding: 20px;
+  margin-top: 350px;
+}
+
+
+/* ARTICLE HERO */
+
+.article-hero {
+  display: flex;
+  width: 100vw;
+}
+
+.article-name {
+  font-size: 100px;
+}
+
+.article-hero .article-image {
+  width: 700px;
+}
+
+.tags {
+  margin-top: 150px;
+  display: flex;
+}
+
+.reading-list-icon {
+  width: 30px;
+  margin-left: 50px;
+}
+
+.article-text {
+  margin-left: 50px;
+}
+
+.content-tag {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: gray;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+
+/* ARTICLE CAROUSEL */
+
+.article-carousel {
+  display: flex;
+}
+
+
+.article-card img {
+  width: 500px;
+}
+
+.article-card .card-name {
+  font-size: 30px;
+  margin: 0;
+}
+
+.card-caption {
+  z-index: 2;
+  position: absolute;
+  width: 460px;
+  padding: 10px;
+  margin-top: 300px;
+  font-size: 20px;
+}
+
+.article-card img {
+  position: relative;
+}
+
+.card-bottom {
+  display: flex;
+  border: solid 2px grey;
+  padding: 20px;
+  width: 460px;
+}
+
+.card-bottom img {
+  width: 30px;
+  margin-left: 200px;
+}
+
+.article-card {
+  margin: 100px;
 }
