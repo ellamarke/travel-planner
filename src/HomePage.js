@@ -3,7 +3,7 @@ import HomeSearch from "./HomeSearch";
 import Hero from "./Hero";
 import WhereNext from "./WhereNext";
 import ArticleHero from "./ArticleHero";
-import ArticleCarousel from "./ArticleCarousel";
+import PlaceCarousel from "./PlaceCarousel";
 
 function HomePage() {
   return (
@@ -12,7 +12,7 @@ function HomePage() {
       <HomeSearch />
       <WhereNext />
       <ArticleHero />
-      <ArticleCarousel />
+      <PlaceCarousel />
     </div>
   );
 }

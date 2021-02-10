@@ -1,0 +1,63 @@
+.place-hero img {
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+  }
+  
+  .place-hero h1, .place-hero .img-caption, .place-hero .weather-box {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .place-hero h1 {
+    text-align: center;
+    top: 250px;
+    left: 250px;
+  }
+  
+  .place-hero .img-caption {
+    bottom: 100px;
+    left: 30px;
+  }
+
+  .weather-box {
+    bottom: 100px;
+    right: 30px;
+  }
+
+  .button-container {
+      display: flex;
+      align-items: center;
+  }
+
+  .place-introduction button {
+      margin: 0 60% 30px 40%;
+      min-width: 200px;
+      font-size: 30px;
+  }
+
+  .place-introduction p {
+      margin: 30px 300px;
+      font-size: 30px;
+      text-align: center;
+  }
+
+
+  .key-stats {
+      background-color: pink;
+  }
+
+  .key-stats h1 {
+    margin: 30px;
+    text-align: center;
+  }
+
+  .key-stats h1 .highlighted {
+      color: gray;
+  }
+
+  .place-carousel h2 {
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-align: center;
+  }

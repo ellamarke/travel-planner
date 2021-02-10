@@ -2,17 +2,18 @@ import "./css/App.css";
 import "./css/Layout.css";
 import React, { useState } from "react";
 
-function ArticleCarousel() {
+function PlaceCarousel() {
   return (
-    <div className="article-carousel">
-      <ArticleCard /> <ArticleCard /> <ArticleCard />
+    <div className="place-carousel">
+      <h2>our favourite places</h2>
+      <PlaceCard /> <PlaceCard /> <PlaceCard />
     </div>
   );
 }
 
-function ArticleCard() {
+function PlaceCard() {
   return (
-    <div className="article-card">
+    <div className="place-card">
       <div className="card-image">
         <p className="card-caption">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -28,4 +29,4 @@ function ArticleCard() {
   );
 }
 
-export default ArticleCarousel;
+export default PlaceCarousel;

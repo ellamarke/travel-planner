@@ -1,32 +1,28 @@
-import "./css/App.css";
-import React, { useState } from "react";
+import "./css/Place.css";
+import React, { useState, useEffect } from "react";
 
 function PlaceHero() {
   return (
     <div className="place-hero">
       <h1>Tokyo, Japan</h1>
       <p className="img-caption">Harajuku</p>
-      <Weather />
+      <Weather city="Tokyo" />
       <img className="hero-image" src="img/grey-rectangle.jpg"></img>
     </div>
   );
 }
 
-function Weather() {
-  const [query, setQuery] = useState("");
+function Weather({ city }) {
   const [weather, setWeather] = useState({});
 
-  const search = (evt) => {
-    if (evt.key === "Enter") {
-      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-        .then((res) => res.json())
-        .then((result) => {
-          setWeather(result);
-          setQuery("");
-          console.log(result);
-        });
-    }
-  };
+  useEffect(() => {
+    fetch(`${api.base}weather?q=${city}&units=metric&APPID=${api.key}`)
+      .then((res) => res.json())
+      .then((result) => {
+        setWeather(result);
+        console.log(result);
+      });
+  });
 
   const api = {
     key: "aff4e10456509422554d2d27827deed3",
@@ -34,15 +30,6 @@ function Weather() {
   };
   return (
     <div>
-      <h1>WEATHER</h1>
-      <input
-        type="text"
-        className="search-bar"
-        placeholder="Search..."
-        onChange={(e) => setQuery(e.target.value)}
-        value={query}
-        onKeyPress={search}
-      />
       {typeof weather.main != "undefined" ? (
         <div className="weather-box">
           <div className="temp">{Math.round(weather.main.temp)}°C</div>

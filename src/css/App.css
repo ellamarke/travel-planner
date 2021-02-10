@@ -113,17 +113,17 @@
 
 /* ARTICLE CAROUSEL */
 
-.article-carousel {
+.place-carousel {
   display: flex;
   background-color: rgb(236, 251, 255);
 }
 
-.article-card {
+.place-card {
   margin: 100px;
   overflow-x: hidden;
 }
 
-.article-card img {
+.place-card img {
   width: 500px;
   position: relative;
 }
@@ -144,7 +144,7 @@
   width: 460px;
 }
 
-.article-card .card-name {
+.place-card .card-name {
   font-size: 30px;
 }
 
@@ -153,6 +153,6 @@
   margin-left: 200px;
 }
 
-.article-like-icon-selected {
+.place-like-icon-selected {
   background-color: red;
 }
