@@ -19,10 +19,14 @@ function Weather({ city }) {
     fetch(`${api.base}weather?q=${city}&units=metric&APPID=${api.key}`)
       .then((res) => res.json())
       .then((result) => {
-        setWeather(result);
-        console.log(result);
+        if (result.cod == 429) {
+          console.log("we have exceeded the number of requests " + result);
+          setWeather({});
+        } else {
+          setWeather(result);
+        }
       });
-  });
+  }, []);
 
   const api = {
     key: "aff4e10456509422554d2d27827deed3",
@@ -36,7 +40,9 @@ function Weather({ city }) {
           <div className="weather">{weather.weather[0].main}</div>
         </div>
       ) : (
-        ""
+        <div className="weather-box">
+          Sorry, can't display weather right now
+        </div>
       )}
     </div>
   );
