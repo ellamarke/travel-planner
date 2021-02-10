@@ -12,6 +12,10 @@ export function WhereNext() {
     "Desert Cities",
   ];
 
+  function handleClick() {
+    console.log("clicked!"); // go to page with the name of the selected placeTitle state
+  }
+
   return (
     <div className="where-next">
       <h2>Find somewhere new</h2>
@@ -38,7 +42,9 @@ export function WhereNext() {
         </div>
       </div>
 
-      <button className="go">Let's explore!</button>
+      <button className="go" onClick={handleClick}>
+        Let's explore!
+      </button>
     </div>
   );
 }

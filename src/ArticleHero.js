@@ -1,7 +1,14 @@
 import "./css/App.css";
 import "./css/Layout.css";
+import React, { useState } from "react";
 
 function ArticleHero() {
+  const [readingList, setReadingList] = useState(false);
+
+  function handleClick() {
+    readingList ? setReadingList(false) : setReadingList(true);
+  }
+
   return (
     <div className="article-hero">
       <img className="article-image" src="img/grey-rectangle-small.jpg"></img>
@@ -13,7 +20,10 @@ function ArticleHero() {
         <div className="tags">
           <p className="content-tag">Culture</p>
           <img
-            className="reading-list-icon"
+            onClick={handleClick}
+            className={
+              readingList ? "reading-list-icon-selected" : "reading-list-icon"
+            }
             src="img/reading-list-icon.png"
           ></img>
         </div>

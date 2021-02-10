@@ -44,11 +44,19 @@
 .home-search .search-bar-main {
   margin-left: 270px;
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
   width: 800px;
   padding: 20px 50px;
   font-size: 50px;
+}
+
+.home-search .go {
+  font-size: 40px;
+  padding: 20px;
+  margin-top: 0;
+  margin-left: 550px;
+  margin-bottom: 60px;
 }
 
 
@@ -83,6 +91,14 @@
 .reading-list-icon {
   width: 30px;
   margin-left: 50px;
+  cursor: pointer;
+}
+
+.reading-list-icon-selected {
+  width: 30px;
+  margin-left: 50px;
+  background-color: red;
+  cursor: pointer;
 }
 
 .content-tag {
@@ -135,4 +151,8 @@
 .card-bottom img {
   width: 30px;
   margin-left: 200px;
+}
+
+.article-like-icon-selected {
+  background-color: red;
 }
