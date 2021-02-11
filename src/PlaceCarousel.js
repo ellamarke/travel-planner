@@ -2,18 +2,23 @@ import "./css/App.css";
 import "./css/Layout.css";
 import React, { useState } from "react";
 
-function PlaceCarousel() {
+function PlaceCarousel({ title, places }) {
   return (
     <div className="place-carousel">
-      <h2>our favourite places</h2>
+      <h2>{title}</h2>
       <div className="card-carousel">
-        <PlaceCard /> <PlaceCard /> <PlaceCard /> <PlaceCard />
+        {places.map((place) => (
+          <PlaceCard
+            cardCaption={place.cardCaption}
+            cardName={place.cardName}
+          />
+        ))}
       </div>
     </div>
   );
 }
 
-function PlaceCard() {
+function PlaceCard({ cardCaption, cardName }) {
   const [favourite, setFavourite] = useState(false);
 
   function handleClick() {
@@ -23,13 +28,10 @@ function PlaceCard() {
   return (
     <div className="place-card">
       <div className="card-image">
-        <p className="card-caption">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <p className="card-caption">{cardCaption}</p>
       </div>
       <div className="card-bottom">
-        <p className="card-name">Hello I'm a card</p>
+        <p className="card-name">{cardName}</p>
         <img
           src="img/heart.png"
           onClick={handleClick}

@@ -4,29 +4,54 @@
     margin: 0;
     max-width: none;
   }
+
   
   .home-page, .place {
     height: 100vh;
     width: 100vw;
     display: grid;
   }
+
+    /* HOME */
   
-  .hero {
+  .home-page .hero {
     grid-row: 1;
   }
   
-  .home-search {
+  .home-page .home-search {
     grid-row: 2;
   }
 
-  .home-dropdown {
+  .home-page .home-dropdown {
       grid-row: 3;
   }
 
-  .article-hero {
+  .home-page .article-hero {
     grid-row: 4;
   }
 
-  .article-carousel {
+  .home-page .place-carousel {
     grid-row: 5;
   }
+
+  /* PLACE */
+
+.place .hero {
+  grid-row: 1;
+}
+
+.place .placeIntroduction{
+  grid-row: 2;
+}
+
+.place .key-stats {
+    grid-row: 3;
+}
+
+.place .place-carousel {
+  grid-row: 4;
+}
+
+.place .article-hero {
+  grid-row: 5;
+}
