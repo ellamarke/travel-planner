@@ -33,7 +33,7 @@ export function WhereNext() {
           <div className="dd-list">
             <ul>
               {places
-                .filter((place) => place != placeTitle)
+                .filter((place) => place !== placeTitle)
                 .map((place) => (
                   <li onClick={() => setPlaceTitle(place)}>{place}</li>
                 ))}

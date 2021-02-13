@@ -1,11 +1,21 @@
 import "./css/App.css";
-import Hero from "./Hero";
+import "./css/Profile.css";
+import React, { useContext } from "react";
+import MyPlaces from "./MyPlaces";
+import { Context } from "./Store";
+import places from "./AllPlaces";
 
 function Profile() {
+  const [state, setState] = useContext(Context);
+  const favouritePlaces = state.favouritePlaces;
+
+  const newPlaces = places.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
   return (
     <div className="profile">
-      <h1>This is the profile page!</h1>
-      <Hero />
+      <MyPlaces places={newPlaces} />
     </div>
   );
 }

@@ -134,7 +134,7 @@
 
 .card-caption {
   z-index: 2;
-  width: 460px;
+  width: inherit;
   margin: 390px 20px 30px 20px;
   font-size: 20px;
 }
@@ -143,7 +143,7 @@
   display: flex;
   border: solid 2px grey;
   padding: 20px;
-  width: 460px;
+  width: inherit;
   margin-top: 40px;
 }
 

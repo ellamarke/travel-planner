@@ -1,6 +1,7 @@
 import "./css/App.css";
 import "./css/Layout.css";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { Context } from "./Store";
 
 function PlaceCarousel({ title, places }) {
   return (
@@ -19,14 +20,30 @@ function PlaceCarousel({ title, places }) {
 }
 
 function PlaceCard({ cardCaption, cardName }) {
-  const [favourite, setFavourite] = useState(false);
+  const [state, setState] = useContext(Context);
+  const favouritePlaces = state.favouritePlaces;
 
   function handleClick() {
-    favourite ? setFavourite(false) : setFavourite(true);
+    const favourite = !favouritePlaces.includes(cardName);
+    if (favourite) {
+      favouritePlaces.push(cardName);
+      setState({ ...state, favouritePlaces: favouritePlaces });
+    } else {
+      const newFavouritePlaces = favouritePlaces.filter(
+        (place) => place != cardName
+      );
+      setState({
+        ...state,
+        favouritePlaces: newFavouritePlaces,
+      });
+    }
   }
+
+  const favourite = favouritePlaces.includes(cardName);
 
   return (
     <div className="place-card">
+      <h3>{state.animal}</h3>
       <div className="card-image">
         <p className="card-caption">{cardCaption}</p>
       </div>
@@ -34,6 +51,7 @@ function PlaceCard({ cardCaption, cardName }) {
         <p className="card-name">{cardName}</p>
         <img
           src="img/heart.png"
+          alt="heart button"
           onClick={handleClick}
           className={favourite ? "favourite-icon-selected" : "favourite-icon"}
         ></img>

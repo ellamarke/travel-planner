@@ -1,6 +1,8 @@
-import "./css/App.css";
 import "./css/Layout.css";
-import React, { useState } from "react";
+import "./css/Profile.css";
+
+import React, { useState, useContext } from "react";
+import { Context } from "./Store";
 
 function MyPlaces({ places }) {
   return (
@@ -21,35 +23,39 @@ function MyPlaces({ places }) {
         ))}
       </div>
 
-      <button className="go">explore more places</button>
+      <button className="explore-more">explore more places</button>
     </div>
   );
 }
 
 function ProfilePlaceCard({ cardCaption, cardName }) {
-  const [deletePlace, setDeletePlace] = useState(false);
-
+  const [state, setState] = useContext(Context);
   function handleClick() {
-    deletePlace ? setDeletePlace(false) : setDeletePlace(true);
+    const favouritePlaces = state.favouritePlaces;
+    const newFavouritePlaces = favouritePlaces.filter(
+      (place) => place != cardName
+    );
+    setState({ ...state, favouritePlaces: newFavouritePlaces });
   }
 
   return (
-    <div className="place-card">
-      <div className="card-image">
-        <p className="card-caption">{cardCaption}</p>
+    <div className="my-place-card">
+      <div className="my-place-card-image">
+        <p className="my-place-card-caption">{cardCaption}</p>
       </div>
-      <div className="card-bottom">
+      <div className="my-place-card-bottom">
         <p className="card-name">{cardName}</p>
         <img
           src="img/heart.png"
+          alt="heart button"
           onClick={handleClick}
-          className={deletePlace ? "delete-icon-selected" : "delete-icon"}
+          className="delete-icon"
         ></img>
       </div>
     </div>
   );
 }
 
-// if user presses delete, the place is removed from their myPlaces.
+// if user presses delete, the place is removed from their myPlaces. The other items shift along the grid
 
 export default MyPlaces;

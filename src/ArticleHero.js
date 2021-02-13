@@ -11,7 +11,11 @@ function ArticleHero({ articleName }) {
 
   return (
     <div className="article-hero">
-      <img className="article-image" src="img/grey-rectangle-small.jpg"></img>
+      <img
+        className="article-image"
+        src="img/grey-rectangle-small.jpg"
+        alt="article"
+      ></img>
       <div className="article-text">
         <h1 className="article-name">{articleName}</h1>
         <div className="tags">
@@ -22,6 +26,7 @@ function ArticleHero({ articleName }) {
               readingList ? "reading-list-icon-selected" : "reading-list-icon"
             }
             src="img/reading-list-icon.png"
+            alt="article"
           ></img>
         </div>
       </div>

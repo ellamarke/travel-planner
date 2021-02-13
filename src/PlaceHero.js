@@ -7,7 +7,11 @@ function PlaceHero() {
       <h1>Tokyo, Japan</h1>
       <p className="img-caption">Harajuku</p>
       <Weather city="Tokyo" />
-      <img className="hero-image" src="img/grey-rectangle.jpg"></img>
+      <img
+        className="hero-image"
+        src="img/grey-rectangle.jpg"
+        alt="Tokyo"
+      ></img>
     </div>
   );
 }
@@ -19,7 +23,7 @@ function Weather({ city }) {
     fetch(`${api.base}weather?q=${city}&units=metric&APPID=${api.key}`)
       .then((res) => res.json())
       .then((result) => {
-        if (result.cod == 429) {
+        if (result.cod === 429) {
           console.log("we have exceeded the number of requests " + result);
           setWeather({});
         } else {
