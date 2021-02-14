@@ -1,8 +1,9 @@
 import "./css/App.css";
 import "./css/Layout.css";
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { Context } from "./Store";
 
-function MyLists() {
+function MyLists({ lists }) {
   return (
     <div className="list-grid">
       <h1>My Lists</h1>
@@ -14,7 +15,7 @@ function MyLists() {
       </p>
       <div className="list-cards">
         {lists.map((list) => (
-          <ProfileListCard cardName={list.cardName} />
+          <ProfileListCard listName={list.listName} />
         ))}
       </div>
 
@@ -23,26 +24,25 @@ function MyLists() {
   );
 }
 
-function ProfileListCard({ cardName }) {
-  const [deleteList, setDeleteList] = useState(false);
-
+function ProfileListCard({ listName }) {
+  const [state, setState] = useContext(Context);
   function handleClick() {
-    deleteList ? setDeleteList(false) : setDeleteList(true);
-  }
-
-  function openList() {
-    console.log("list opens on screen!");
+    const myLists = state.myLists;
+    const newLists = myLists.filter((list) => list !== listName);
+    setState({ ...state, myLists: newLists });
   }
 
   return (
-    <div className="list-card" onClick={openList}>
-      <p className="card-name">{cardName}</p>
-      <img
-        src="img/heart.png"
-        alt="delete button"
-        onClick={handleClick}
-        className={deleteList ? "delete-icon-selected" : "delete-icon"}
-      ></img>
+    <div className="list-card">
+      <div className="list-card-bottom">
+        <p className="list-name">{listName}</p>
+        <img
+          src="img/heart.png"
+          alt="heart button"
+          onClick={handleClick}
+          className="delete-icon"
+        ></img>
+      </div>
     </div>
   );
 }

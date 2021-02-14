@@ -1,7 +1,7 @@
 import "./css/Layout.css";
 import "./css/Profile.css";
 
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Context } from "./Store";
 
 function MyPlaces({ places }) {
@@ -33,7 +33,7 @@ function ProfilePlaceCard({ cardCaption, cardName }) {
   function handleClick() {
     const favouritePlaces = state.favouritePlaces;
     const newFavouritePlaces = favouritePlaces.filter(
-      (place) => place != cardName
+      (place) => place !== cardName
     );
     setState({ ...state, favouritePlaces: newFavouritePlaces });
   }

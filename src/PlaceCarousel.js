@@ -1,6 +1,6 @@
 import "./css/App.css";
 import "./css/Layout.css";
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Context } from "./Store";
 
 function PlaceCarousel({ title, places }) {
@@ -10,6 +10,7 @@ function PlaceCarousel({ title, places }) {
       <div className="card-carousel">
         {places.map((place) => (
           <PlaceCard
+            key={place.cardName}
             cardCaption={place.cardCaption}
             cardName={place.cardName}
           />
@@ -30,7 +31,7 @@ function PlaceCard({ cardCaption, cardName }) {
       setState({ ...state, favouritePlaces: favouritePlaces });
     } else {
       const newFavouritePlaces = favouritePlaces.filter(
-        (place) => place != cardName
+        (place) => place !== cardName
       );
       setState({
         ...state,

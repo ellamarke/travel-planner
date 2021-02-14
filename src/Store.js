@@ -2,6 +2,10 @@ import React, { useState } from "react";
 
 const initialState = {
   favouritePlaces: [],
+  myLists: [
+    { listName: "Master Packing List" },
+    { listName: "Weekend Away Packing List" },
+  ],
 };
 
 export const Context = React.createContext();

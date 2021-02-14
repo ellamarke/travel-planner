@@ -35,7 +35,9 @@ export function WhereNext() {
               {places
                 .filter((place) => place !== placeTitle)
                 .map((place) => (
-                  <li onClick={() => setPlaceTitle(place)}>{place}</li>
+                  <li key={place} onClick={() => setPlaceTitle(place)}>
+                    {place}
+                  </li>
                 ))}
             </ul>
           </div>
