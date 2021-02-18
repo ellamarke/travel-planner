@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import StarterLists from "./StarterLists";
 
 const initialState = {
   favouritePlaces: [],
-  myLists: [
-    { listName: "Master Packing List" },
-    { listName: "Weekend Away Packing List" },
-  ],
+  myLists: StarterLists,
+  currentList: StarterLists[0],
 };
 
 export const Context = React.createContext();

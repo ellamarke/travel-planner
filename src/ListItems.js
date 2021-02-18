@@ -3,9 +3,27 @@ import "./css/Layout.css";
 import "./css/Profile.css";
 import ListForm from "./ListForm";
 import List from "./List";
+import { useEffect } from "react";
+import { Context } from "./Store";
 
-function ListItems() {
+function ListItems({ list }) {
+  const [state, setState] = useContext(Context);
   const [listItems, setListItems] = useState([]);
+  useEffect(() => setListItems(list.items), []);
+
+  const updateCurrentList = (listItems) => {
+    const myLists = state.myLists;
+    const currentList = state.myLists.find(
+      (globalList) => globalList.listName == list.listName
+    );
+    currentList.items = listItems;
+    return myLists;
+  };
+
+  const setGlobalListItems = (listItems) => {
+    setListItems(listItems);
+    setState({ ...state, myLists: updateCurrentList(listItems) });
+  };
 
   const addListItem = (listItem) => {
     if (!listItem.text || /^\s*$/.test(listItem.text)) {
@@ -14,7 +32,7 @@ function ListItems() {
 
     const newListItems = [listItem, ...listItems];
 
-    setListItems(newListItems);
+    setGlobalListItems(newListItems);
     console.log(newListItems);
   };
 
@@ -22,14 +40,14 @@ function ListItems() {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return;
     }
-    setListItems((prev) =>
+    setGlobalListItems((prev) =>
       prev.map((item) => (item.id === listItemId ? newValue : item))
-    );
+    ); // fix bug - edits delete everything
   };
 
   const removeListItem = (id) => {
     const removeArray = [...listItems].filter((listItem) => listItem.id !== id);
-    setListItems(removeArray);
+    setGlobalListItems(removeArray);
   };
 
   const completeListItem = (id) => {
@@ -39,12 +57,12 @@ function ListItems() {
       }
       return listItem;
     });
-    setListItems(updatedListItems);
+    setGlobalListItems(updatedListItems);
   };
 
   return (
     <div className="list-items">
-      <h1>Master Packing List</h1>
+      <h1>{list.listName}</h1>
       <ListForm onSubmit={addListItem} />
       <List
         listItems={listItems}

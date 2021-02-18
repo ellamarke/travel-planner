@@ -5,8 +5,6 @@ import MyPlaces from "./MyPlaces";
 import { Context } from "./Store";
 import places from "./AllPlaces";
 import MyLists from "./MyLists";
-import ListForm from "./ListForm";
-import ListItems from "./ListItems";
 
 function Profile() {
   const [state, setState] = useContext(Context);
@@ -19,7 +17,7 @@ function Profile() {
   return (
     <div className="profile">
       <MyPlaces places={newPlaces} />
-      <ListItems />
+      <MyLists lists={state.myLists} />
     </div>
   );
 }

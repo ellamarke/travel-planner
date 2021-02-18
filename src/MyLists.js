@@ -1,7 +1,8 @@
-import "./css/App.css";
+import "./css/Profile.css";
 import "./css/Layout.css";
 import React, { useContext } from "react";
 import { Context } from "./Store";
+import { Link, useHistory } from "react-router-dom";
 
 function MyLists({ lists }) {
   return (
@@ -15,7 +16,7 @@ function MyLists({ lists }) {
       </p>
       <div className="list-cards">
         {lists.map((list) => (
-          <ProfileListCard listName={list.listName} />
+          <ProfileListCard list={list} />
         ))}
       </div>
 
@@ -24,22 +25,22 @@ function MyLists({ lists }) {
   );
 }
 
-function ProfileListCard({ listName }) {
+function ProfileListCard({ list }) {
   const [state, setState] = useContext(Context);
-  function handleClick() {
-    const myLists = state.myLists;
-    const newLists = myLists.filter((list) => list !== listName);
-    setState({ ...state, myLists: newLists });
+  const history = useHistory();
+
+  function goToList() {
+    setState({ ...state, currentList: list });
+    history.push("/listEdit");
   }
 
   return (
-    <div className="list-card">
+    <div className="list-card" onClick={goToList}>
       <div className="list-card-bottom">
-        <p className="list-name">{listName}</p>
+        <p className="list-name">{list.listName}</p>
         <img
           src="img/heart.png"
           alt="heart button"
-          onClick={handleClick}
           className="delete-icon"
         ></img>
       </div>

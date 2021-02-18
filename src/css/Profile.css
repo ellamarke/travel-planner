@@ -1,21 +1,24 @@
-.place-card-grid {
+.place-card-grid, .list-grid {
     background-color: rgb(236, 251, 255);
     width: 100vw;
     text-align: center;
   }
 
-  .place-card-grid .my-places-introduction {
+  .place-card-grid .my-places-introduction,
+  .list-grid .my-lists-introduction {
       margin: 60px, 200px;
   }
 
-  .place-cards {
+  .place-cards,
+  .list-cards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       width: 100vw;
       margin: 60px;
   }
 
-  .my-place-card {
+  .my-place-card,
+  .list-card {
     max-width: 300px;
     height: 300px;
     margin: 30px;
@@ -29,7 +32,8 @@
     font-size: 15px;
   }
   
-  .my-place-card-bottom {
+  .my-place-card-bottom, 
+  .list-card-bottom {
     display: flex;
     border: solid 2px grey;
     padding: 20px;
@@ -37,11 +41,13 @@
     margin-top: 50px;
   }
   
-  .my-place-place-card .card-name {
+  .my-place-place-card .card-name,
+  .list-card-bottom .card-name {
     font-size: 30px;
   }
   
-  .my-place-card-bottom img {
+  .my-place-card-bottom img,
+  .list-card-bottom img {
     width: 30px;
     margin-left: 70%;
   }
@@ -50,9 +56,14 @@
     background-color: red;
   }
 
-  .explore-more {
+  .explore-more,
+  .add-list {
       font-size: 30px;
       margin-top: 40px;
       margin-bottom: 60px;
       padding: 20px;
   }
+
+
+  /* MY LISTS */
+

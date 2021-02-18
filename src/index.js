@@ -11,6 +11,7 @@ import Place from "./Place";
 import Profile from "./Profile";
 import Error from "./Error";
 import NavBar from "./NavBar";
+import ListEdit from "./listEdit";
 
 ReactDOM.render(
   <Store>
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Route path="/" component={HomePage} exact />
         <Route path="/place" component={Place} />
         <Route path="/profile" component={Profile} />
+        <Route path="/listEdit" component={ListEdit} />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>
