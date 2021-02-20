@@ -20,34 +20,19 @@ function Weather({ city }) {
   const [weather, setWeather] = useState({});
 
   useEffect(() => {
-    fetch(`${api.base}weather?q=${city}&units=metric&APPID=${api.key}`)
+    fetch(`/weather?city=${city}`)
       .then((res) => res.json())
       .then((result) => {
-        if (result.cod === 429) {
-          console.log("we have exceeded the number of requests " + result);
-          setWeather({});
-        } else {
-          setWeather(result);
-        }
+        setWeather(result);
       });
   }, []);
 
-  const api = {
-    key: "aff4e10456509422554d2d27827deed3",
-    base: "https://api.openweathermap.org/data/2.5/",
-  };
   return (
     <div>
-      {typeof weather.main != "undefined" ? (
-        <div className="weather-box">
-          <div className="temp">{Math.round(weather.main.temp)}°C</div>
-          <div className="weather">{weather.weather[0].main}</div>
-        </div>
-      ) : (
-        <div className="weather-box">
-          Sorry, can't display weather right now
-        </div>
-      )}
+      <div className="weather-box">
+        <div className="temp">{Math.round(weather.temperature)}°C</div>
+        <div className="weather">{weather.condition}</div>
+      </div>
     </div>
   );
 }

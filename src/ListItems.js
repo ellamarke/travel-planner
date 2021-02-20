@@ -46,7 +46,7 @@ function ListItems({ list }) {
     }
     setGlobalListItems((prev) =>
       prev.map((item) => (item.id === listItemId ? newValue : item))
-    ); // fix bug - edits delete everything
+    );
   };
 
   const removeListItem = (id) => {
