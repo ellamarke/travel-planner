@@ -16,13 +16,17 @@ function ListItems({ list }) {
     const currentList = state.myLists.find(
       (globalList) => globalList.listName == list.listName
     );
-    currentList.items = listItems;
+    if (typeof listItems === "function") {
+      currentList.items = listItems(currentList.items);
+    } else {
+      currentList.items = listItems;
+    }
     return myLists;
   };
 
-  const setGlobalListItems = (listItems) => {
-    setListItems(listItems);
-    setState({ ...state, myLists: updateCurrentList(listItems) });
+  const setGlobalListItems = (newListItems) => {
+    setListItems(newListItems);
+    setState({ ...state, myLists: updateCurrentList(newListItems) });
   };
 
   const addListItem = (listItem) => {
