@@ -99,3 +99,147 @@ export const temples = [
       "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
   },
 ];
+
+export const jungles = [
+  {
+    cardName: "Daintree",
+    country: "Australia",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "The Amazon",
+    country: "Brazil",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Sinharaja Forest Reserve",
+    country: "Sri Lanka",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Tufi Jungles",
+    country: "Papua New Guinea",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Waipoua Forest",
+    country: "New Zealand",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+];
+
+export const deserts = [
+  {
+    cardName: "San Pedro de Atacama",
+    country: "Chile",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Uyuni",
+    country: "Bolivia",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Jaisalmer",
+    country: "India",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Scottsdale, Arizona",
+    country: "USA",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Dubai",
+    country: "United Arab Emirates",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+];
+
+export const mountains = [
+  {
+    cardName: "Kilimanjaro",
+    country: "Tanzania",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "The Atlas Mountains",
+    country: "Morocco",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Mount Fuji",
+    country: "Japan",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Mount Everest",
+    country: "Nepal",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Kangchenjunga",
+    country: "India",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Lhotse",
+    country: "China",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+];
+
+export const lakes = [
+  {
+    cardName: "Lake Titicaca",
+    country: "Bolivia",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Lake Superior",
+    country: "USA",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Lake Malawi",
+    country: "Malawi",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Lake Baikal",
+    country: "Russia",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Lake Huron",
+    country: "USA",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+  {
+    cardName: "Lake Balkhash",
+    country: "Kazakhstan",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+  },
+];

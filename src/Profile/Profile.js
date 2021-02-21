@@ -3,7 +3,14 @@ import "../css/Profile.css";
 import React, { useContext } from "react";
 import MyPlaces from "./MyPlaces";
 import { Context } from "../Store";
-import { places, temples } from "../Reference/AllPlaces";
+import {
+  places,
+  temples,
+  lakes,
+  deserts,
+  jungles,
+  mountains,
+} from "../Reference/AllPlaces";
 import MyLists from "../Lists/MyLists";
 
 function Profile() {
@@ -18,7 +25,28 @@ function Profile() {
     favouritePlaces.includes(place.cardName)
   );
 
-  const allPlaces = newPlaces.concat(newTemples);
+  const newLakes = lakes.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newJungles = jungles.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newMountains = mountains.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newDeserts = deserts.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const allPlaces = newPlaces
+    .concat(newTemples)
+    .concat(newLakes)
+    .concat(newJungles)
+    .concat(newMountains)
+    .concat(newDeserts);
 
   return (
     <div className="profile">

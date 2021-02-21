@@ -6,11 +6,11 @@ import React, { useLayoutEffect } from "react";
 
 import CuratedPlaceHero from "./CuratedPlaceHero";
 import CuratedPlaceIntro from "./CuratedPlaceIntro";
-import PlaceCaseStudy from "./PlaceCaseStudy";
-import TempleCarousel from "./TempleCarousel";
+import JungleCaseStudy from "./JungleCaseStudy";
+import JungleCarousel from "./JungleCarousel";
 import WhereNext from "../HomePage/WhereNext";
 
-import { temples } from "../Reference/AllPlaces";
+import { jungles } from "../Reference/AllPlaces";
 
 function JunglePage() {
   useLayoutEffect(() => {
@@ -18,14 +18,21 @@ function JunglePage() {
   });
   return (
     <div className="curatedPlaces">
-      <CuratedPlaceHero />
-      <CuratedPlaceIntro />
-      {temples
-        .map((temple) => <PlaceCaseStudy temple={temple} />)
-        .filter((temple, index) => index < 3)}
-      <TempleCarousel
-        title={"YOU CAN ALSO FIND TEMPLES HERE"}
-        temples={temples}
+      <CuratedPlaceHero
+        curatedPlacesName={"Dark Jungles"}
+        heroImageName={"The Amazon, Brazil"}
+      />
+      <CuratedPlaceIntro
+        introText={
+          "A jungle is land covered with dense forest and tangled vegetation, usually in tropical climates. Application of the term has varied greatly during the past recent centuries. Before the 1970s, tropical forests were generally referred to as jungles, but this terminology has fallen out of usage."
+        }
+      />
+      {jungles
+        .map((jungle) => <JungleCaseStudy jungle={jungle} />)
+        .filter((jungle, index) => index < 3)}
+      <JungleCarousel
+        title={"YOU CAN ALSO FIND JUNGLES HERE"}
+        jungles={jungles}
       />
       <WhereNext />
     </div>
