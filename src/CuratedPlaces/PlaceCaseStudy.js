@@ -1,10 +1,13 @@
 import "../css/App.css";
 import "../css/Layout.css";
-import React, { useState, useContext } from "react";
+import "../css/CuratedPlaces.css";
+import React, { useContext } from "react";
+import { Context } from "../Store";
 
-function PlaceCaseStudy({ articleName }) {
+function PlaceCaseStudy({ temple }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
+  const { cardName, cardCaption, country } = temple;
 
   function handleClick() {
     const favourite = !favouritePlaces.includes(cardName);
@@ -22,6 +25,8 @@ function PlaceCaseStudy({ articleName }) {
     }
   }
 
+  const favourite = favouritePlaces.includes(cardName);
+
   return (
     <div className="place-case-study">
       <img
@@ -30,14 +35,8 @@ function PlaceCaseStudy({ articleName }) {
         alt="place"
       ></img>
       <div className="case-study-text">
-        <h1 className="place-name">Cambodia's Shining Star</h1>
-        <p className="case-study-body">
-          Elit amet irure aliquip id et anim ut. Elit elit minim elit irure
-          eiusmod mollit tempor. Aliquip culpa consequat amet qui aliquip qui.
-          Anim nostrud voluptate Lorem est sint Lorem mollit et sunt excepteur
-          nisi velit laborum. Do duis eu nisi quis elit. Proident cillum est sit
-          elit culpa.
-        </p>
+        <h1 className="place-name">{cardName}</h1>
+        <p className="case-study-body">{cardCaption}</p>
         <div className="tags">
           <img
             src="img/heart.png"
@@ -45,6 +44,7 @@ function PlaceCaseStudy({ articleName }) {
             onClick={handleClick}
             className={favourite ? "favourite-icon-selected" : "favourite-icon"}
           ></img>
+          <button className="see-more">See more of {country}</button>
         </div>
       </div>
     </div>

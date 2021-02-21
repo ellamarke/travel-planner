@@ -12,6 +12,7 @@ import Profile from "./Profile/Profile";
 import Error from "./Error";
 import NavBar from "./Shared/NavBar";
 import ListEdit from "./Lists/ListEdit";
+import CuratedPlaces from "./CuratedPlaces/CuratedPlaces";
 
 ReactDOM.render(
   <Store>
@@ -22,6 +23,7 @@ ReactDOM.render(
         <Route path="/place" component={Place} />
         <Route path="/profile" component={Profile} />
         <Route path="/listEdit" component={ListEdit} />
+        <Route path="/curatedPlaces" component={CuratedPlaces} />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>

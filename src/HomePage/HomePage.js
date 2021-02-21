@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import WhereNext from "./WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
-import places from "../Reference/AllPlaces";
+import { places } from "../Reference/AllPlaces";
 
 function HomePage() {
   return (

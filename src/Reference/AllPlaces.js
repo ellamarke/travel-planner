@@ -1,4 +1,4 @@
-const places = [
+export const places = [
   {
     cardName: "Mexico City",
     cardCaption:
@@ -49,4 +49,53 @@ const places = [
   },
 ];
 
-export default places;
+export const temples = [
+  {
+    cardName: "Angkor Wat",
+    country: "Cambodia",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco elit occaecat. Dolore sint eu Lorem reprehenderit nisi velit esse et. Cillum nulla eiusmod quis ut exercitation ut eiusmod non excepteur amet consequat. Fugiat do labore cillum labore. Occaecat commodo consectetur irure non cupidatat. Esse nisi incididunt voluptate ipsum amet tempor deserunt. Culpa et reprehenderit pariatur enim pariatur. Eiusmod officia minim dolore occaecat qui laboris adipisicing ea consequat.",
+  },
+  {
+    cardName: "Chichen Itza",
+    country: "Mexico",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco elit occaecat. Dolore sint eu Lorem reprehenderit nisi velit esse et. Cillum nulla eiusmod quis ut exercitation ut eiusmod non excepteur amet consequat. Fugiat do labore cillum labore. Occaecat commodo consectetur irure non cupidatat. Esse nisi incididunt voluptate ipsum amet tempor deserunt. Culpa et reprehenderit pariatur enim pariatur. Eiusmod officia minim dolore occaecat qui laboris adipisicing ea consequat.",
+  },
+  {
+    cardName: "Kinkaku-ji",
+    country: "Japan",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco elit occaecat. Dolore sint eu Lorem reprehenderit nisi velit esse et. Cillum nulla eiusmod quis ut exercitation ut eiusmod non excepteur amet consequat. Fugiat do labore cillum labore. Occaecat commodo consectetur irure non cupidatat. Esse nisi incididunt voluptate ipsum amet tempor deserunt. Culpa et reprehenderit pariatur enim pariatur. Eiusmod officia minim dolore occaecat qui laboris adipisicing ea consequat.",
+  },
+  {
+    cardName: "Borobudur Temple",
+    country: "Indonesia",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
+  },
+  {
+    cardName: "Mahabodhi Temple",
+    country: "India",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
+  },
+  {
+    cardName: "Shwe Dagon Pagoda",
+    country: "Myanmar",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
+  },
+  {
+    cardName: "Sensō-ji",
+    country: "Japan",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
+  },
+  {
+    cardName: "Temple of Bacchus",
+    country: "Lebanon",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
+  },
+];

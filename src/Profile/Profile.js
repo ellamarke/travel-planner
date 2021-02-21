@@ -3,7 +3,7 @@ import "../css/Profile.css";
 import React, { useContext } from "react";
 import MyPlaces from "./MyPlaces";
 import { Context } from "../Store";
-import places from "../Reference/AllPlaces";
+import { places } from "../Reference/AllPlaces";
 import MyLists from "../Lists/MyLists";
 
 function Profile() {
