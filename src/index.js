@@ -12,7 +12,11 @@ import Profile from "./Profile/Profile";
 import Error from "./Error";
 import NavBar from "./Shared/NavBar";
 import ListEdit from "./Lists/ListEdit";
-import CuratedPlaces from "./CuratedPlaces/CuratedPlaces";
+import TemplePage from "./CuratedPlaces/TemplePage";
+import DesertPage from "./CuratedPlaces/DesertPage";
+import JunglePage from "./CuratedPlaces/JunglePage";
+import LakePage from "./CuratedPlaces/LakePage";
+import MountainPage from "./CuratedPlaces/MountainPage";
 
 ReactDOM.render(
   <Store>
@@ -23,7 +27,11 @@ ReactDOM.render(
         <Route path="/place" component={Place} />
         <Route path="/profile" component={Profile} />
         <Route path="/listEdit" component={ListEdit} />
-        <Route path="/curatedPlaces" component={CuratedPlaces} />
+        <Route path="/temples" component={TemplePage} />
+        <Route path="/deserts" component={DesertPage} />
+        <Route path="/jungles" component={JunglePage} />
+        <Route path="/lakes" component={LakePage} />
+        <Route path="/mountains" component={MountainPage} />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>

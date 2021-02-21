@@ -1,19 +1,23 @@
 import "../css/WhereNext.css";
 import "../css/Layout.css";
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 export function WhereNext() {
-  const [placeTitle, setPlaceTitle] = useState("Great Lakes");
   const places = [
-    "Great Lakes",
-    "Misty Mountains",
-    "Crumbling Temples",
-    "Dark Jungles",
-    "Desert Cities",
+    { placeTitle: "Great Lakes", route: "/lakes" },
+    { placeTitle: "Misty Mountains", route: "/mountains" },
+    { placeTitle: "Crumbling Temples", route: "/temples" },
+    { placeTitle: "Dark Jungles", route: "/jungles" },
+    { placeTitle: "Desert Cities", route: "/deserts" },
   ];
 
+  const [place, setPlace] = useState(places[0]);
+
+  const history = useHistory();
+
   function handleClick() {
-    console.log("clicked!"); // go to page with the name of the selected placeTitle state
+    history.push(place.route);
   }
 
   return (
@@ -26,17 +30,22 @@ export function WhereNext() {
         <div className="dd-wrapper">
           <div className="dd-header">
             <button className="dd-header-title">
-              <h1>{placeTitle}</h1>
+              <h1>{place.placeTitle}</h1>
             </button>
           </div>
 
           <div className="dd-list">
             <ul>
               {places
-                .filter((place) => place !== placeTitle)
-                .map((place) => (
-                  <li key={place} onClick={() => setPlaceTitle(place)}>
-                    {place}
+                .filter(
+                  (placeInList) => place.placeTitle !== placeInList.placeTitle
+                )
+                .map((placeInList) => (
+                  <li
+                    key={placeInList.placeTitle}
+                    onClick={() => setPlace(placeInList)}
+                  >
+                    {placeInList.placeTitle}
                   </li>
                 ))}
             </ul>

@@ -3,7 +3,7 @@ import "../css/Profile.css";
 import React, { useContext } from "react";
 import MyPlaces from "./MyPlaces";
 import { Context } from "../Store";
-import { places } from "../Reference/AllPlaces";
+import { places, temples } from "../Reference/AllPlaces";
 import MyLists from "../Lists/MyLists";
 
 function Profile() {
@@ -14,9 +14,15 @@ function Profile() {
     favouritePlaces.includes(place.cardName)
   );
 
+  const newTemples = temples.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const allPlaces = newPlaces.concat(newTemples);
+
   return (
     <div className="profile">
-      <MyPlaces places={newPlaces} />
+      <MyPlaces places={allPlaces} />
       <MyLists lists={state.myLists} />
     </div>
   );

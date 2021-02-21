@@ -2,7 +2,7 @@ import "../css/App.css";
 import "../css/Profile.css";
 import "../css/CuratedPlaces.css";
 
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import CuratedPlaceHero from "./CuratedPlaceHero";
 import CuratedPlaceIntro from "./CuratedPlaceIntro";
@@ -12,7 +12,10 @@ import WhereNext from "../HomePage/WhereNext";
 
 import { temples } from "../Reference/AllPlaces";
 
-function CuratedPlaces() {
+function JunglePage() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="curatedPlaces">
       <CuratedPlaceHero />
@@ -29,4 +32,4 @@ function CuratedPlaces() {
   );
 }
 
-export default CuratedPlaces;
+export default JunglePage;
