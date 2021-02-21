@@ -1,7 +1,7 @@
-import "./css/App.css";
-import "./css/Layout.css";
+import "../css/App.css";
+import "../css/Layout.css";
 import React, { useContext } from "react";
-import { Context } from "./Store";
+import { Context } from "../Store";
 
 function PlaceCarousel({ title, places }) {
   return (

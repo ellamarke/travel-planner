@@ -1,10 +1,10 @@
-import "./css/App.css";
+import "../css/App.css";
 import HomeSearch from "./HomeSearch";
 import Hero from "./Hero";
 import WhereNext from "./WhereNext";
-import ArticleHero from "./ArticleHero";
-import PlaceCarousel from "./PlaceCarousel";
-import places from "./AllPlaces";
+import ArticleHero from "../Shared/ArticleHero";
+import PlaceCarousel from "../Shared/PlaceCarousel";
+import places from "../Reference/AllPlaces";
 
 function HomePage() {
   return (

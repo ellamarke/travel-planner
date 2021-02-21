@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import StarterLists from "./StarterLists";
+import StarterLists from "./Lists/StarterLists";
 
 const initialState = {
   favouritePlaces: [],

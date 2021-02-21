@@ -1,10 +1,10 @@
-import "./css/App.css";
+import "../css/App.css";
 import HomeSearch from "./HomeSearch";
 import Hero from "./Hero";
-import WhereNext from "./WhereNext";
+import WhereNext from "../WhereNext";
 import ArticleHero from "./ArticleHero";
-import PlaceCarousel from "./PlaceCarousel";
-import places from "./AllPlaces";
+import PlaceCarousel from "../PlaceCarousel";
+import places from "../Reference/AllPlaces";
 
 function MyCountry() {
   return (

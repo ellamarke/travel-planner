@@ -1,4 +1,4 @@
-import "./css/Place.css";
+import "../css/Place.css";
 import React, { useState, useEffect } from "react";
 
 function PlaceHero() {
@@ -25,7 +25,7 @@ function Weather({ city }) {
       .then((result) => {
         setWeather(result);
       });
-  }, []);
+  }, [city]);
 
   return (
     <div>

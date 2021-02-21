@@ -1,5 +1,5 @@
-import "./css/WhereNext.css";
-import "./css/Layout.css";
+import "../css/WhereNext.css";
+import "../css/Layout.css";
 import React, { useState } from "react";
 
 export function WhereNext() {

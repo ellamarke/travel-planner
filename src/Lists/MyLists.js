@@ -1,7 +1,7 @@
-import "./css/Profile.css";
-import "./css/Layout.css";
+import "../css/Profile.css";
+import "../css/Layout.css";
 import React, { useContext } from "react";
-import { Context } from "./Store";
+import { Context } from "../Store";
 import { Link, useHistory } from "react-router-dom";
 
 function MyLists({ lists }) {
@@ -31,7 +31,7 @@ function ProfileListCard({ list }) {
 
   function goToList() {
     setState({ ...state, currentList: list });
-    history.push("/listEdit");
+    history.push("/ListEdit");
   }
 
   return (

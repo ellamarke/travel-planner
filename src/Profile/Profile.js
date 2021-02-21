@@ -1,10 +1,10 @@
-import "./css/App.css";
-import "./css/Profile.css";
+import "../css/App.css";
+import "../css/Profile.css";
 import React, { useContext } from "react";
 import MyPlaces from "./MyPlaces";
-import { Context } from "./Store";
-import places from "./AllPlaces";
-import MyLists from "./MyLists";
+import { Context } from "../Store";
+import places from "../Reference/AllPlaces";
+import MyLists from "../Lists/MyLists";
 
 function Profile() {
   const [state, setState] = useContext(Context);

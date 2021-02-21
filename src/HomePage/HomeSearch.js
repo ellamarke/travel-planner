@@ -1,5 +1,5 @@
-import "./css/App.css";
-import "./css/Layout.css";
+import "../css/App.css";
+import "../css/Layout.css";
 
 function HomeSearch() {
   function handleClick() {

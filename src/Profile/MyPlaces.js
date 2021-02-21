@@ -1,8 +1,8 @@
-import "./css/Layout.css";
-import "./css/Profile.css";
+import "../css/Layout.css";
+import "../css/Profile.css";
 
 import React, { useContext } from "react";
-import { Context } from "./Store";
+import { Context } from "../Store";
 
 function MyPlaces({ places }) {
   return (

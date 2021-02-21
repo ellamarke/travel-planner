@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
-import "./css/Layout.css";
-import "./css/Profile.css";
+import "../css/Layout.css";
+import "../css/Profile.css";
 import ListForm from "./ListForm";
 import List from "./List";
 import { useEffect } from "react";
-import { Context } from "./Store";
+import { Context } from "../Store";
 
 function ListItems({ list }) {
   const [state, setState] = useContext(Context);
@@ -14,7 +14,7 @@ function ListItems({ list }) {
   const updateCurrentList = (listItems) => {
     const myLists = state.myLists;
     const currentList = state.myLists.find(
-      (globalList) => globalList.listName == list.listName
+      (globalList) => globalList.listName === list.listName
     );
     if (typeof listItems === "function") {
       currentList.items = listItems(currentList.items);

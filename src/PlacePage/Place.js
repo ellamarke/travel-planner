@@ -1,9 +1,9 @@
-import "./css/App.css";
+import "../css/App.css";
 import PlaceHero from "./PlaceHero";
 import PlaceIntroduction from "./PlaceIntroduction";
 import KeyStats from "./KeyStats";
-import PlaceCarousel from "./PlaceCarousel";
-import ArticleHero from "./ArticleHero";
+import PlaceCarousel from "../Shared/PlaceCarousel";
+import ArticleHero from "../Shared/ArticleHero";
 
 function Place() {
   const places = [

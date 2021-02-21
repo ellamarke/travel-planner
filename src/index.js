@@ -6,12 +6,12 @@ import Store from "./Store";
 
 import "./css/index.css";
 
-import HomePage from "./HomePage";
-import Place from "./Place";
-import Profile from "./Profile";
+import HomePage from "./HomePage/HomePage";
+import Place from "./PlacePage/Place";
+import Profile from "./Profile/Profile";
 import Error from "./Error";
-import NavBar from "./NavBar";
-import ListEdit from "./listEdit";
+import NavBar from "./Shared/NavBar";
+import ListEdit from "./Lists/ListEdit";
 
 ReactDOM.render(
   <Store>
