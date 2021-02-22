@@ -28,7 +28,9 @@ function DesertPage() {
         }
       />
       {deserts
-        .map((desert) => <DesertCaseStudy desert={desert} />)
+        .map((desert) => (
+          <DesertCaseStudy desert={desert} key={desert.cardName} />
+        ))
         .filter((desert, index) => index < 3)}
       <DesertCarousel
         title={"YOU CAN ALSO FIND DESERTS HERE"}

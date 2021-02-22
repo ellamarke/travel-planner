@@ -28,7 +28,7 @@ function LakePage() {
         }
       />
       {lakes
-        .map((lake) => <LakeCaseStudy lake={lake} />)
+        .map((lake) => <LakeCaseStudy lake={lake} key={lake.cardName} />)
         .filter((lake, index) => index < 3)}
       <LakeCarousel title={"YOU CAN ALSO FIND LAKES HERE"} lakes={lakes} />
       <WhereNext />
