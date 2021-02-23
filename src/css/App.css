@@ -159,3 +159,12 @@
 .favourite-icon-selected {
   background-color: red;
 }
+
+
+.read-more-hidden {
+  display:none;
+}
+
+.read-more-displayed {
+  display: inline;
+}
