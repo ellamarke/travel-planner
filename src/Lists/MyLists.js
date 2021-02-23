@@ -3,8 +3,12 @@ import "../css/Layout.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
 import { useHistory } from "react-router-dom";
+import { newList } from "./StarterLists";
 
 function MyLists({ lists }) {
+  const [state, setState] = useContext(Context);
+  const history = useHistory();
+
   return (
     <div className="list-grid">
       <h1>My Lists</h1>
@@ -20,9 +24,23 @@ function MyLists({ lists }) {
         ))}
       </div>
 
-      <button className="add-list">create a new list</button>
+      <button
+        className="add-list"
+        onClick={() => AddNewList(state, setState, history)}
+      >
+        create a new list
+      </button>
     </div>
   );
+}
+
+function AddNewList(state, setState, history) {
+  const myLists = state.myLists;
+  const anotherList = JSON.parse(JSON.stringify(newList)); // this is cloning newList
+  myLists.push(anotherList); // this adds anotherList to myList
+
+  setState({ ...state, myLists: myLists, currentList: anotherList }); // this updates the state with the previous state and changes the current list to the newly made list
+  history.push("/ListEdit");
 }
 
 function ProfileListCard({ list }) {
@@ -47,7 +65,5 @@ function ProfileListCard({ list }) {
     </div>
   );
 }
-
-// if user presses delete, the list is removed from their myLists. The other items shift along the grid
 
 export default MyLists;

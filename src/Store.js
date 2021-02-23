@@ -9,8 +9,13 @@ const defaultState = {
 };
 
 // add new list
-// set currentList to added list
+// set currentList to be the newly added list
 // push history to go to edit page
+
+//  function goToList() {
+//  setState({ ...state, currentList: list });
+//  history.push("/ListEdit");
+// }
 
 export const Context = React.createContext();
 

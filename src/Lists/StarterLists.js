@@ -18,3 +18,8 @@ const initialLists = [
 ];
 
 export default initialLists;
+
+export const newList = {
+  listName: "New List",
+  items: [{ text: "Skirts", isComplete: false, id: 1 }],
+};
