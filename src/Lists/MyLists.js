@@ -2,7 +2,7 @@ import "../css/Profile.css";
 import "../css/Layout.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function MyLists({ lists }) {
   return (
@@ -16,7 +16,7 @@ function MyLists({ lists }) {
       </p>
       <div className="list-cards">
         {lists.map((list) => (
-          <ProfileListCard list={list} />
+          <ProfileListCard list={list} key={list.listName} />
         ))}
       </div>
 

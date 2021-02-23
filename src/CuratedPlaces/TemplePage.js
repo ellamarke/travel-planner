@@ -28,7 +28,9 @@ function TemplePage() {
         }
       />
       {temples
-        .map((temple) => <PlaceCaseStudy temple={temple} />)
+        .map((temple) => (
+          <PlaceCaseStudy temple={temple} key={temple.cardName} />
+        ))
         .filter((temple, index) => index < 3)}
       <TempleCarousel
         title={"YOU CAN ALSO FIND TEMPLES HERE"}

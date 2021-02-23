@@ -28,7 +28,9 @@ function JunglePage() {
         }
       />
       {jungles
-        .map((jungle) => <JungleCaseStudy jungle={jungle} />)
+        .map((jungle) => (
+          <JungleCaseStudy jungle={jungle} key={jungle.cardName} />
+        ))
         .filter((jungle, index) => index < 3)}
       <JungleCarousel
         title={"YOU CAN ALSO FIND JUNGLES HERE"}

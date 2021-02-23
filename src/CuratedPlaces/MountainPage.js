@@ -28,7 +28,9 @@ function MountainPage() {
         }
       />
       {mountains
-        .map((mountain) => <MountainCaseStudy mountain={mountain} />)
+        .map((mountain) => (
+          <MountainCaseStudy mountain={mountain} key={mountain.cardName} />
+        ))
         .filter((mountain, index) => index < 3)}
       <MountainCarousel
         title={"YOU CAN ALSO FIND MOUNTAINS HERE"}

@@ -19,6 +19,7 @@ function MyPlaces({ places }) {
           <ProfilePlaceCard
             cardCaption={place.cardCaption}
             cardName={place.cardName}
+            key={place.cardName}
           />
         ))}
       </div>

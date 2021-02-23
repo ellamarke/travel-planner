@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Context } from "../Store";
 
 function ListEdit() {
-  const [state, setState] = useContext(Context);
+  const [state] = useContext(Context);
 
   return <ListItems list={state.currentList} />;
 }

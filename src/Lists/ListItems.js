@@ -9,7 +9,7 @@ import { Context } from "../Store";
 function ListItems({ list }) {
   const [state, setState] = useContext(Context);
   const [listItems, setListItems] = useState([]);
-  useEffect(() => setListItems(list.items), []);
+  useEffect(() => setListItems(list.items), [list.items]);
 
   const updateCurrentList = (listItems) => {
     const myLists = state.myLists;

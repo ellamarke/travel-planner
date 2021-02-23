@@ -14,7 +14,7 @@ import {
 import MyLists from "../Lists/MyLists";
 
 function Profile() {
-  const [state, setState] = useContext(Context);
+  const [state] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
 
   const newPlaces = places.filter((place) =>
