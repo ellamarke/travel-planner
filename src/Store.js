@@ -8,6 +8,10 @@ const defaultState = {
   // If we add anything else here, it won't appear if localStorage isn't cleared as it defaults to getFromLocalStorage
 };
 
+// add new list
+// set currentList to added list
+// push history to go to edit page
+
 export const Context = React.createContext();
 
 const Store = ({ children }) => {
@@ -25,7 +29,16 @@ const Store = ({ children }) => {
 
 function getFromLocalStorage() {
   const travelPlanner = localStorage.getItem("TravelPlannerStorage");
-  return travelPlanner && JSON.parse(travelPlanner);
+  const savedState = travelPlanner && JSON.parse(travelPlanner);
+
+  if (savedState) {
+    if (savedState.currentList) {
+      savedState.currentList = savedState.myLists.find(
+        (list) => list.listName == savedState.currentList.listName
+      );
+    }
+  }
+  return savedState;
 }
 
 function saveToLocalStorage(state) {

@@ -64,9 +64,30 @@ function ListItems({ list }) {
     setGlobalListItems(updatedListItems);
   };
 
+  const changeListName = (event) => {
+    console.log(event.target.value);
+
+    setState({ ...state, myLists: updateCurrentListName(event.target.value) });
+  };
+
+  const updateCurrentListName = (listName) => {
+    const myLists = state.myLists;
+    const currentList = state.myLists.find(
+      (globalList) => globalList.listName === list.listName
+    );
+    currentList.listName = listName;
+
+    return myLists;
+  };
+
   return (
     <div className="list-items">
-      <h1>{list.listName}</h1>
+      <input
+        type="text"
+        value={list.listName}
+        name="text"
+        onChange={changeListName}
+      />
       <ListForm onSubmit={addListItem} />
       <List
         listItems={listItems}
