@@ -44,7 +44,6 @@ function PlaceCard({ cardCaption, cardName }) {
 
   return (
     <div className="place-card">
-      <h3>{state.animal}</h3>
       <div className="card-image">
         <p className="card-caption">{cardCaption}</p>
       </div>

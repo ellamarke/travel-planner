@@ -57,6 +57,4 @@ function ProfilePlaceCard({ cardCaption, cardName }) {
   );
 }
 
-// if user presses delete, the place is removed from their myPlaces. The other items shift along the grid
-
 export default MyPlaces;

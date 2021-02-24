@@ -9,15 +9,22 @@ function ArticleHero({ articleName, contentTag }) {
     readingList ? setReadingList(false) : setReadingList(true);
   }
 
+  function articleClicked() {
+    console.log("article has been clicked!!");
+  }
+
   return (
     <div className="article-hero">
       <img
         className="article-image"
         src="img/grey-rectangle-small.jpg"
         alt="article"
+        onClick={articleClicked}
       ></img>
       <div className="article-text">
-        <h1 className="article-name">{articleName}</h1>
+        <h1 className="article-name" onClick={articleClicked}>
+          {articleName}
+        </h1>
         <div className="tags">
           <p className="content-tag">{contentTag}</p>
           <img

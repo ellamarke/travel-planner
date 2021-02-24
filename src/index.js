@@ -18,6 +18,7 @@ import JunglePage from "./CuratedPlaces/JunglePage";
 import LakePage from "./CuratedPlaces/LakePage";
 import MountainPage from "./CuratedPlaces/MountainPage";
 import ExplorePlacesPage from "./ExplorePlaces/ExplorePlacesPage";
+import ArticlePage from "./Articles/ArticlePage";
 
 ReactDOM.render(
   <Store>
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path="/place" component={Place} />
         <Route path="/profile" component={Profile} />
         <Route path="/explore" component={ExplorePlacesPage} />
+        <Route path="/article" component={ArticlePage} />
         <Route path="/listEdit" component={ListEdit} />
         <Route path="/temples" component={TemplePage} />
         <Route path="/deserts" component={DesertPage} />
