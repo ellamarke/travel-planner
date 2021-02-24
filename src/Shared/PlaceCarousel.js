@@ -1,6 +1,7 @@
 import "../css/App.css";
 import "../css/Layout.css";
 import React, { useContext } from "react";
+import { useHistory } from "react-router-dom";
 import { Context } from "../Store";
 
 function PlaceCarousel({ title, places }) {
@@ -23,6 +24,7 @@ function PlaceCarousel({ title, places }) {
 function PlaceCard({ cardCaption, cardName }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
+  const history = useHistory();
 
   function handleClick() {
     const favourite = !favouritePlaces.includes(cardName);
@@ -42,13 +44,21 @@ function PlaceCard({ cardCaption, cardName }) {
 
   const favourite = favouritePlaces.includes(cardName);
 
+  function goToPlace() {
+    history.push("/place");
+  }
+
   return (
     <div className="place-card">
-      <div className="card-image">
-        <p className="card-caption">{cardCaption}</p>
+      <div className="card-image" onClick={goToPlace}>
+        <p className="card-caption" onClick={goToPlace}>
+          {cardCaption}
+        </p>
       </div>
       <div className="card-bottom">
-        <p className="card-name">{cardName}</p>
+        <p className="card-name" onClick={goToPlace}>
+          {cardName}
+        </p>
         <img
           src="img/heart.png"
           alt="heart button"

@@ -1,4 +1,9 @@
+import React, { useLayoutEffect } from "react";
+
 function ArticlePageContent() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="article-page-content">
       <p>

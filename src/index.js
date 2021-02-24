@@ -7,7 +7,6 @@ import Store from "./Store";
 import "./css/index.css";
 
 import HomePage from "./HomePage/HomePage";
-import Place from "./PlacePage/Place";
 import Profile from "./Profile/Profile";
 import Error from "./Error";
 import NavBar from "./Shared/NavBar";
@@ -19,6 +18,11 @@ import LakePage from "./CuratedPlaces/LakePage";
 import MountainPage from "./CuratedPlaces/MountainPage";
 import ExplorePlacesPage from "./ExplorePlaces/ExplorePlacesPage";
 import ArticlePage from "./Articles/ArticlePage";
+import Tokyo from "./PlacePage/Tokyo";
+import Istanbul from "./PlacePage/Istanbul";
+import Austria from "./PlacePage/Austria";
+import India from "./PlacePage/India";
+import Marrakech from "./PlacePage/Marrakech";
 
 ReactDOM.render(
   <Store>
@@ -26,7 +30,11 @@ ReactDOM.render(
       <NavBar />
       <Switch>
         <Route path="/" component={HomePage} exact />
-        <Route path="/place" component={Place} />
+        <Route path="/tokyo" component={Tokyo} />
+        <Route path="/istanbul" component={Istanbul} />
+        <Route path="/austria" component={Austria} />
+        <Route path="/india" component={India} />
+        <Route path="/marrakech" component={Marrakech} />
         <Route path="/profile" component={Profile} />
         <Route path="/explore" component={ExplorePlacesPage} />
         <Route path="/article" component={ArticlePage} />

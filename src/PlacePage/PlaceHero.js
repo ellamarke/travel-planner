@@ -1,12 +1,12 @@
 import "../css/Place.css";
 import React, { useState, useEffect } from "react";
 
-function PlaceHero() {
+function PlaceHero({ placeName, imgCaption, weatherCityName }) {
   return (
     <div className="place-hero">
-      <h1>Tokyo, Japan</h1>
-      <p className="img-caption">Harajuku</p>
-      <Weather city="Tokyo" />
+      <h1>{placeName}</h1>
+      <p className="img-caption">{imgCaption}</p>
+      <Weather city={weatherCityName} />
       <img
         className="hero-image"
         src="img/grey-rectangle.jpg"

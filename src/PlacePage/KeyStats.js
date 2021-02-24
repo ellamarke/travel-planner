@@ -1,16 +1,16 @@
 import "../css/App.css";
 
-function KeyStats() {
+function KeyStats({ language, currency, population }) {
   return (
     <div className="key-stats">
       <h1 className="language">
-        People speak <span className="highlighted">Japanese</span>.
+        People speak <span className="highlighted">{language}</span>.
       </h1>
       <h1 className="currency">
-        They pay in <span className="highlighted">Yen</span>.
+        They pay in <span className="highlighted">{currency}</span>.
       </h1>
       <h1 className="language">
-        <span className="highlighted">9.2 million</span> people live there.
+        <span className="highlighted">{population}</span> people live there.
       </h1>
     </div>
   );

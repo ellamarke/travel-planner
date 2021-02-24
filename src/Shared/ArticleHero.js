@@ -1,9 +1,11 @@
 import "../css/App.css";
 import "../css/Layout.css";
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 function ArticleHero({ articleName, contentTag }) {
   const [readingList, setReadingList] = useState(false);
+  const history = useHistory();
 
   function handleClick() {
     readingList ? setReadingList(false) : setReadingList(true);
@@ -11,6 +13,7 @@ function ArticleHero({ articleName, contentTag }) {
 
   function articleClicked() {
     console.log("article has been clicked!!");
+    history.push("/article");
   }
 
   return (

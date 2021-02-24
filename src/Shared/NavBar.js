@@ -10,8 +10,8 @@ function NavBar() {
         <h1>Logo</h1>
       </Link>
       <ul className="nav-links">
-        <Link to="/place">
-          <li>Place</li>
+        <Link to="/tokyo">
+          <li>Tokyo</li>
         </Link>
         <Link to="/explore">
           <li>Explore</li>

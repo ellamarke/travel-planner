@@ -243,3 +243,113 @@ export const lakes = [
       "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
   },
 ];
+
+export const istanbulPlaces = [
+  {
+    cardName: "Hagia Sophia",
+    cardCaption:
+      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+  },
+  {
+    cardName: "Topkapi Palace",
+    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+  },
+  {
+    cardName: "Rumeli Fortress",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+  },
+  {
+    cardName: "Basillica Cistern",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+  },
+];
+
+export const tokyoPlaces = [
+  {
+    cardName: "Harajuku",
+    cardCaption:
+      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+  },
+  {
+    cardName: "Minato",
+    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+  },
+  {
+    cardName: "Chiyoda",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+  },
+  {
+    cardName: "Taito",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+  },
+];
+
+export const austriaPlaces = [
+  {
+    cardName: "Vienna",
+    cardCaption:
+      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+  },
+  {
+    cardName: "Salzburg",
+    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+  },
+  {
+    cardName: "Innsbruck",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+  },
+  {
+    cardName: "Graz",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+  },
+];
+
+export const indiaPlaces = [
+  {
+    cardName: "Jaipur",
+    cardCaption:
+      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+  },
+  {
+    cardName: "New Delhi",
+    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+  },
+  {
+    cardName: "Mumbai",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+  },
+  {
+    cardName: "Mahabaleshwar",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+  },
+];
+
+export const marrakechPlaces = [
+  {
+    cardName: "Atlas Mountains",
+    cardCaption:
+      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+  },
+  {
+    cardName: "Jardin Majorelle",
+    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+  },
+  {
+    cardName: "Medina of Marrakesh",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+  },
+  {
+    cardName: "Musee Yves Saint Laurent Marrakech",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+  },
+];
