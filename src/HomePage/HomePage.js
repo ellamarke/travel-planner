@@ -9,10 +9,10 @@ import { places } from "../Reference/AllPlaces";
 function HomePage() {
   return (
     <div className="home-page">
-      <Hero />
+      <Hero title="Finding your next adventure" />
       <HomeSearch />
-      <WhereNext />
-      <ArticleHero articleName="Peru: Our New Obsession" />
+      <WhereNext title="Find somewhere new!" />
+      <ArticleHero articleName="Peru: Our New Obsession" contentTag="culture" />
       <PlaceCarousel title={"our favourite places"} places={places} />
     </div>
   );

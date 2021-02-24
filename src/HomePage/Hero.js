@@ -1,9 +1,9 @@
 import "../css/App.css";
 
-function Hero() {
+function Hero({ title }) {
   return (
     <div className="hero">
-      <h1>Finding your next adventure</h1>
+      <h1>{title}</h1>
       <p className="img-caption">Beijing, China</p>
       <img
         className="hero-image"

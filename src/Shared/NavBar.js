@@ -13,6 +13,9 @@ function NavBar() {
         <Link to="/place">
           <li>Place</li>
         </Link>
+        <Link to="/explore">
+          <li>Explore</li>
+        </Link>
         <Link to="/profile">
           <li>Profile</li>
         </Link>

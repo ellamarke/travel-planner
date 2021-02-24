@@ -34,7 +34,10 @@ function Place() {
       <PlaceIntroduction />
       <KeyStats />
       <PlaceCarousel title={"some cool places"} places={places} />
-      <ArticleHero articleName="Tokyo's cultural hotspots just got a major boost" />
+      <ArticleHero
+        articleName="Tokyo's cultural hotspots just got a major boost"
+        contentTag="culture"
+      />
     </div>
   );
 }

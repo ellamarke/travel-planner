@@ -21,5 +21,5 @@ export default initialLists;
 
 export const newList = {
   listName: "New List",
-  items: [{ text: "Skirts", isComplete: false, id: 1 }],
+  items: [{ text: "Skirts", isComplete: false, id: 1 }], // how to deal with IDs
 };

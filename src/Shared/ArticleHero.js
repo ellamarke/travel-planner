@@ -2,7 +2,7 @@ import "../css/App.css";
 import "../css/Layout.css";
 import React, { useState } from "react";
 
-function ArticleHero({ articleName }) {
+function ArticleHero({ articleName, contentTag }) {
   const [readingList, setReadingList] = useState(false);
 
   function handleClick() {
@@ -19,7 +19,7 @@ function ArticleHero({ articleName }) {
       <div className="article-text">
         <h1 className="article-name">{articleName}</h1>
         <div className="tags">
-          <p className="content-tag">Culture</p>
+          <p className="content-tag">{contentTag}</p>
           <img
             onClick={handleClick}
             className={

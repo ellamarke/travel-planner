@@ -35,6 +35,7 @@ function MyLists({ lists }) {
 }
 
 function AddNewList(state, setState, history) {
+  // this isn't a functional component -- it's just a normal function. This means we can't use Hooks directly
   const myLists = state.myLists;
   const anotherList = JSON.parse(JSON.stringify(newList)); // this is cloning newList
   myLists.push(anotherList); // this adds anotherList to myList

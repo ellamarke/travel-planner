@@ -3,7 +3,7 @@ import "../css/Layout.css";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-export function WhereNext() {
+export function WhereNext({ title }) {
   const places = [
     { placeTitle: "Great Lakes", route: "/lakes" },
     { placeTitle: "Misty Mountains", route: "/mountains" },
@@ -22,7 +22,7 @@ export function WhereNext() {
 
   return (
     <div className="where-next">
-      <h2>Find somewhere new</h2>
+      <h2>{title}</h2>
 
       <div className="dropdown-sentence">
         <h1>I want to see</h1>

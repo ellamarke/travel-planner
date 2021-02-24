@@ -17,6 +17,7 @@ import DesertPage from "./CuratedPlaces/DesertPage";
 import JunglePage from "./CuratedPlaces/JunglePage";
 import LakePage from "./CuratedPlaces/LakePage";
 import MountainPage from "./CuratedPlaces/MountainPage";
+import ExplorePlacesPage from "./ExplorePlaces/ExplorePlacesPage";
 
 ReactDOM.render(
   <Store>
@@ -26,6 +27,7 @@ ReactDOM.render(
         <Route path="/" component={HomePage} exact />
         <Route path="/place" component={Place} />
         <Route path="/profile" component={Profile} />
+        <Route path="/explore" component={ExplorePlacesPage} />
         <Route path="/listEdit" component={ListEdit} />
         <Route path="/temples" component={TemplePage} />
         <Route path="/deserts" component={DesertPage} />
