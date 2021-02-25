@@ -14,6 +14,7 @@ function PlaceCarousel({ title, places }) {
             key={place.cardName}
             cardCaption={place.cardCaption}
             cardName={place.cardName}
+            route={place.route}
           />
         ))}
       </div>
@@ -21,7 +22,7 @@ function PlaceCarousel({ title, places }) {
   );
 }
 
-function PlaceCard({ cardCaption, cardName }) {
+function PlaceCard({ cardCaption, cardName, route }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
   const history = useHistory();
@@ -45,7 +46,8 @@ function PlaceCard({ cardCaption, cardName }) {
   const favourite = favouritePlaces.includes(cardName);
 
   function goToPlace() {
-    history.push("/place");
+    history.push(route);
+    console.log(route);
   }
 
   return (

@@ -22,7 +22,7 @@ function Marrakech() {
   return (
     <div className="place">
       <PlaceHero
-        placeName="Marrakech"
+        placeName="Marrakech, Morocco"
         imgCaption="Medina of Marrakech"
         weatherCityName="Marrakech"
       />

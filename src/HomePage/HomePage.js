@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import WhereNext from "./WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
-import { places } from "../Reference/AllPlaces";
+import { newPlaces } from "../Reference/AllPlaces";
 
 function HomePage() {
   return (
@@ -13,7 +13,7 @@ function HomePage() {
       <HomeSearch />
       <WhereNext title="Find somewhere new!" />
       <ArticleHero articleName="Peru: Our New Obsession" contentTag="culture" />
-      <PlaceCarousel title={"our favourite places"} places={places} />
+      <PlaceCarousel title={"our favourite places"} places={newPlaces} />
     </div>
   );
 }

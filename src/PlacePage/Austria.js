@@ -42,7 +42,7 @@ function Austria() {
         cardCaption="Picturesquely perched on a hill and set among beautiful gardens, this Renaissance pile was acquired in 1564 by Archduke Ferdinand II, then ruler of Tyrol, who transformed it from a fortress into a palace. Don't miss the centrepiece Spanische Saal (Spanish Hall), the dazzling Armour Collection and the gallery's Velázquez and Van Dyck originals."
       />
       <ArticleHero
-        articleName="If you're not already obsessed with Austrian food, you will soon"
+        articleName="If you're not already obsessed with Austrian food, you will be soon"
         contentTag="food"
       />
     </div>

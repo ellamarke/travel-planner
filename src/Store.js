@@ -39,7 +39,7 @@ function getFromLocalStorage() {
   if (savedState) {
     if (savedState.currentList) {
       savedState.currentList = savedState.myLists.find(
-        (list) => list.listName == savedState.currentList.listName
+        (list) => list.listName === savedState.currentList.listName
       );
     }
   }

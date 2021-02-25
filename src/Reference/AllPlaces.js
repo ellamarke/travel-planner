@@ -3,21 +3,19 @@ export const places = [
     cardName: "Mexico City",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    route: "/mexico-city",
   },
   {
     cardName: "Phnom Penh",
     cardCaption:
       "Pariatur sunt non proident aliquip. Proident dolore fugiat est nisi sit. Lorem in tempor occaecat irure est ut.",
+    route: "/phnom-penh",
   },
   {
     cardName: "Lagos",
     cardCaption:
       "Eu officia sit ex dolore quis eu dolor tempor fugiat mollit incididunt excepteur cillum.",
-  },
-  {
-    cardName: "Istanbul",
-    cardCaption:
-      "In in ut non ullamco consequat sunt proident velit. In laborum duis esse ea proident.",
+    route: "/lagos",
   },
   {
     cardName: "Beijing",
@@ -351,5 +349,93 @@ export const marrakechPlaces = [
     cardName: "Musee Yves Saint Laurent Marrakech",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+  },
+];
+
+export const mexicoCityPlaces = [
+  {
+    cardName: "Museo Frida Kahlo",
+    cardCaption:
+      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+  },
+  {
+    cardName: "Palacio de Bellas Artes",
+    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+  },
+  {
+    cardName: "Floating Gardens of Xochimilco",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+  },
+  {
+    cardName: "Arena Mexico",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+  },
+];
+
+export const phnomPenhPlaces = [
+  {
+    cardName: "Mekong River",
+    cardCaption:
+      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+  },
+  {
+    cardName: "Wat Phnom",
+    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+  },
+  {
+    cardName: "Central Market",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+  },
+  {
+    cardName: "Royal Palace",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+  },
+];
+
+export const newPlaces = [
+  {
+    cardName: "Marrakech, Morocco",
+    cardCaption:
+      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+    route: "/marrakech",
+  },
+  {
+    cardName: "Tokyo, Japan",
+    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+    route: "/tokyo",
+  },
+  {
+    cardName: "India",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    route: "/india",
+  },
+  {
+    cardName: "Istanbul, Turkey",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    route: "/istanbul",
+  },
+  {
+    cardName: "Austria",
+    cardCaption:
+      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    route: "/austria",
+  },
+  {
+    cardName: "Mexico City, Mexico",
+    cardCaption:
+      "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    route: "/mexico-city",
+  },
+  {
+    cardName: "Phnom Penh, Cambodia",
+    cardCaption:
+      "Pariatur sunt non proident aliquip. Proident dolore fugiat est nisi sit. Lorem in tempor occaecat irure est ut.",
+    route: "/phnom-penh",
   },
 ];
