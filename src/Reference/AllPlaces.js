@@ -396,7 +396,7 @@ export const phnomPenhPlaces = [
   },
 ];
 
-export const newPlaces = [
+export const hardCodedPlaces = [
   {
     cardName: "Marrakech, Morocco",
     cardCaption:
@@ -413,6 +413,7 @@ export const newPlaces = [
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
     route: "/india",
+    country: "India",
   },
   {
     cardName: "Istanbul, Turkey",

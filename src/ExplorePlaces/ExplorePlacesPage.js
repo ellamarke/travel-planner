@@ -4,12 +4,13 @@ import WhereNext from "../HomePage/WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleCarousel from "../Shared/ArticleCarousel";
-import { places } from "../Reference/AllPlaces";
+import { places, hardCodedPlaces } from "../Reference/AllPlaces";
 import CaseStudy from "./CaseStudy";
 import PageIntro from "../Shared/PageIntro";
 import { articles } from "../Reference/Articles";
 
 const parisArticle = articles[4];
+const indiaCaseStudy = hardCodedPlaces[2];
 
 function ExplorePlacesPage() {
   return (
@@ -23,9 +24,9 @@ function ExplorePlacesPage() {
       />
       <ArticleCarousel title={"Reading stuff"} articles={articles} />
       <CaseStudy
-        cardName="Warsaw"
-        cardCaption="Hello I'm talking about Warsaw"
-        country="Poland"
+        cardName={indiaCaseStudy.cardName}
+        cardCaption={indiaCaseStudy.cardCaption}
+        country={indiaCaseStudy.country}
       />
       <WhereNext title="Need more inspiration?" />
     </div>

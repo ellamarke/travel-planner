@@ -10,6 +10,7 @@ import {
   deserts,
   jungles,
   mountains,
+  hardCodedPlaces,
 } from "../Reference/AllPlaces";
 import MyLists from "../Lists/MyLists";
 import MyArticles from "./MyArticles";
@@ -43,12 +44,17 @@ function Profile() {
     favouritePlaces.includes(place.cardName)
   );
 
+  const newHardCodedPlaces = hardCodedPlaces.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
   const allPlaces = newPlaces
     .concat(newTemples)
     .concat(newLakes)
     .concat(newJungles)
     .concat(newMountains)
-    .concat(newDeserts);
+    .concat(newDeserts)
+    .concat(newHardCodedPlaces);
 
   const myArticleNames = state.myArticles;
   const myArticleList = articles.filter((article) =>

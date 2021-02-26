@@ -9,6 +9,7 @@ function CaseStudy({ cardName, cardCaption, country }) {
   const favouritePlaces = state.favouritePlaces;
 
   function handleClick() {
+    console.log("Clicked!");
     const favourite = !favouritePlaces.includes(cardName);
     if (favourite) {
       favouritePlaces.push(cardName);
