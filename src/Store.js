@@ -1,22 +1,15 @@
 import React, { useState } from "react";
 import StarterLists from "./Lists/StarterLists";
+import { articles } from "./Reference/Articles";
 
 const defaultState = {
   favouritePlaces: [],
   myLists: StarterLists,
   currentList: StarterLists[0],
   myArticles: [],
-  // If we add anything else here, it won't appear if localStorage isn't cleared as it defaults to getFromLocalStorage
+  currentArticleName: articles[0].articleName,
+  // will need to delete local storage if adding to this
 };
-
-// add new list
-// set currentList to be the newly added list
-// push history to go to edit page
-
-//  function goToList() {
-//  setState({ ...state, currentList: list });
-//  history.push("/ListEdit");
-// }
 
 export const Context = React.createContext();
 

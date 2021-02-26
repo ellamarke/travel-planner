@@ -3,6 +3,7 @@ import Hero from "../HomePage/Hero";
 import WhereNext from "../HomePage/WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
+import ArticleCarousel from "../Shared/ArticleCarousel";
 import { places } from "../Reference/AllPlaces";
 import CaseStudy from "./CaseStudy";
 import PageIntro from "../Shared/PageIntro";
@@ -20,7 +21,7 @@ function ExplorePlacesPage() {
         articleName={parisArticle.articleName}
         contentTag={parisArticle.contentTag}
       />
-      <PlaceCarousel title={"Travelling East"} places={places} />
+      <ArticleCarousel title={"Reading stuff"} articles={articles} />
       <CaseStudy
         cardName="Warsaw"
         cardCaption="Hello I'm talking about Warsaw"

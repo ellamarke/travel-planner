@@ -11,7 +11,7 @@ function ArticleHero({ articleName, contentTag }) {
   const history = useHistory();
 
   function articleClicked() {
-    console.log("article has been clicked!!");
+    setState({ ...state, currentArticleName: articleName });
     history.push("/article");
   }
 
