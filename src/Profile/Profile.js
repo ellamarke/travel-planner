@@ -12,6 +12,8 @@ import {
   mountains,
 } from "../Reference/AllPlaces";
 import MyLists from "../Lists/MyLists";
+import MyArticles from "./MyArticles";
+import { articles } from "../Reference/Articles";
 
 function Profile() {
   const [state] = useContext(Context);
@@ -48,10 +50,16 @@ function Profile() {
     .concat(newMountains)
     .concat(newDeserts);
 
+  const myArticleNames = state.myArticles;
+  const myArticleList = articles.filter((article) =>
+    myArticleNames.includes(article.articleName)
+  );
+
   return (
     <div className="profile">
       <MyPlaces places={allPlaces} />
       <MyLists lists={state.myLists} />
+      <MyArticles articles={myArticleList} />
     </div>
   );
 }

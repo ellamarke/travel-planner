@@ -5,6 +5,7 @@ const defaultState = {
   favouritePlaces: [],
   myLists: StarterLists,
   currentList: StarterLists[0],
+  myArticles: [],
   // If we add anything else here, it won't appear if localStorage isn't cleared as it defaults to getFromLocalStorage
 };
 

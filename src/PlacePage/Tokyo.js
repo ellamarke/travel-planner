@@ -7,11 +7,14 @@ import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleHero from "../Shared/ArticleHero";
 import PlacePageCaseStudy from "./PlacePageCaseStudy";
 import { tokyoPlaces } from "../Reference/AllPlaces";
+import { articles } from "../Reference/Articles";
 
 function Tokyo() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const tokyoArticle = articles[3];
 
   const shortDescription = ` Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional,
   from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto
@@ -60,8 +63,8 @@ function Tokyo() {
         country="Japan"
       />
       <ArticleHero
-        articleName="Tokyo's cultural hotspots just got a major boost"
-        contentTag="culture"
+        articleName={tokyoArticle.articleName}
+        contentTag={tokyoArticle.contentTag}
       />
     </div>
   );

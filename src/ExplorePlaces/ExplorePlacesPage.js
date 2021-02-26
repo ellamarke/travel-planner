@@ -6,16 +6,19 @@ import PlaceCarousel from "../Shared/PlaceCarousel";
 import { places } from "../Reference/AllPlaces";
 import CaseStudy from "./CaseStudy";
 import PageIntro from "../Shared/PageIntro";
+import { articles } from "../Reference/Articles";
 
-function HomePage() {
+const parisArticle = articles[4];
+
+function ExplorePlacesPage() {
   return (
     <div className="home-page">
       <Hero title="Let's explore!" />
       <PageIntro />
       <PlaceCarousel title={"Off the beaten track"} places={places} />
       <ArticleHero
-        articleName="Paris: Re-thinking the City of Romance"
-        contentTag="history"
+        articleName={parisArticle.articleName}
+        contentTag={parisArticle.contentTag}
       />
       <PlaceCarousel title={"Travelling East"} places={places} />
       <CaseStudy
@@ -28,4 +31,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default ExplorePlacesPage;

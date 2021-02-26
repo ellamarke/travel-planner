@@ -42,7 +42,8 @@
   }
   
   .my-place-place-card .card-name,
-  .list-card-bottom .card-name {
+  .list-card-bottom .card-name,
+  .my-place-card .article-name {
     font-size: 30px;
   }
   
@@ -62,6 +63,10 @@
       margin-top: 40px;
       margin-bottom: 60px;
       padding: 20px;
+  }
+
+  .delete-icon {
+    width: 30px;
   }
 
 

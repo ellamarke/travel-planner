@@ -4,28 +4,26 @@ import "../css/Article.css";
 
 function ArticlePageHero({ articleName, authorName, contentTag }) {
   const [state, setState] = useContext(Context);
-  const [readingList, setReadingList] = useState(false);
-  const favouriteArticles = state.favouriteArticles;
+  const myArticles = state.myArticles;
 
   function handleClick() {
-    readingList ? setReadingList(false) : setReadingList(true);
-  }
-
-  function handleClick() {
-    const favourite = !favouriteArticles.includes(articleName);
-    if (favourite) {
-      favouriteArticles.push(articleName);
-      setState({ ...state, favouriteArticles: favouriteArticles });
+    console.log("CLICKED!!!!");
+    const newFavourite = !myArticles.includes(articleName);
+    if (newFavourite) {
+      myArticles.push(articleName);
+      setState({ ...state, myArticles: myArticles });
     } else {
-      const newFavouriteArticles = favouriteArticles.filter(
+      const newMyArticles = myArticles.filter(
         (article) => article !== articleName
       );
       setState({
         ...state,
-        favouriteArticles: newFavouriteArticles,
+        myArticles: newMyArticles,
       });
     }
   }
+
+  const favourite = myArticles.includes(articleName);
 
   return (
     <div className="article-page-hero">
@@ -36,7 +34,7 @@ function ArticlePageHero({ articleName, authorName, contentTag }) {
         <img
           onClick={handleClick}
           className={
-            readingList ? "reading-list-icon-selected" : "reading-list-icon"
+            favourite ? "reading-list-icon-selected" : "reading-list-icon"
           }
           src="img/reading-list-icon.png"
           alt="article"
