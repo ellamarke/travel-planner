@@ -23,4 +23,26 @@ app.get("/weather", (req, response) => {
     });
 });
 
+app.get("/search-place", async (req, response) => {
+  const searchTerm = req.query.searchTerm;
+
+  const apiResponse = await fetch(
+    `https://en.wikipedia.org/w/api.php?action=query&titles=${searchTerm}&prop=extracts&format=json&exintro=1`
+  );
+
+  const result = await apiResponse.json();
+  console.log(result);
+  const pages = result.query.pages;
+  const keys = Object.keys(pages);
+  const firstPageKey = keys[0];
+  const place = JSON.stringify({
+    placeName: result.query.normalized[0].to,
+    content: pages[firstPageKey].extract,
+  });
+
+  response.send(place);
+});
+
+console.log(`I've started!!`);
+
 app.listen(8080);

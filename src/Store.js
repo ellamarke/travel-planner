@@ -8,6 +8,11 @@ const defaultState = {
   currentList: StarterLists[0],
   myArticles: [],
   currentArticleName: articles[0].articleName,
+  currentSearchedPlace: {
+    placeName: "Poland",
+    content:
+      "Reprehenderit nostrud ut labore adipisicing anim. Incididunt officia fugiat deserunt amet id ex sunt consectetur aliquip laboris. Enim incididunt nisi incididunt duis id ex ipsum labore officia laborum. Veniam pariatur do ex veniam exercitation culpa velit nostrud magna eiusmod et quis ad. Voluptate aliqua ea et ea voluptate laboris minim reprehenderit ad aliquip sit velit veniam proident. Elit velit veniam fugiat veniam proident. Nostrud velit irure est id anim consequat ad adipisicing Lorem excepteur deserunt esse.",
+  },
   // will need to delete local storage if adding to this
 };
 

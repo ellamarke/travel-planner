@@ -25,6 +25,7 @@ import India from "./PlacePage/India";
 import Marrakech from "./PlacePage/Marrakech";
 import MexicoCity from "./PlacePage/MexicoCity";
 import PhnomPenh from "./PlacePage/PhnomPenh";
+import BasicPlacePage from "./PlacePage/BasicPlacePage";
 
 ReactDOM.render(
   <Store>
@@ -48,6 +49,7 @@ ReactDOM.render(
         <Route path="/jungles" component={JunglePage} />
         <Route path="/lakes" component={LakePage} />
         <Route path="/mountains" component={MountainPage} />
+        <Route path="/searched-place" component={BasicPlacePage} />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>
