@@ -5,11 +5,13 @@ import ListForm from "./ListForm";
 import List from "./List";
 import { useEffect } from "react";
 import { Context } from "../Store";
+import { useHistory } from "react-router-dom";
 
 function ListItems({ list }) {
   const [state, setState] = useContext(Context);
   const [listItems, setListItems] = useState([]);
   useEffect(() => setListItems(list.items), [list.items]);
+  const history = useHistory();
 
   const updateCurrentList = (listItems) => {
     const myLists = state.myLists;
@@ -80,6 +82,10 @@ function ListItems({ list }) {
     return myLists;
   };
 
+  const returnToLists = () => {
+    history.push("/profile");
+  };
+
   return (
     <div className="list-items">
       <input
@@ -95,6 +101,7 @@ function ListItems({ list }) {
         removeListItem={removeListItem}
         updateList={updateList}
       />
+      <button onClick={returnToLists}>Back to profile</button>
     </div>
   );
 }

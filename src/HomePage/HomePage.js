@@ -13,7 +13,10 @@ function HomePage() {
       <HomeSearch />
       <WhereNext title="Find somewhere new!" />
       <ArticleHero articleName="Peru: Our New Obsession" contentTag="culture" />
-      <PlaceCarousel title={"our favourite places"} places={hardCodedPlaces} />
+      <PlaceCarousel
+        title={"Some of our favourite places"}
+        places={hardCodedPlaces.filter((hardCodedPlace, index) => index < 4)}
+      />
     </div>
   );
 }

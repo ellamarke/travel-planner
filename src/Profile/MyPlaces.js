@@ -3,8 +3,13 @@ import "../css/Profile.css";
 
 import React, { useContext } from "react";
 import { Context } from "../Store";
+import { useHistory } from "react-router-dom";
 
 function MyPlaces({ places }) {
+  const history = useHistory();
+  function handleClick() {
+    history.push("/explore");
+  }
   return (
     <div className="place-card-grid">
       <h1>My Places</h1>
@@ -24,7 +29,9 @@ function MyPlaces({ places }) {
         ))}
       </div>
 
-      <button className="explore-more">explore more places</button>
+      <button className="explore-more" onClick={handleClick}>
+        explore more places
+      </button>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import "../css/App.css";
 import "../css/Profile.css";
-import React, { useContext } from "react";
+import React, { useContext, useLayoutEffect } from "react";
 import MyPlaces from "./MyPlaces";
 import { Context } from "../Store";
 import {
@@ -11,6 +11,13 @@ import {
   jungles,
   mountains,
   hardCodedPlaces,
+  tokyoPlaces,
+  istanbulPlaces,
+  austriaPlaces,
+  indiaPlaces,
+  marrakechPlaces,
+  mexicoCityPlaces,
+  phnomPenhPlaces,
 } from "../Reference/AllPlaces";
 import MyLists from "../Lists/MyLists";
 import MyArticles from "./MyArticles";
@@ -19,6 +26,10 @@ import { articles } from "../Reference/Articles";
 function Profile() {
   const [state] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const newPlaces = places.filter((place) =>
     favouritePlaces.includes(place.cardName)
@@ -48,13 +59,48 @@ function Profile() {
     favouritePlaces.includes(place.cardName)
   );
 
+  const newTokyoPlaces = tokyoPlaces.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newIstanbulPlaces = istanbulPlaces.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newAustriaPlaces = austriaPlaces.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newIndiaPlaces = indiaPlaces.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newMarrakechPlaces = marrakechPlaces.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newMexicoCityPlaces = mexicoCityPlaces.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
+  const newPhnomPenhPlaces = phnomPenhPlaces.filter((place) =>
+    favouritePlaces.includes(place.cardName)
+  );
+
   const allPlaces = newPlaces
     .concat(newTemples)
     .concat(newLakes)
     .concat(newJungles)
     .concat(newMountains)
     .concat(newDeserts)
-    .concat(newHardCodedPlaces);
+    .concat(newHardCodedPlaces)
+    .concat(newTokyoPlaces)
+    .concat(newIstanbulPlaces)
+    .concat(newAustriaPlaces)
+    .concat(newIndiaPlaces)
+    .concat(newMarrakechPlaces)
+    .concat(newMexicoCityPlaces)
+    .concat(newPhnomPenhPlaces);
 
   const myArticleNames = state.myArticles;
   const myArticleList = articles.filter((article) =>
