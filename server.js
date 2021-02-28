@@ -26,23 +26,57 @@ app.get("/weather", (req, response) => {
 app.get("/search-place", async (req, response) => {
   const searchTerm = req.query.searchTerm;
 
-  const apiResponse = await fetch(
-    `https://en.wikipedia.org/w/api.php?action=query&titles=${searchTerm}&prop=extracts&format=json&exintro=1`
-  );
+  const wikipediaPlace = await wikipediaSearch(searchTerm);
 
-  const result = await apiResponse.json();
-  console.log(result);
-  const pages = result.query.pages;
-  const keys = Object.keys(pages);
-  const firstPageKey = keys[0];
-  const place = JSON.stringify({
-    placeName: result.query.normalized[0].to,
-    content: pages[firstPageKey].extract,
-  });
+  const restCountry = await countrySearch(searchTerm);
 
-  response.send(place);
+  const details = { ...wikipediaPlace, countryDetails: restCountry };
+
+  console.log(details);
+
+  response.send(JSON.stringify(details));
 });
 
 console.log(`I've started!!`);
 
 app.listen(8080);
+
+async function wikipediaSearch(searchTerm) {
+  const apiResponse = await fetch(
+    `https://en.wikipedia.org/w/api.php?action=query&titles=${searchTerm}&prop=extracts&format=json&exintro=1`
+  );
+
+  const result = await apiResponse.json();
+  const pages = result.query.pages;
+  const keys = Object.keys(pages);
+  const firstPageKey = keys[0];
+  const place = {
+    placeName: result.query.normalized[0].to,
+    content: pages[firstPageKey].extract,
+  };
+
+  return place;
+}
+
+async function countrySearch(searchTerm) {
+  const apiResponse = await fetch(
+    `https://restcountries.eu/rest/v2/name/${searchTerm}`
+  );
+
+  const result = await apiResponse.json();
+
+  console.log(result);
+
+  if (result.status === 404) {
+    return null;
+  }
+
+  const country = result[0];
+
+  return {
+    flagImage: country.flag,
+    currency: country.currencies[0].name,
+    population: country.population,
+    language: country.languages[0].name,
+  };
+}

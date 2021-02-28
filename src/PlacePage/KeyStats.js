@@ -12,6 +12,9 @@ function KeyStats({ language, currency, population }) {
       <h1 className="language">
         <span className="highlighted">{population}</span> people live there.
       </h1>
+      {/*   <img className="flag">
+        <img src={flagImage}></img>
+      </img> */}
     </div>
   );
 }

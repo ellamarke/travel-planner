@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../Store";
+import KeyStats from "./KeyStats";
 
 function BasicPlacePage() {
   const [state] = useContext(Context);
@@ -12,6 +13,14 @@ function BasicPlacePage() {
     <div>
       This is {currentSearchedPlace.placeName}
       <pre>{renderHTML(currentSearchedPlace.content)}</pre>
+      {currentSearchedPlace.countryDetails && (
+        <KeyStats
+          currency={currentSearchedPlace.countryDetails.currency}
+          population={currentSearchedPlace.countryDetails.population}
+          language={currentSearchedPlace.countryDetails.language}
+          flagImage={currentSearchedPlace.countryDetails.flagImage}
+        />
+      )}
     </div>
   );
 }
