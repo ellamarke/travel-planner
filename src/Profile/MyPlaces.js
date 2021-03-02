@@ -10,6 +10,7 @@ function MyPlaces({ places }) {
   function handleClick() {
     history.push("/explore");
   }
+
   return (
     <div className="place-card-grid">
       <h1>My Places</h1>

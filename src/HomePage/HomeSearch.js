@@ -7,7 +7,7 @@ import { Context } from "../Store";
 function HomeSearch() {
   const history = useHistory();
   const [state, setState] = useContext(Context);
-  const [searchTerm, setSearchTerm] = useState("london");
+  const [searchTerm, setSearchTerm] = useState("");
 
   const changeSearchTerm = (event) => {
     setSearchTerm(event.target.value);
@@ -34,11 +34,11 @@ function HomeSearch() {
   return (
     <div className="home-search">
       <h2>somewhere in mind?</h2>
-      <h1>Where do you want to go next?</h1>
+      <h1>Discover a new country</h1>
       <input
         className="search-bar-main"
         key="search-bar-1"
-        placeholder="Japan? Belgrade? Ethiopia?"
+        placeholder="Japan? Turkey? Morocco?"
         value={searchTerm}
         onChange={changeSearchTerm}
       />
