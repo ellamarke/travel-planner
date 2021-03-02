@@ -3,14 +3,19 @@ import "../css/Layout.css";
 import "../css/NavBar.css"; */
 import "../styles/sitewide.css";
 import { Link } from "react-router-dom";
+import SearchBar from "./searchBar";
 
 function NavBar() {
   return (
     <nav>
       <ul className="nav-container">
-        <Link to="/" className="logo">
-          <img src="img/logo.svg" alt="voyage logo"></img>
-        </Link>
+        <div className="logo-search">
+          <Link to="/" className="logo">
+            <img src="img/logo.svg" alt="voyage logo"></img>
+          </Link>
+
+          <SearchBar className="nav-search-bar" />
+        </div>
 
         <div className="nav-links">
           <Link to="/explore" className="button">

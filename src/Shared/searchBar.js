@@ -1,10 +1,8 @@
-import "../css/App.css";
-import "../css/Layout.css";
 import { useHistory } from "react-router-dom";
 import { useContext, useState } from "react";
 import { Context } from "../Store";
 
-function HomeSearch() {
+function SearchBar() {
   const history = useHistory();
   const [state, setState] = useContext(Context);
   const [searchTerm, setSearchTerm] = useState("");
@@ -13,7 +11,15 @@ function HomeSearch() {
     setSearchTerm(event.target.value);
   };
 
-  async function handleClick() {
+  async function doSearch(term) {
+    const response = await fetch(`/search-place?searchTerm=${term}`);
+    const result = await response.json();
+    return result;
+  }
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
     const searchedPlace = await doSearch(searchTerm);
     setState({
       ...state,
@@ -21,30 +27,22 @@ function HomeSearch() {
     });
 
     history.push("/searched-place");
-  }
-
-  async function doSearch(term) {
-    const response = await fetch(`/search-place?searchTerm=${term}`);
-    const result = await response.json();
-    return result;
-  }
+  };
 
   return (
-    <div className="home-search">
-      <h2>somewhere in mind?</h2>
-      <h1>Discover a new country</h1>
+    <form
+      role="search"
+      className="search-bar"
+      onSubmit={(event) => onSubmit(event)}
+    >
       <input
-        className="search-bar-main"
-        key="search-bar-1"
-        placeholder="Japan? Turkey? Morocco?"
+        placeholder="Search for a country"
         value={searchTerm}
         onChange={changeSearchTerm}
+        className="search-bar-input"
       />
-      <button className="go" onClick={handleClick}>
-        Let's explore!
-      </button>
-    </div>
+    </form>
   );
 }
 
-export default HomeSearch;
+export default SearchBar;

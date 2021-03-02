@@ -2,11 +2,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 body {
@@ -17,14 +26,7 @@ body {
 
 nav {
   background-color: #7CFF8D;
-  color: #3B413C;
   padding: 1.5em 0;
-}
-
-nav .logo {
-  width: 14em;
-  margin-right: auto;
-  margin-left: 4em;
 }
 
 .nav-container {
@@ -37,6 +39,50 @@ nav .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav-container .logo-search {
+  margin-right: auto;
+  margin-left: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .logo-search .logo {
+  width: 14em;
+}
+
+.nav-container input {
+  font-family: work-sans, sans-serif;
+  font-weight: 300;
+  font-weight: 500;
+  padding: 0.6em;
+  font-size: 1.3rem;
+  border: 2px solid #3B413C;
+  background-color: inherit;
+  color: #3B413C;
+  width: 15em;
+  margin-left: 3em;
+}
+
+.nav-container ::-webkit-input-placeholder {
+  color: #3B413C;
+}
+
+.nav-container :-ms-input-placeholder {
+  color: #3B413C;
+}
+
+.nav-container ::-ms-input-placeholder {
+  color: #3B413C;
+}
+
+.nav-container ::placeholder {
+  color: #3B413C;
 }
 
 .nav-container .nav-links {

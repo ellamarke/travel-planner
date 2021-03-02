@@ -1,20 +1,39 @@
 nav {
     background-color: $mint;
-    color: $olive;
     padding: 1.5em 0;
-
-    .logo {
-        width: 14em;
-        margin-right: auto;
-        margin-left: 4em;
-    }
 }
-
 
 .nav-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    .logo-search {
+        margin-right: auto;
+        margin-left: 4em;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            width: 14em;
+        }
+    }
+
+    input {
+        @include work-standard;
+        font-weight: 500;
+        padding: 0.6em;
+        font-size: 1.3rem;
+        border: 2px solid $olive;
+        background-color: inherit;
+        color: $olive;
+        width: 15em;
+        margin-left: 3em;
+    }
+
+    ::placeholder {
+        color: $olive;
+    }
 
     .nav-links {
         display: flex;
