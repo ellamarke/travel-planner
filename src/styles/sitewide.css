@@ -1,9 +1,12 @@
-body {
-  font-size: 80px;
-  color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -12,7 +15,55 @@ body {
   font-style: normal;
 }
 
-body {
+nav {
+  background-color: #7CFF8D;
+  color: #3B413C;
+  padding: 1.5em 0;
+}
+
+nav .logo {
+  width: 14em;
+  margin-right: auto;
+  margin-left: 4em;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3em;
+}
+
+.nav-container .button {
+  margin: 0 0.5em;
+  font-size: 1.7rem;
+}
+
+h1 {
+  font-family: roc-grotesk, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 6rem;
+  line-height: 5rem;
+}
+
+/* || Buttons */
+.button {
+  font-family: roc-grotesk, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,10 +73,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: yellow;
+  color: #3B413C;
+  font-size: 2rem;
+  line-height: 1em;
+  border: 2px solid #3B413C;
+  padding: 0.5em 0.6em 0.3em 0.6em;
 }
 
-body ul {
-  font-size: 20px;
+.button .arrow-icon {
+  width: 0.65em;
+  margin-left: 0.6em;
+  margin-bottom: 0.1em;
+}
+
+.button .star-icon {
+  width: 0.7em;
+  margin-left: 0.6em;
+  margin-bottom: 0.2em;
 }
 /*# sourceMappingURL=sitewide.css.map */

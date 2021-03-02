@@ -7,19 +7,26 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <nav>
-      <Link to="/">
-        <h1>Logo</h1>
-      </Link>
-      <ul className="nav-links">
-        <Link to="/tokyo">
-          <li>Tokyo</li>
+      <ul className="nav-container">
+        <Link to="/" className="logo">
+          <img src="img/logo.svg" alt="voyage logo"></img>
         </Link>
-        <Link to="/explore">
-          <li>Explore</li>
-        </Link>
-        <Link to="/profile">
-          <li>Profile</li>
-        </Link>
+
+        <div className="nav-links">
+          <Link to="/explore" className="button">
+            <li>Explore</li>
+            <img
+              src="img/arrow-up.svg"
+              className="arrow-icon"
+              alt="arrow icon"
+            ></img>
+          </Link>
+
+          <Link to="/profile" className="button">
+            <li>Profile</li>
+            <img src="img/star.svg" className="star-icon" alt="star icon"></img>
+          </Link>
+        </div>
       </ul>
     </nav>
   );

@@ -1,6 +1,10 @@
-body {
-    font-size: 80px;
-    color: red;
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+    color: inherit;
 }

@@ -1,10 +1,39 @@
 @import "./utilities";
 @import "./mixins";
 @import "./variables";
+@import "./nav";
 
-body {
-    @include flexCenter(yellow);
-    ul {
-        font-size: 20px;
+h1 {
+    font-family: roc-grotesk, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 5rem;
+}
+
+/* || Buttons */
+
+.button {
+    @include roc-standard;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $olive;
+    font-size: 2rem;
+    line-height: 1em;
+    border: 2px solid $olive;
+    padding: 0.5em 0.6em 0.3em 0.6em;
+
+    .arrow-icon {
+        width: 0.65em;
+        margin-left: 0.6em;
+        margin-bottom: 0.1em;
+    }
+
+    .star-icon {
+        width: 0.7em;
+        margin-left: 0.6em;
+        margin-bottom: 0.2em;
     }
 }
