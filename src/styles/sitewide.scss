@@ -1,0 +1,10 @@
+@import "./utilities";
+@import "./mixins";
+@import "./variables";
+
+body {
+    @include flexCenter(yellow);
+    ul {
+        font-size: 20px;
+    }
+}

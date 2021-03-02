@@ -1,0 +1,6 @@
+@mixin flexCenter($background-colour) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-colour;
+}
