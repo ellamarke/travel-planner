@@ -22,15 +22,15 @@ export function WhereNext({ title }) {
 
   return (
     <div className="where-next">
-      <h2>{title}</h2>
+      <h3>{title}</h3>
 
       <div className="dropdown-sentence">
-        <h1>I want to see</h1>
+        <h4>I want to see</h4>
 
         <div className="dd-wrapper">
           <div className="dd-header">
             <button className="dd-header-title">
-              <h1>{place.placeTitle}</h1>
+              <h4>{place.placeTitle}</h4>
             </button>
           </div>
 
@@ -53,8 +53,13 @@ export function WhereNext({ title }) {
         </div>
       </div>
 
-      <button className="go" onClick={handleClick}>
+      <button className="button" onClick={handleClick}>
         Let's explore!
+        <img
+          src="img/arrow-up.svg"
+          className="arrow-icon"
+          alt="arrow icon"
+        ></img>
       </button>
     </div>
   );

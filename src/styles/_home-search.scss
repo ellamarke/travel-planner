@@ -4,6 +4,25 @@
     padding: 5em;
     text-align: center;
 
+    .search-bar-container {
+        display: flex;
+        border: 2px solid $olive;        
+        margin: 7em auto;
+        width: 80%;
+        
+    
+        img {
+            width: 3em;
+            margin-left: 2em;
+        }
+    
+        .colour-bar {
+            border-left: $peach solid 0.5em;
+            display: flex;
+            width: 100%;
+        }
+    }
+
     .button {
         background-color: $peach;
         margin: 0 auto;
@@ -16,21 +35,10 @@
     font-size: 3rem;
     padding: 0.5em;
     border: 0;
-    width: 100%;
-    margin-left: 0.5em;
+    margin-left: 0.2em;
     background-color: inherit;
     color: $olive;
+    width: 100%;
     
 }
 
-.search-bar-container {
-    display: flex;
-    border: 2px solid $olive;        
-    margin: 0 auto;
-    width: 80%;
-
-    img {
-        width: 1.3em;
-        margin-left: 1em;
-    }
-}

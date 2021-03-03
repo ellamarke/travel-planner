@@ -22,6 +22,7 @@ body {
   font-family: work-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
+  color: #3B413C;
 }
 
 .nav-container {
@@ -211,6 +212,28 @@ body {
   text-align: center;
 }
 
+.home-search .search-bar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #3B413C;
+  margin: 7em auto;
+  width: 80%;
+}
+
+.home-search .search-bar-container img {
+  width: 3em;
+  margin-left: 2em;
+}
+
+.home-search .search-bar-container .colour-bar {
+  border-left: #FF917D solid 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
 .home-search .button {
   background-color: #FF917D;
   margin: 0 auto;
@@ -223,24 +246,69 @@ body {
   font-size: 3rem;
   padding: 0.5em;
   border: 0;
-  width: 100%;
-  margin-left: 0.5em;
+  margin-left: 0.2em;
   background-color: inherit;
   color: #3B413C;
+  width: 100%;
 }
 
-.search-bar-container {
+.where-next {
+  padding: 5em;
+  width: 100vw;
+  background-color: #C0C0C0;
+}
+
+.where-next .button {
+  background-color: #FF917D;
+  margin: 0 auto;
+}
+
+.dropdown-sentence {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid #3B413C;
-  margin: 0 auto;
-  width: 80%;
+  margin: 7em auto;
 }
 
-.search-bar-container img {
-  width: 1.3em;
-  margin-left: 1em;
+.dd-header-title {
+  border: #3B413C solid 2px;
+  cursor: pointer;
+  padding: 0.1em 2.3em;
+  background-color: #FF917D;
+  color: #3B413C;
+}
+
+/* Positioning the dropdown content */
+.dd-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: 2em;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dd-list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: #DEDEDE;
+  border: #3B413C solid 2px;
+}
+
+/* Links inside the dropdown */
+.dd-list li {
+  font-size: 2.8rem;
+  color: #3B413C;
+  text-align: center;
+  padding: 0.5em 0.2em;
+  text-decoration: none;
+  display: block;
+  border-top: #3B413C solid 2px;
+}
+
+/* Show the dropdown menu on hover */
+.dd-wrapper:hover .dd-list {
+  display: block;
 }
 
 h1 {
@@ -265,6 +333,13 @@ h3 {
   font-family: work-sans, sans-serif;
   font-weight: 500;
   font-size: 2.5rem;
+  text-align: center;
+}
+
+h4 {
+  font-family: work-sans, sans-serif;
+  font-weight: 200;
+  font-size: 5.5rem;
   text-align: center;
 }
 

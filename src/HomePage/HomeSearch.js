@@ -33,14 +33,16 @@ function HomeSearch() {
     <div className="home-search">
       <h3>Search for a country.</h3>
       <div className="search-bar-container">
-        <img src="img/search-icon.svg" alt="search icon" />
-        <input
-          className="search-bar-main"
-          key="search-bar-1"
-          placeholder="Japan? Turkey? Morocco?"
-          value={searchTerm}
-          onChange={changeSearchTerm}
-        />
+        <div className="colour-bar">
+          <img src="img/search-icon-light.svg" alt="search icon" />
+          <input
+            className="search-bar-main"
+            key="search-bar-1"
+            placeholder="Japan? Turkey? Morocco?"
+            value={searchTerm}
+            onChange={changeSearchTerm}
+          />
+        </div>
       </div>
       <button className="button" onClick={handleClick}>
         Let's explore!

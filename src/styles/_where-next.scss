@@ -1,0 +1,57 @@
+.where-next {
+    padding: 5em;
+    width: 100vw;
+    background-color: $dark-grey;
+
+    .button {
+        background-color: $peach;
+        margin: 0 auto;
+    }
+  }
+  
+  .dropdown-sentence {
+    display: flex;
+    margin: 7em auto;
+  }
+  
+  .dd-header-title {
+    border: $olive solid 2px;
+    cursor: pointer;
+    padding: 0.1em 2.3em;
+    background-color: $peach;
+    color: $olive;
+  }
+  
+  /* Positioning the dropdown content */
+  .dd-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-left: 2em;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dd-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-color: $light-grey;
+    border: $olive solid 2px;
+  }
+  
+  /* Links inside the dropdown */
+  .dd-list li {
+    font-size: 2.8rem;
+    color: $olive;
+    text-align: center;
+    padding: 0.5em 0.2em;
+    text-decoration: none;
+    display: block;
+    border-top: $olive solid 2px;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dd-wrapper:hover .dd-list {
+    display: block;
+  }
+  

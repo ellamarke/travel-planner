@@ -5,6 +5,7 @@
 @import "./heroes";
 @import "./ticker-tape";
 @import "./home-search";
+@import "./where-next";
 
 h1 {
     font-family: roc-grotesk, sans-serif;
@@ -28,6 +29,13 @@ h3 {
     font-family: work-sans, sans-serif;
     font-weight: 500;
     font-size: 2.5rem;
+    text-align: center;
+}
+
+h4 {
+    font-family: work-sans, sans-serif;
+    font-weight: 200;
+    font-size: 5.5rem;
     text-align: center;
 }
 

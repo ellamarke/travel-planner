@@ -1,4 +1,4 @@
-.where-next {
+ /* .where-next {
     width: 100vw;
     background-color: rgb(236, 251, 255);
   }
@@ -20,14 +20,14 @@
     cursor: pointer;
   }
   
-  /* Positioning the dropdown content */
+ Positioning the dropdown content 
   .dd-wrapper {
     position: relative;
     display: inline-block;
     margin-left: 20px;
   }
   
-  /* Dropdown Content (Hidden by Default) */
+ Dropdown Content (Hidden by Default) 
   .dd-list {
     display: none;
     position: absolute;
@@ -35,7 +35,7 @@
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
+ Links inside the dropdown 
   .dd-list li {
     font-size: 40px;
     color: gray;
@@ -44,7 +44,7 @@
     display: block;
   }
   
-  /* Show the dropdown menu on hover */
+ Show the dropdown menu on hover 
   .dd-wrapper:hover .dd-list {
     display: block;
   }
