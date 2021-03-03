@@ -32,9 +32,10 @@ function SearchBar() {
   return (
     <form
       role="search"
-      className="search-bar"
+      className="search-bar-container"
       onSubmit={(event) => onSubmit(event)}
     >
+      <img src="img/search-icon.svg" alt="search icon"></img>
       <input
         placeholder="Search for a country"
         value={searchTerm}

@@ -1,12 +1,9 @@
-nav {
-    background-color: $mint;
-    padding: 1.5em 0;
-}
-
 .nav-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: $mint;
+    padding: 1.5em 0;
 
     .logo-search {
         margin-right: auto;
@@ -21,18 +18,31 @@ nav {
 
     input {
         @include work-standard;
-        font-weight: 500;
-        padding: 0.6em;
+        font-weight: 400;
         font-size: 1.3rem;
-        border: 2px solid $olive;
+        padding: 0.6em;
+        border: 0;
+        width: 15em;
+        margin-left: 0.5em;
         background-color: inherit;
         color: $olive;
-        width: 15em;
+        
+    }
+
+    .search-bar-container {
+        display: flex;
+        border: 2px solid $olive;        
         margin-left: 3em;
+
+        img {
+            width: 1.3em;
+            margin-left: 1em;
+        }
     }
 
     ::placeholder {
         color: $olive;
+        opacity: 0.5;
     }
 
     .nav-links {

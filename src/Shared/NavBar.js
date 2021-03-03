@@ -1,6 +1,3 @@
-/* import "../css/App.css";
-import "../css/Layout.css";
-import "../css/NavBar.css"; */
 import "../styles/sitewide.css";
 import { Link } from "react-router-dom";
 import SearchBar from "./searchBar";

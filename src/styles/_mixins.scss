@@ -1,8 +1,7 @@
-@mixin flexCenter($background-colour) {
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $background-colour;
 }
 
 @mixin roc-standard {

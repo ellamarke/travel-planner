@@ -24,11 +24,6 @@ body {
   font-style: normal;
 }
 
-nav {
-  background-color: #7CFF8D;
-  padding: 1.5em 0;
-}
-
 .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +34,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #7CFF8D;
+  padding: 1.5em 0;
 }
 
 .nav-container .logo-search {
@@ -59,30 +56,47 @@ nav {
 .nav-container input {
   font-family: work-sans, sans-serif;
   font-weight: 300;
-  font-weight: 500;
-  padding: 0.6em;
+  font-weight: 400;
   font-size: 1.3rem;
-  border: 2px solid #3B413C;
+  padding: 0.6em;
+  border: 0;
+  width: 15em;
+  margin-left: 0.5em;
   background-color: inherit;
   color: #3B413C;
-  width: 15em;
+}
+
+.nav-container .search-bar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #3B413C;
   margin-left: 3em;
+}
+
+.nav-container .search-bar-container img {
+  width: 1.3em;
+  margin-left: 1em;
 }
 
 .nav-container ::-webkit-input-placeholder {
   color: #3B413C;
+  opacity: 0.5;
 }
 
 .nav-container :-ms-input-placeholder {
   color: #3B413C;
+  opacity: 0.5;
 }
 
 .nav-container ::-ms-input-placeholder {
   color: #3B413C;
+  opacity: 0.5;
 }
 
 .nav-container ::placeholder {
   color: #3B413C;
+  opacity: 0.5;
 }
 
 .nav-container .nav-links {
