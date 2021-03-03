@@ -5,11 +5,13 @@ import WhereNext from "./WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import { hardCodedPlaces } from "../Reference/AllPlaces";
+import TickerTape from "../Shared/TickerTape";
 
 function HomePage() {
   return (
     <div className="home-page">
-      <Hero title="Finding your next adventure" />
+      <Hero />
+      <TickerTape tickerText="Grab your passport" />
       <HomeSearch />
       <WhereNext title="Find somewhere new!" />
       <ArticleHero articleName="Peru: Our New Obsession" contentTag="culture" />

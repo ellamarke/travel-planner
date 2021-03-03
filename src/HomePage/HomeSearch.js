@@ -1,5 +1,5 @@
-import "../css/App.css";
-import "../css/Layout.css";
+/* import "../css/App.css";
+import "../css/Layout.css"; */
 import { useHistory } from "react-router-dom";
 import { useContext, useState } from "react";
 import { Context } from "../Store";
@@ -31,17 +31,24 @@ function HomeSearch() {
 
   return (
     <div className="home-search">
-      <h2>somewhere in mind?</h2>
-      <h1>Discover a new country</h1>
-      <input
-        className="search-bar-main"
-        key="search-bar-1"
-        placeholder="Japan? Turkey? Morocco?"
-        value={searchTerm}
-        onChange={changeSearchTerm}
-      />
-      <button className="go" onClick={handleClick}>
+      <h3>Search for a country.</h3>
+      <div className="search-bar-container">
+        <img src="img/search-icon.svg" alt="search icon" />
+        <input
+          className="search-bar-main"
+          key="search-bar-1"
+          placeholder="Japan? Turkey? Morocco?"
+          value={searchTerm}
+          onChange={changeSearchTerm}
+        />
+      </div>
+      <button className="button" onClick={handleClick}>
         Let's explore!
+        <img
+          src="img/arrow-up.svg"
+          className="arrow-icon"
+          alt="arrow icon"
+        ></img>
       </button>
     </div>
   );

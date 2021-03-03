@@ -1,0 +1,44 @@
+.ticker-parent {
+
+  .ticker-tape {
+    @include roc-standard;
+    font-size: 2.5rem;
+
+    white-space: nowrap;
+    border-bottom: solid 2px $olive;
+    border-top: solid 2px $olive;
+    padding-bottom: 0.2em;
+    padding-top: 0.3em;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 100vw;
+    background-color: $peach;
+    
+    .ticker-list {
+      animation: ticker 20s infinite linear;
+      color: $olive;
+
+      img {
+          width: 0.9em;
+          margin-left: 0.6em;
+          margin-right: 0.5em;
+      }
+    }
+      
+  }
+  
+}
+
+@-webkit-keyframes ticker {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}

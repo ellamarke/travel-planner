@@ -1,0 +1,36 @@
+.home-search {
+    background-color: $light-grey;
+    color: $olive;
+    padding: 5em;
+    text-align: center;
+
+    .button {
+        background-color: $peach;
+        margin: 0 auto;
+    }
+}
+
+.search-bar-main {
+    @include work-standard;
+    font-weight: 200;
+    font-size: 3rem;
+    padding: 0.5em;
+    border: 0;
+    width: 100%;
+    margin-left: 0.5em;
+    background-color: inherit;
+    color: $olive;
+    
+}
+
+.search-bar-container {
+    display: flex;
+    border: 2px solid $olive;        
+    margin: 0 auto;
+    width: 80%;
+
+    img {
+        width: 1.3em;
+        margin-left: 1em;
+    }
+}
