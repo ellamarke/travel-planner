@@ -1,6 +1,7 @@
 import "../css/App.css";
 import { useLayoutEffect } from "react";
-import Hero from "../HomePage/Hero";
+import ExploreHero from "./ExploreHero";
+import TickerTape from "../Shared/TickerTape";
 import WhereNext from "../HomePage/WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
@@ -19,7 +20,8 @@ function ExplorePlacesPage() {
   });
   return (
     <div className="home-page">
-      <Hero title="Let's explore!" />
+      <ExploreHero />
+      <TickerTape tickerText="Let's go travelling" />
       <PageIntro />
       <PlaceCarousel
         title={"Off the beaten track"}

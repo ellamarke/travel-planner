@@ -1,0 +1,16 @@
+.page-intro {
+    background-color: $olive;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    p {
+        color: $light-grey;
+        text-align: center;
+        padding: 3em 10em;
+    }
+
+    img {
+        width: 3em;
+        margin: 0 auto;
+    }
+}

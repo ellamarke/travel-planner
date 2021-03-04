@@ -1,6 +1,6 @@
+@import "./variables";
 @import "./utilities";
 @import "./mixins";
-@import "./variables";
 @import "./nav";
 @import "./heroes";
 @import "./ticker-tape";
@@ -9,6 +9,7 @@
 @import "./article-hero";
 @import "./place-cards";
 @import "./footer";
+@import "./page-intro";
 
 
 h1 {
@@ -53,6 +54,11 @@ h6 {
     @include roc-standard;
     font-size: 3rem;
     line-height: 2.8rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
 }
 
 /* || Buttons */

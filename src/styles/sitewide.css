@@ -1,9 +1,20 @@
+body {
+  font-family: work-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #3B413C;
+}
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  background-color: #D4D4D4;
 }
 
 a {
@@ -16,13 +27,6 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
-}
-
-body {
-  font-family: work-sans, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #3B413C;
 }
 
 .nav-container {
@@ -155,6 +159,14 @@ body {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.explore-hero {
+  background-image: url(./background-imgs/jungle.jpg);
+  /*   .hero-overlay {
+    z-index: 10;
+    margin-bottom: 7em;
+  } */
 }
 
 @media only screen and (min-width: 1955px) {
@@ -483,6 +495,7 @@ body {
 }
 
 .article-hero {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,6 +514,13 @@ body {
 .article-hero .author-name {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.article-hero .drawn-arrow {
+  position: absolute;
+  width: 17em;
+  top: 27em;
+  left: 27em;
 }
 
 .place-carousel {
@@ -593,6 +613,29 @@ body {
   font-size: 2.1rem;
 }
 
+.page-intro {
+  background-color: #3B413C;
+  padding: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-intro p {
+  color: #DEDEDE;
+  text-align: center;
+  padding: 3em 10em;
+}
+
+.page-intro img {
+  width: 3em;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: roc-grotesk, sans-serif;
   text-transform: uppercase;
@@ -638,6 +681,11 @@ h6 {
   font-weight: 300;
   font-size: 3rem;
   line-height: 2.8rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
 }
 
 /* || Buttons */

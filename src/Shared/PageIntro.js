@@ -9,6 +9,7 @@ function PageIntro() {
         exercitation. Qui incididunt laborum duis dolor nostrud anim commodo
         sint ex amet.
       </p>
+      <img src="img/star-peach.svg" />
     </div>
   );
 }

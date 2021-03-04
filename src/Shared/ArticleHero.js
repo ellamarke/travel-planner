@@ -35,6 +35,11 @@ function ArticleHero({ articleName, authorName, contentTag }) {
 
   return (
     <div className="article-hero">
+      <img
+        className="drawn-arrow"
+        src="img/drawn-elements/arrow-1.svg"
+        alt=""
+      />
       <div className="article-text">
         <h2 className="article-name" onClick={articleClicked}>
           {articleName}

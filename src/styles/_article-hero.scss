@@ -1,4 +1,5 @@
 .article-hero {
+    position: relative;
     display: flex;
     background-color: $light-grey;
     padding: 2em;
@@ -14,6 +15,13 @@
     .author-name {
         margin-top: 1em;
         margin-bottom: 1em;
+    }
+
+    .drawn-arrow {
+        position: absolute;
+        width: 17em;
+        top: 27em;
+        left: 27em;
     }
 }
 
