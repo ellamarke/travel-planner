@@ -14,9 +14,13 @@ function HomePage() {
       <TickerTape tickerText="Grab your passport" />
       <HomeSearch />
       <WhereNext title="Find somewhere new!" />
-      <ArticleHero articleName="Peru: Our New Obsession" contentTag="culture" />
+      <ArticleHero
+        articleName={`Paris: Re-Thinking the City of Romance`}
+        authorName="Alice Ito"
+        contentTag="culture"
+      />
       <PlaceCarousel
-        title={"Some of our favourite places"}
+        title={"Some of our favourite places."}
         places={hardCodedPlaces.filter((hardCodedPlace, index) => index < 4)}
       />
     </div>

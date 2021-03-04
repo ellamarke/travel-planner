@@ -6,6 +6,8 @@
 @import "./ticker-tape";
 @import "./home-search";
 @import "./where-next";
+@import "./article-hero";
+
 
 h1 {
     font-family: roc-grotesk, sans-serif;
@@ -20,9 +22,9 @@ h2 {
     font-family: roc-grotesk, sans-serif;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 8rem;
-    line-height: 6rem;
-    text-align: center;
+    font-size: 6.5rem;
+    line-height: 5.5rem;
+    text-align: left;
 }
 
 h3 {
@@ -35,8 +37,14 @@ h3 {
 h4 {
     font-family: work-sans, sans-serif;
     font-weight: 200;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     text-align: center;
+}
+
+h5 {
+    @include work-standard;
+    font-weight: 200;
+    font-size: 2.5rem;
 }
 
 /* || Buttons */
@@ -53,6 +61,8 @@ h4 {
     border: 2px solid $olive;
     padding: 0.5em 0.6em 0.3em 0.6em;
 
+    cursor: pointer;
+
     .arrow-icon {
         width: 0.65em;
         margin-left: 0.6em;
@@ -61,6 +71,26 @@ h4 {
 
     .star-icon {
         width: 0.7em;
+        margin-left: 0.6em;
+        margin-bottom: 0.2em;
+    }
+}
+
+.save-button {
+    font-size: 1.5rem;
+    background-color: inherit;
+    img {
+        width: 0.8em;
+        margin-left: 0.6em;
+        margin-bottom: 0.2em;
+    }
+}
+
+.saved-button {
+    font-size: 1.5rem;
+    background-color: $peach;
+    img {
+        width: 0.8em;
         margin-left: 0.6em;
         margin-bottom: 0.2em;
     }

@@ -31,6 +31,7 @@ export function WhereNext({ title }) {
           <div className="dd-header">
             <button className="dd-header-title">
               <h4>{place.placeTitle}</h4>
+              <img src="img/dropdown.svg" alt="dropdown button"></img>
             </button>
           </div>
 

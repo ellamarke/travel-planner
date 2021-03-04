@@ -1,11 +1,11 @@
-import "../css/App.css";
-import "../css/Layout.css";
+/* import "../css/App.css";
+import "../css/Layout.css"; */
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "../Store";
 
-function ArticleHero({ articleName, contentTag }) {
+function ArticleHero({ articleName, authorName, contentTag }) {
   const [state, setState] = useContext(Context);
   const myArticles = state.myArticles;
   const history = useHistory();
@@ -35,28 +35,28 @@ function ArticleHero({ articleName, contentTag }) {
 
   return (
     <div className="article-hero">
+      <div className="article-text">
+        <h2 className="article-name" onClick={articleClicked}>
+          {articleName}
+        </h2>
+
+        <h5 className="author-name">{authorName}</h5>
+
+        <button
+          className={favourite ? "button saved-button" : "button save-button"}
+          onClick={handleClick}
+        >
+          {favourite ? "Saved!" : "Save"}
+          <img src="img/star.svg" alt="save button" />
+        </button>
+      </div>
+
       <img
         className="article-image"
-        src="img/grey-rectangle-small.jpg"
+        src="img/articles/paris.jpg"
         alt="article"
         onClick={articleClicked}
       ></img>
-      <div className="article-text">
-        <h1 className="article-name" onClick={articleClicked}>
-          {articleName}
-        </h1>
-        <div className="tags">
-          <p className="content-tag">{contentTag}</p>
-          <img
-            onClick={handleClick}
-            className={
-              favourite ? "reading-list-icon-selected" : "reading-list-icon"
-            }
-            src="img/reading-list-icon.png"
-            alt="article"
-          ></img>
-        </div>
-      </div>
     </div>
   );
 }

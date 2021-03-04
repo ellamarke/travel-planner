@@ -3,7 +3,7 @@
     justify-content: flex-end;
     align-items: center;
     background-color: $mint;
-    padding: 1.5em 0;
+    padding: 1.2em 0;
 
     .logo-search {
         margin-right: auto;
@@ -12,14 +12,14 @@
         align-items: center;
 
         .logo {
-            width: 14em;
+            width: 11em;
         }
     }
 
     input {
         @include work-standard;
         font-weight: 400;
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 0.6em;
         border: 0;
         width: 15em;
@@ -52,6 +52,6 @@
 
     .button {
         margin: 0 0.5em;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 }

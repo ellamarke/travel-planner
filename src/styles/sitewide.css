@@ -36,7 +36,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #7CFF8D;
-  padding: 1.5em 0;
+  padding: 1.2em 0;
 }
 
 .nav-container .logo-search {
@@ -51,14 +51,14 @@ body {
 }
 
 .nav-container .logo-search .logo {
-  width: 14em;
+  width: 11em;
 }
 
 .nav-container input {
   font-family: work-sans, sans-serif;
   font-weight: 300;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 0.6em;
   border: 0;
   width: 15em;
@@ -109,7 +109,7 @@ body {
 
 .nav-container .button {
   margin: 0 0.5em;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 .hero-container {
@@ -423,11 +423,24 @@ body {
 }
 
 .dd-header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -0.5em;
   border: #3B413C solid 2px;
   cursor: pointer;
-  padding: 0.1em 2.3em;
+  padding: 0.3em 2.3em;
   background-color: #FF917D;
   color: #3B413C;
+}
+
+.dd-header-title img {
+  width: 3.5em;
+  margin-left: 1.5em;
+  margin-top: 1em;
 }
 
 /* Positioning the dropdown content */
@@ -445,22 +458,49 @@ body {
   z-index: 1;
   background-color: #DEDEDE;
   border: #3B413C solid 2px;
+  border-top: none;
+  cursor: pointer;
 }
 
-/* Links inside the dropdown */
 .dd-list li {
+  /* Links inside the dropdown */
   font-size: 2.8rem;
   color: #3B413C;
   text-align: center;
   padding: 0.5em 0.2em;
   text-decoration: none;
   display: block;
-  border-top: #3B413C solid 2px;
+  border-bottom: #3B413C solid 2px;
+}
+
+.dd-list li:last-child {
+  border-bottom: none;
 }
 
 /* Show the dropdown menu on hover */
 .dd-wrapper:hover .dd-list {
   display: block;
+}
+
+.article-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #DEDEDE;
+  padding: 2em;
+}
+
+.article-hero .article-image {
+  width: 35em;
+}
+
+.article-hero .article-text {
+  padding: 2em;
+}
+
+.article-hero .author-name {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -476,9 +516,9 @@ h2 {
   font-family: roc-grotesk, sans-serif;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 8rem;
-  line-height: 6rem;
-  text-align: center;
+  font-size: 6.5rem;
+  line-height: 5.5rem;
+  text-align: left;
 }
 
 h3 {
@@ -491,8 +531,15 @@ h3 {
 h4 {
   font-family: work-sans, sans-serif;
   font-weight: 200;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   text-align: center;
+}
+
+h5 {
+  font-family: work-sans, sans-serif;
+  font-weight: 300;
+  font-weight: 200;
+  font-size: 2.5rem;
 }
 
 /* || Buttons */
@@ -514,6 +561,7 @@ h4 {
   line-height: 1em;
   border: 2px solid #3B413C;
   padding: 0.5em 0.6em 0.3em 0.6em;
+  cursor: pointer;
 }
 
 .button .arrow-icon {
@@ -524,6 +572,28 @@ h4 {
 
 .button .star-icon {
   width: 0.7em;
+  margin-left: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.save-button {
+  font-size: 1.5rem;
+  background-color: inherit;
+}
+
+.save-button img {
+  width: 0.8em;
+  margin-left: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.saved-button {
+  font-size: 1.5rem;
+  background-color: #FF917D;
+}
+
+.saved-button img {
+  width: 0.8em;
   margin-left: 0.6em;
   margin-bottom: 0.2em;
 }

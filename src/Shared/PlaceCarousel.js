@@ -7,7 +7,7 @@ import { Context } from "../Store";
 function PlaceCarousel({ title, places }) {
   return (
     <div className="place-carousel">
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <div className="card-carousel">
         {places.map((place) => (
           <PlaceCard
