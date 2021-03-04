@@ -15,11 +15,19 @@
   }
   
   .dd-header-title {
+    display: flex;
+    align-items: center;
+    margin-top: -0.5em;
     border: $olive solid 2px;
     cursor: pointer;
-    padding: 0.1em 2.3em;
+    padding: 0.3em 2.3em;
     background-color: $peach;
     color: $olive;
+    img {
+        width: 3.5em;
+        margin-left: 1.5em;
+        margin-top: 1em;
+    }
   }
   
   /* Positioning the dropdown content */
@@ -37,18 +45,24 @@
     z-index: 1;
     background-color: $light-grey;
     border: $olive solid 2px;
+    border-top: none;
+    cursor: pointer;
+
+    li { /* Links inside the dropdown */
+        font-size: 2.8rem;
+        color: $olive;
+        text-align: center;
+        padding: 0.5em 0.2em;
+        text-decoration: none;
+        display: block;
+        border-bottom: $olive solid 2px;
+      }
+
+      li:last-child {
+          border-bottom: none;
+      }
   }
   
-  /* Links inside the dropdown */
-  .dd-list li {
-    font-size: 2.8rem;
-    color: $olive;
-    text-align: center;
-    padding: 0.5em 0.2em;
-    text-decoration: none;
-    display: block;
-    border-top: $olive solid 2px;
-  }
   
   /* Show the dropdown menu on hover */
   .dd-wrapper:hover .dd-list {
