@@ -29,7 +29,7 @@
     }
 
     .hero-image-surfers {
-        width: 60%;
+        width: 100%;
         z-index: 1;
         position: absolute;
         object-fit: cover;
@@ -41,4 +41,58 @@
     .hero {
         background-image: url(./background-imgs/hero-large.jpg);
     }
+  }
+
+  .surfer-1{
+    animation: floating1 30s;
+    animation-iteration-count: infinite;
+  }
+
+  .surfer-2{
+    animation: floating2 35s;
+    animation-iteration-count: infinite;
+  }
+
+  .surfer-3{
+    animation: floating3 32s;
+    animation-iteration-count: infinite;
+  }
+
+  .surfer-4{
+    animation: floating4 27s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes floating1 {
+    0% { transform: translate(0px, 30px) rotate(2deg); }
+
+    25% {}
+
+    50% { transform: translate(0px, -30px) rotate(-2deg); }
+
+    100% { transform: translate(0px, 30px) rotate(2deg); }
+  }
+
+  @keyframes floating2 {
+    0% { transform: translate(-35px, 0px) rotate(-5deg); }
+
+    50% { transform: translate(35px, -0px) rotate(5deg); }
+
+    100% { transform: translate(-35px, 0px) rotate(-5deg); }
+  }
+
+  @keyframes floating3 {
+    0% { transform: translate(45px, 10px) rotate(2deg); }
+
+    50% { transform: translate(-45px, -10px) rotate(-2deg); }
+
+    100% { transform: translate(45px, 10px) rotate(2deg); }
+  }
+
+  @keyframes floating4 {
+    0% { transform: translate(-30px, 10px) rotate(-5deg); }
+
+    50% { transform: translate(30px, -10px) rotate(5deg); }
+
+    100% { transform: translate(-30px, 10px) rotate(-5deg); }
   }
