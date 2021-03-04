@@ -1,0 +1,32 @@
+.footer {
+    background-color: $mint;
+    display: flex;
+    padding: 2em;
+    align-items: flex-start;
+
+    .logo {
+        width: 20em;
+    }
+
+    .globe {
+        width: 4em;
+        margin-left: auto;
+    }
+
+    .logo__links {
+        display: flex;
+    }
+    
+    .links {
+        margin-left: 2.5em;
+
+        .link {
+            margin-top: 0.8em;
+        }
+    }
+
+    h6 {
+        font-size: 2.1rem;
+    }
+
+}

@@ -10,6 +10,7 @@ import HomePage from "./HomePage/HomePage";
 import Profile from "./Profile/Profile";
 import Error from "./Error";
 import NavBar from "./Shared/NavBar";
+import Footer from "./Shared/Footer";
 import ListEdit from "./Lists/ListEdit";
 import TemplePage from "./CuratedPlaces/TemplePage";
 import DesertPage from "./CuratedPlaces/DesertPage";
@@ -52,6 +53,7 @@ ReactDOM.render(
         <Route path="/searched-place" component={BasicPlacePage} />
         <Route component={Error} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   </Store>,
   document.getElementById("root")

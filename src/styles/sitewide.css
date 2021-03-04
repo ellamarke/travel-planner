@@ -503,6 +503,96 @@ body {
   margin-bottom: 1em;
 }
 
+.place-carousel {
+  background-color: #C0C0C0;
+  padding: 5em;
+}
+
+.place-card {
+  background-color: #DEDEDE;
+  padding: 1.3em;
+  width: 30em;
+  height: 40em;
+  margin: 5em 3em;
+  position: relative;
+}
+
+.place-card h6 {
+  margin-top: 1em;
+}
+
+.place-card .arrow {
+  width: 1.6em;
+}
+
+.place-card .card-image {
+  width: 25em;
+}
+
+.place-card .card-text {
+  position: absolute;
+  bottom: 1em;
+}
+
+.place-card .card-buttons {
+  width: 25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.2em;
+}
+
+.card-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.footer {
+  background-color: #7CFF8D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .logo {
+  width: 20em;
+}
+
+.footer .globe {
+  width: 4em;
+  margin-left: auto;
+}
+
+.footer .logo__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .links {
+  margin-left: 2.5em;
+}
+
+.footer .links .link {
+  margin-top: 0.8em;
+}
+
+.footer h6 {
+  font-size: 2.1rem;
+}
+
 h1 {
   font-family: roc-grotesk, sans-serif;
   text-transform: uppercase;
@@ -542,11 +632,20 @@ h5 {
   font-size: 2.5rem;
 }
 
+h6 {
+  font-family: roc-grotesk, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 2.8rem;
+}
+
 /* || Buttons */
 .button {
   font-family: roc-grotesk, sans-serif;
   text-transform: uppercase;
   font-weight: 300;
+  font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,6 +695,11 @@ h5 {
   width: 0.8em;
   margin-left: 0.6em;
   margin-bottom: 0.2em;
+}
+
+.small-button {
+  font-size: 0.9rem;
+  border: 1.5px solid #3B413C;
 }
 
 /* || Tags */

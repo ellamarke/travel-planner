@@ -7,6 +7,8 @@
 @import "./home-search";
 @import "./where-next";
 @import "./article-hero";
+@import "./place-cards";
+@import "./footer";
 
 
 h1 {
@@ -47,10 +49,17 @@ h5 {
     font-size: 2.5rem;
 }
 
+h6 {
+    @include roc-standard;
+    font-size: 3rem;
+    line-height: 2.8rem;
+}
+
 /* || Buttons */
 
 .button {
     @include roc-standard;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,6 +103,11 @@ h5 {
         margin-left: 0.6em;
         margin-bottom: 0.2em;
     }
+}
+
+.small-button {
+    font-size: 0.9rem;
+    border: 1.5px solid $olive;
 }
 
 /* || Tags */

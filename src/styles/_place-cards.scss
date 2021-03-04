@@ -1,0 +1,46 @@
+.place-carousel {
+    background-color: $dark-grey;
+    padding: 5em;
+}
+
+.place-card {
+    background-color: $light-grey;
+    padding: 1.3em;
+    width: 30em;
+    height: 40em;
+    margin: 5em 3em;
+    position: relative;
+
+    h6 {
+        margin-top: 1em;
+    }
+    
+    .arrow {
+        width: 1.6em;
+    }
+
+    .card-image {
+        width: 25em;
+    }
+
+    .card-text {
+        position: absolute;
+        bottom: 1em;
+    }
+
+
+    .card-buttons {
+        width: 25em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.2em;
+    }
+}
+
+.card-carousel {
+    display: flex;
+    overflow-x: scroll;
+  }
+  
+

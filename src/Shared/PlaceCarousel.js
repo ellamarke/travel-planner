@@ -1,5 +1,3 @@
-import "../css/App.css";
-import "../css/Layout.css";
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { Context } from "../Store";
@@ -15,6 +13,7 @@ function PlaceCarousel({ title, places }) {
             cardCaption={place.cardCaption}
             cardName={place.cardName}
             route={place.route}
+            src={place.src}
           />
         ))}
       </div>
@@ -22,7 +21,7 @@ function PlaceCarousel({ title, places }) {
   );
 }
 
-function PlaceCard({ cardCaption, cardName, route }) {
+function PlaceCard({ cardCaption, cardName, route, src }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
   const history = useHistory();
@@ -52,21 +51,30 @@ function PlaceCard({ cardCaption, cardName, route }) {
 
   return (
     <div className="place-card">
-      <div className="card-image" onClick={goToPlace}>
-        <p className="card-caption" onClick={goToPlace}>
-          {cardCaption}
-        </p>
-      </div>
-      <div className="card-bottom">
-        <p className="card-name" onClick={goToPlace}>
+      <img src={src} className="card-image" onClick={goToPlace} alt="china" />
+      <div className="card-text">
+        <h6 className="card-name" onClick={goToPlace}>
           {cardName}
-        </p>
-        <img
-          src="img/heart.png"
-          alt="heart button"
-          onClick={handleClick}
-          className={favourite ? "favourite-icon-selected" : "favourite-icon"}
-        ></img>
+        </h6>
+        <div className="card-buttons">
+          <button
+            className={
+              favourite
+                ? "button saved-button small-button"
+                : "button save-button small-button"
+            }
+            onClick={handleClick}
+          >
+            {favourite ? "Saved!" : "Save"}
+            <img src="img/star.svg" alt="save button" />
+          </button>
+          <img
+            src="img/arrow-right.svg"
+            className="arrow"
+            alt="arrow button"
+            onClick={goToPlace}
+          />
+        </div>
       </div>
     </div>
   );

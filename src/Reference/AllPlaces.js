@@ -402,11 +402,13 @@ export const hardCodedPlaces = [
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
     route: "/marrakech",
+    src: "/img/place-squares/morocco.jpg",
   },
   {
     cardName: "Tokyo, Japan",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
     route: "/tokyo",
+    src: "/img/place-squares/tokyo-2.jpg",
   },
   {
     cardName: "India",
@@ -414,29 +416,34 @@ export const hardCodedPlaces = [
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
     route: "/india",
     country: "India",
+    src: "/img/place-squares/india.jpg",
   },
   {
     cardName: "Istanbul, Turkey",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
     route: "/istanbul",
+    src: "/img/place-squares/istanbul.jpg",
   },
   {
     cardName: "Austria",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
     route: "/austria",
+    src: "/img/place-squares/morocco.jpg",
   },
   {
     cardName: "Mexico City, Mexico",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
     route: "/mexico-city",
+    src: "/img/place-squares/morocco.jpg",
   },
   {
     cardName: "Phnom Penh, Cambodia",
     cardCaption:
       "Pariatur sunt non proident aliquip. Proident dolore fugiat est nisi sit. Lorem in tempor occaecat irure est ut.",
     route: "/phnom-penh",
+    src: "/img/place-squares/morocco.jpg",
   },
 ];
