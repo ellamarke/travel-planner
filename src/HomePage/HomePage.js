@@ -5,7 +5,10 @@ import WhereNext from "./WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import { hardCodedPlaces } from "../Reference/AllPlaces";
+import { articles } from "../Reference/Articles";
 import TickerTape from "../Shared/TickerTape";
+
+const parisArticle = articles[4];
 
 function HomePage() {
   return (
@@ -15,9 +18,10 @@ function HomePage() {
       <HomeSearch />
       <WhereNext title="Find somewhere new!" />
       <ArticleHero
-        articleName={`Paris: Re-Thinking the City of Romance`}
-        authorName="Alice Ito"
-        contentTag="culture"
+        articleName={parisArticle.articleName}
+        authorName={parisArticle.authorName}
+        contentTag={parisArticle.contentTag}
+        imgSrc={parisArticle.imgSrc}
       />
       <PlaceCarousel
         title={"Some of our favourite places."}

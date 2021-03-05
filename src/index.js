@@ -25,8 +25,8 @@ import Austria from "./PlacePage/Austria";
 import India from "./PlacePage/India";
 import Marrakech from "./PlacePage/Marrakech";
 import MexicoCity from "./PlacePage/MexicoCity";
-import PhnomPenh from "./PlacePage/PhnomPenh";
 import BasicPlacePage from "./PlacePage/BasicPlacePage";
+import SiemReap from "./PlacePage/SiemReap";
 
 ReactDOM.render(
   <Store>
@@ -40,7 +40,7 @@ ReactDOM.render(
         <Route path="/india" component={India} />
         <Route path="/marrakech" component={Marrakech} />
         <Route path="/mexico-city" component={MexicoCity} />
-        <Route path="/phnom-penh" component={PhnomPenh} />
+        <Route path="/siem-reap" component={SiemReap} />
         <Route path="/profile" component={Profile} />
         <Route path="/explore" component={ExplorePlacesPage} />
         <Route path="/article" component={ArticlePage} />

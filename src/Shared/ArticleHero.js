@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "../Store";
 
-function ArticleHero({ articleName, authorName, contentTag }) {
+function ArticleHero({ articleName, authorName, imgSrc }) {
   const [state, setState] = useContext(Context);
   const myArticles = state.myArticles;
   const history = useHistory();
@@ -58,7 +58,7 @@ function ArticleHero({ articleName, authorName, contentTag }) {
 
       <img
         className="article-image"
-        src="img/articles/paris.jpg"
+        src={imgSrc}
         alt="article"
         onClick={articleClicked}
       ></img>

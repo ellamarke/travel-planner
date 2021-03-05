@@ -1,15 +1,11 @@
-import "../css/App.css";
-import "../css/Layout.css";
-import "../css/CuratedPlaces.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
 
-function CaseStudy({ cardName, cardCaption, country }) {
+function Spotlight({ cardName, cardCaption, country, src, alt }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
 
   function handleClick() {
-    console.log("Clicked!");
     const favourite = !favouritePlaces.includes(cardName);
     if (favourite) {
       favouritePlaces.push(cardName);
@@ -28,14 +24,10 @@ function CaseStudy({ cardName, cardCaption, country }) {
   const favourite = favouritePlaces.includes(cardName);
 
   return (
-    <div className="case-study-container">
-      <h1>Place Spotlight</h1>
+    <div className="spotlight-container">
+      <h5>Place Spotlight.</h5>
       <div className="place-case-study">
-        <img
-          className="case-study-image"
-          src="img/grey-rectangle-small.jpg"
-          alt="place"
-        ></img>
+        <img className="case-study-image" src={src} alt={alt}></img>
         <div className="case-study-text">
           <h1 className="place-name">{cardName}</h1>
           <p className="case-study-body">{cardCaption}</p>
@@ -56,4 +48,4 @@ function CaseStudy({ cardName, cardCaption, country }) {
   );
 }
 
-export default CaseStudy;
+export default Spotlight;

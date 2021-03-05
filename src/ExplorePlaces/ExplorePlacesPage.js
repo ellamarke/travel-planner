@@ -6,13 +6,13 @@ import WhereNext from "../HomePage/WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleCarousel from "../Shared/ArticleCarousel";
-import { hardCodedPlaces } from "../Reference/AllPlaces";
-import CaseStudy from "./CaseStudy";
+import { hardCodedPlaces, spotlights } from "../Reference/AllPlaces";
 import PageIntro from "../Shared/PageIntro";
 import { articles } from "../Reference/Articles";
+import Spotlight from "./Spotlight";
 
-const parisArticle = articles[4];
-const indiaCaseStudy = hardCodedPlaces[2];
+const petraArticle = articles[5];
+const jaipurSpotlight = spotlights[0];
 
 function ExplorePlacesPage() {
   useLayoutEffect(() => {
@@ -28,14 +28,19 @@ function ExplorePlacesPage() {
         places={hardCodedPlaces.filter((hardCodedPlace, index) => index > 3)}
       />
       <ArticleHero
-        articleName={parisArticle.articleName}
-        contentTag={parisArticle.contentTag}
+        articleName={petraArticle.articleName}
+        authorName={petraArticle.authorName}
+        contentTag={petraArticle.contentTag}
+        imgSrc={petraArticle.imgSrc}
       />
-      <ArticleCarousel title={"Reading stuff"} articles={articles} />
-      <CaseStudy
-        cardName={indiaCaseStudy.cardName}
-        cardCaption={indiaCaseStudy.cardCaption}
-        country={indiaCaseStudy.country}
+      <ArticleCarousel title={"Let's keep reading."} articles={articles} />
+      <Spotlight
+        cardName={jaipurSpotlight.cardName}
+        cardCaption={jaipurSpotlight.cardCaption}
+        country={jaipurSpotlight.country}
+        route={jaipurSpotlight.route}
+        imgSrc={jaipurSpotlight.src}
+        alt={jaipurSpotlight.alt}
       />
       <WhereNext title="Need more inspiration?" />
     </div>

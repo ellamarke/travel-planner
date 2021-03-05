@@ -374,23 +374,23 @@ export const mexicoCityPlaces = [
   },
 ];
 
-export const phnomPenhPlaces = [
+export const siemReapPlaces = [
   {
-    cardName: "Mekong River",
+    cardName: "Ta Prohm",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
   },
   {
-    cardName: "Wat Phnom",
+    cardName: "Banteay Srei",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
   },
   {
-    cardName: "Central Market",
+    cardName: "Angkor Thom",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
   },
   {
-    cardName: "Royal Palace",
+    cardName: "Bayon Temple",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
   },
@@ -430,20 +430,32 @@ export const hardCodedPlaces = [
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
     route: "/austria",
-    src: "/img/place-squares/morocco.jpg",
+    src: "/img/place-squares/austria.jpg",
   },
   {
     cardName: "Mexico City, Mexico",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
     route: "/mexico-city",
-    src: "/img/place-squares/morocco.jpg",
+    src: "/img/place-squares/mexico-city.jpg",
   },
   {
-    cardName: "Phnom Penh, Cambodia",
+    cardName: "Siem Reap, Cambodia",
     cardCaption:
       "Pariatur sunt non proident aliquip. Proident dolore fugiat est nisi sit. Lorem in tempor occaecat irure est ut.",
-    route: "/phnom-penh",
-    src: "/img/place-squares/morocco.jpg",
+    route: "/siem-reap",
+    src: "/img/place-squares/siem-reap.jpg",
+  },
+];
+
+export const spotlights = [
+  {
+    cardName: "Jaipur, India",
+    cardCaption:
+      "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color.",
+    country: "india",
+    route: "/india",
+    src: "img/place-squares/jaipur.jpg",
+    alt: "holi celebrations in jaipur",
   },
 ];

@@ -1,13 +1,11 @@
-import "../css/App.css";
-import "../css/Layout.css";
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { Context } from "../Store";
 
 function ArticleCarousel({ title, articles }) {
   return (
-    <div className="place-carousel">
-      <h2>{title}</h2>
+    <div className="article-carousel">
+      <h3>{title}</h3>
       <div className="card-carousel">
         {articles.map((article) => (
           <ArticleCard
@@ -15,6 +13,9 @@ function ArticleCarousel({ title, articles }) {
             articleName={article.articleName}
             authorName={article.authorName}
             contentTag={article.contentTag}
+            imgSrc={article.imgSrc}
+            publishDate={article.publishDate}
+            alt={article.alt}
           />
         ))}
       </div>
@@ -22,7 +23,7 @@ function ArticleCarousel({ title, articles }) {
   );
 }
 
-function ArticleCard({ articleName, authorName }) {
+function ArticleCard({ articleName, authorName, imgSrc, publishDate, alt }) {
   const [state, setState] = useContext(Context);
   const myArticles = state.myArticles;
   const history = useHistory();
@@ -51,23 +52,75 @@ function ArticleCard({ articleName, authorName }) {
   const favourite = myArticles.includes(articleName);
 
   return (
-    <div className="my-article-card">
-      <h1 className="article-name" onClick={articleClicked}>
-        {articleName}
-      </h1>
-      <h2 className="author-name" onClick={articleClicked}>
-        {authorName}
-      </h2>
+    <div className="article-card">
       <img
-        onClick={handleClick}
-        className={
-          favourite ? "reading-list-icon-selected" : "reading-list-icon"
-        }
-        src="img/reading-list-icon.png"
-        alt="article"
-      ></img>
+        src={imgSrc}
+        className="card-image"
+        onClick={articleClicked}
+        alt={alt}
+      />
+      <div className="publish-info">
+        <p className="author-name" onClick={articleClicked}>
+          {authorName}
+        </p>
+        <p className="publish-date">{publishDate}</p>
+      </div>
+      <div className="card-text">
+        <h6 className="article-name" onClick={articleClicked}>
+          {articleName}
+        </h6>
+        <div className="card-buttons">
+          <button
+            className={
+              favourite
+                ? "button saved-button small-button"
+                : "button save-button small-button"
+            }
+            onClick={handleClick}
+          >
+            {favourite ? "Saved!" : "Save"}
+            <img src="img/star.svg" alt="save button" />
+          </button>
+          <img
+            src="img/arrow-right.svg"
+            className="arrow"
+            alt="arrow button"
+            onClick={articleClicked}
+          />
+        </div>
+      </div>
     </div>
   );
 }
 
 export default ArticleCarousel;
+
+/*
+<div className="place-card">
+  <img src={src} className="card-image" onClick={goToPlace} alt="china" />
+  <div className="card-text">
+    <h6 className="card-name" onClick={goToPlace}>
+      {cardName}
+    </h6>
+    <div className="card-buttons">
+      <button
+        className={
+          favourite
+            ? "button saved-button small-button"
+            : "button save-button small-button"
+        }
+        onClick={handleClick}
+      >
+        {favourite ? "Saved!" : "Save"}
+        <img src="img/star.svg" alt="save button" />
+      </button>
+      <img
+        src="img/arrow-right.svg"
+        className="arrow"
+        alt="arrow button"
+        onClick={goToPlace}
+      />
+    </div>
+  </div>
+</div>;
+*/

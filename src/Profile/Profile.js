@@ -17,7 +17,7 @@ import {
   indiaPlaces,
   marrakechPlaces,
   mexicoCityPlaces,
-  phnomPenhPlaces,
+  siemReapPlaces,
 } from "../Reference/AllPlaces";
 import MyLists from "../Lists/MyLists";
 import MyArticles from "./MyArticles";
@@ -83,7 +83,7 @@ function Profile() {
     favouritePlaces.includes(place.cardName)
   );
 
-  const newPhnomPenhPlaces = phnomPenhPlaces.filter((place) =>
+  const newSiemReapPlaces = siemReapPlaces.filter((place) =>
     favouritePlaces.includes(place.cardName)
   );
 
@@ -100,7 +100,7 @@ function Profile() {
     .concat(newIndiaPlaces)
     .concat(newMarrakechPlaces)
     .concat(newMexicoCityPlaces)
-    .concat(newPhnomPenhPlaces);
+    .concat(newSiemReapPlaces);
 
   const myArticleNames = state.myArticles;
   const myArticleList = articles.filter((article) =>
