@@ -7,6 +7,7 @@
     .intro__button {
         display: flex;
         justify-content: space-between;
+        align-items: center; 
 
         button {
             background-color: $peach;
@@ -14,7 +15,8 @@
         }
     }
 
-    .my-places-introduction {
+    .my-places-introduction,
+    .my-lists-introduction {
         max-width: 50%;
         margin-top: 1em;
     }
@@ -30,7 +32,8 @@
 
     }
 
-    .my-place-card {
+    .my-place-card,
+    .list-card {
         background-color: $light-grey;
         padding: 1.3em;
         width: 22em;
@@ -57,7 +60,6 @@
             bottom: 1em;
         }
     
-    
         .card-buttons {
             width: 19em;
             display: flex;
@@ -66,9 +68,37 @@
             margin-top: 1.2em;
         }
     }
+
+    .article-card {
+        width: 22em;
+
+        .card-image, .card-buttons, .card-text {
+            width: 19.4em;
+        }
+
+
+    }
+}
+
+.list-card-container .list-card {
+    background-color: $dark-grey;
+    height: 17em;
+    h6 {
+        color: $olive;
+        margin-top: 0;
+    }
+
+    .card-buttons {
+        position: absolute;
+        bottom: 1em;
+    }
 }
 
 .list-grid {
     background-color: $olive;
     color: $grey;
+}
+
+.grey-background {
+    background-color: $dark-grey;
 }

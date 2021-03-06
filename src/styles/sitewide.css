@@ -792,6 +792,9 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .place-card-grid .intro__button button,
@@ -801,7 +804,9 @@ button:focus {
 }
 
 .place-card-grid .my-places-introduction,
-.list-grid .my-places-introduction {
+.place-card-grid .my-lists-introduction,
+.list-grid .my-places-introduction,
+.list-grid .my-lists-introduction {
   max-width: 50%;
   margin-top: 1em;
 }
@@ -822,7 +827,9 @@ button:focus {
 }
 
 .place-card-grid .my-place-card,
-.list-grid .my-place-card {
+.place-card-grid .list-card,
+.list-grid .my-place-card,
+.list-grid .list-card {
   background-color: #DEDEDE;
   padding: 1.3em;
   width: 22em;
@@ -832,30 +839,40 @@ button:focus {
 }
 
 .place-card-grid .my-place-card h6,
-.list-grid .my-place-card h6 {
+.place-card-grid .list-card h6,
+.list-grid .my-place-card h6,
+.list-grid .list-card h6 {
   margin-top: 1em;
   font-size: 2.3rem;
   line-height: 1em;
 }
 
 .place-card-grid .my-place-card .arrow,
-.list-grid .my-place-card .arrow {
+.place-card-grid .list-card .arrow,
+.list-grid .my-place-card .arrow,
+.list-grid .list-card .arrow {
   width: 1.6em;
 }
 
 .place-card-grid .my-place-card .card-image,
-.list-grid .my-place-card .card-image {
+.place-card-grid .list-card .card-image,
+.list-grid .my-place-card .card-image,
+.list-grid .list-card .card-image {
   width: 19.4em;
 }
 
 .place-card-grid .my-place-card .card-text,
-.list-grid .my-place-card .card-text {
+.place-card-grid .list-card .card-text,
+.list-grid .my-place-card .card-text,
+.list-grid .list-card .card-text {
   position: absolute;
   bottom: 1em;
 }
 
 .place-card-grid .my-place-card .card-buttons,
-.list-grid .my-place-card .card-buttons {
+.place-card-grid .list-card .card-buttons,
+.list-grid .my-place-card .card-buttons,
+.list-grid .list-card .card-buttons {
   width: 19em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -869,9 +886,40 @@ button:focus {
   margin-top: 1.2em;
 }
 
+.place-card-grid .article-card,
+.list-grid .article-card {
+  width: 22em;
+}
+
+.place-card-grid .article-card .card-image, .place-card-grid .article-card .card-buttons, .place-card-grid .article-card .card-text,
+.list-grid .article-card .card-image,
+.list-grid .article-card .card-buttons,
+.list-grid .article-card .card-text {
+  width: 19.4em;
+}
+
+.list-card-container .list-card {
+  background-color: #C0C0C0;
+  height: 17em;
+}
+
+.list-card-container .list-card h6 {
+  color: #3B413C;
+  margin-top: 0;
+}
+
+.list-card-container .list-card .card-buttons {
+  position: absolute;
+  bottom: 1em;
+}
+
 .list-grid {
   background-color: #3B413C;
   color: #D4D4D4;
+}
+
+.grey-background {
+  background-color: #C0C0C0;
 }
 
 h1 {
@@ -957,6 +1005,12 @@ p {
 
 .button .star-icon {
   width: 0.7em;
+  margin-left: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.button .read-icon {
+  width: 0.8em;
   margin-left: 0.6em;
   margin-bottom: 0.2em;
 }

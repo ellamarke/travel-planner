@@ -1,23 +1,35 @@
-import "../css/Layout.css";
-import "../css/Profile.css";
-
 import React, { useContext } from "react";
 import { Context } from "../Store";
+import { useHistory } from "react-router-dom";
 
 function MyArticles({ articles }) {
+  const history = useHistory();
   const articleIntroduction =
-    "Voluptate id culpa id exercitation deserunt. Do reprehenderit sit velit irure aliqua occaecat occaecat commodo veniam ullamco labore occaecat enim anim. Eiusmod ipsum ullamco ea consectetur anim. Lorem proident reprehenderit ad aliquip cupidatat eiusmod dolore mollit consectetur anim nisi laboris. Consequat pariatur reprehenderit laboris dolor cillum. Voluptate non occaecat et culpa. Labore mollit ullamco est exercitation in.";
+    "There’s a lot to read and learn.Save articles for reference here.";
 
+  function handleClick() {
+    history.push("/explore");
+  }
   return (
-    <div className="place-card-grid">
-      <h1>My Articles</h1>
-      <p className="my-places-introduction">{articleIntroduction}</p>
+    <div className="place-card-grid grey-background">
+      <h6>My Articles</h6>
+      <div className="intro__button">
+        <p className="my-places-introduction">{articleIntroduction}</p>
+        <button className="button" onClick={handleClick}>
+          Read more
+          <img src="img/read.svg" alt="" className="read-icon" />
+        </button>
+      </div>
       <div className="place-cards">
         {articles.map((article) => (
           <ProfileArticleCard
-            authorName={article.authorName}
-            articleName={article.articleName}
             key={article.articleName}
+            articleName={article.articleName}
+            authorName={article.authorName}
+            contentTag={article.contentTag}
+            imgSrc={article.imgSrc}
+            publishDate={article.publishDate}
+            alt={article.alt}
           />
         ))}
       </div>
@@ -25,8 +37,15 @@ function MyArticles({ articles }) {
   );
 }
 
-function ProfileArticleCard({ articleName, authorName }) {
+function ProfileArticleCard({
+  articleName,
+  authorName,
+  imgSrc,
+  alt,
+  publishDate,
+}) {
   const [state, setState] = useContext(Context);
+  const history = useHistory();
   function handleClick() {
     const myArticles = state.myArticles;
     const newMyArticles = myArticles.filter(
@@ -35,16 +54,41 @@ function ProfileArticleCard({ articleName, authorName }) {
     setState({ ...state, myArticles: newMyArticles });
   }
 
+  function articleClicked() {
+    setState({ ...state, currentArticleName: articleName });
+    history.push("/article");
+  }
+
   return (
-    <div className="my-place-card">
-      <h1 className="article-name">{articleName}</h1>
-      <h2 className="author-name">{authorName}</h2>
+    <div className="article-card">
       <img
-        src="img/heart.png"
-        alt="heart button"
-        onClick={handleClick}
-        className="delete-icon"
-      ></img>
+        src={imgSrc}
+        className="card-image"
+        onClick={articleClicked}
+        alt={alt}
+      />
+      <div className="publish-info">
+        <p className="author-name" onClick={articleClicked}>
+          {authorName}
+        </p>
+        <p className="publish-date">{publishDate}</p>
+      </div>
+      <div className="card-text">
+        <h6 className="article-name" onClick={articleClicked}>
+          {articleName}
+        </h6>
+        <div className="card-buttons">
+          <button className="delete-button button" onClick={handleClick}>
+            delete
+          </button>
+          <img
+            src="img/arrow-right.svg"
+            className="arrow"
+            alt="arrow button"
+            onClick={articleClicked}
+          />
+        </div>
+      </div>
     </div>
   );
 }

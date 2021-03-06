@@ -22,22 +22,21 @@ function MyLists({ lists }) {
   return (
     <div className="list-grid">
       <h2>My Lists</h2>
-      <p className="my-lists-introduction">
-        Id consectetur excepteur consectetur adipisicing ex non cupidatat id ad
-        ex. Cupidatat aliqua laborum officia proident eu reprehenderit id ea
-        minim nisi voluptate nisi. Amet et reprehenderit qui qui est anim. Esse
-        tempor incididunt consectetur ad et esse consectetur fugiat veniam.
-      </p>
+      <div className="intro__button">
+        <p className="my-lists-introduction">
+          Travelling means keeping a lot in mind. What are you packing? What are
+          you seeing? Keep track of everything here.
+        </p>
+        <button className="add-list button" onClick={AddNewList}>
+          add a new list
+          <img src="img/star-thick.svg" alt="" className="star-icon" />
+        </button>
+      </div>
       <div className="list-cards">
         {lists.map((list) => (
           <ProfileListCard list={list} key={list.listName} />
         ))}
       </div>
-
-      <button className="add-list button" onClick={AddNewList}>
-        add a new list
-        <img src="img/star.svg" alt="" className="star-icon" />
-      </button>
     </div>
   );
 }
@@ -52,9 +51,9 @@ function ProfileListCard({ list }) {
   }
 
   return (
-    <div className="list-card" onClick={goToList}>
-      <div className="list-card-bottom">
-        <p className="list-name">{list.listName}</p>
+    <div className="list-card-container">
+      <div className="list-card" onClick={goToList}>
+        <h6 className="list-name">{list.listName}</h6>
         <div className="card-buttons">
           <button className="delete-button button">delete</button>
           <img src="img/arrow-right.svg" className="arrow" alt="arrow button" />
