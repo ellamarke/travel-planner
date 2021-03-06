@@ -1,4 +1,5 @@
-.place-card-grid {
+.place-card-grid,
+.list-grid {
     background-color: $grey;
     overflow: hidden;
     padding: 5em;
@@ -65,4 +66,9 @@
             margin-top: 1.2em;
         }
     }
+}
+
+.list-grid {
+    background-color: $olive;
+    color: $grey;
 }

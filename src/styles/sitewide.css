@@ -777,13 +777,15 @@ button:focus {
   margin-bottom: 0.2em;
 }
 
-.place-card-grid {
+.place-card-grid,
+.list-grid {
   background-color: #D4D4D4;
   overflow: hidden;
   padding: 5em;
 }
 
-.place-card-grid .intro__button {
+.place-card-grid .intro__button,
+.list-grid .intro__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,18 +794,22 @@ button:focus {
           justify-content: space-between;
 }
 
-.place-card-grid .intro__button button {
+.place-card-grid .intro__button button,
+.list-grid .intro__button button {
   background-color: #FF917D;
   font-size: 1.5rem;
 }
 
-.place-card-grid .my-places-introduction {
+.place-card-grid .my-places-introduction,
+.list-grid .my-places-introduction {
   max-width: 50%;
   margin-top: 1em;
 }
 
 .place-card-grid .place-cards,
-.place-card-grid .list-cards {
+.place-card-grid .list-cards,
+.list-grid .place-cards,
+.list-grid .list-cards {
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -815,7 +821,8 @@ button:focus {
   padding: 0.75rem;
 }
 
-.place-card-grid .my-place-card {
+.place-card-grid .my-place-card,
+.list-grid .my-place-card {
   background-color: #DEDEDE;
   padding: 1.3em;
   width: 22em;
@@ -824,26 +831,31 @@ button:focus {
   position: relative;
 }
 
-.place-card-grid .my-place-card h6 {
+.place-card-grid .my-place-card h6,
+.list-grid .my-place-card h6 {
   margin-top: 1em;
   font-size: 2.3rem;
   line-height: 1em;
 }
 
-.place-card-grid .my-place-card .arrow {
+.place-card-grid .my-place-card .arrow,
+.list-grid .my-place-card .arrow {
   width: 1.6em;
 }
 
-.place-card-grid .my-place-card .card-image {
+.place-card-grid .my-place-card .card-image,
+.list-grid .my-place-card .card-image {
   width: 19.4em;
 }
 
-.place-card-grid .my-place-card .card-text {
+.place-card-grid .my-place-card .card-text,
+.list-grid .my-place-card .card-text {
   position: absolute;
   bottom: 1em;
 }
 
-.place-card-grid .my-place-card .card-buttons {
+.place-card-grid .my-place-card .card-buttons,
+.list-grid .my-place-card .card-buttons {
   width: 19em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -855,6 +867,11 @@ button:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1.2em;
+}
+
+.list-grid {
+  background-color: #3B413C;
+  color: #D4D4D4;
 }
 
 h1 {

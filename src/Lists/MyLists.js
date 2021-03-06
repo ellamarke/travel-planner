@@ -21,7 +21,7 @@ function MyLists({ lists }) {
 
   return (
     <div className="list-grid">
-      <h1>My Lists</h1>
+      <h2>My Lists</h2>
       <p className="my-lists-introduction">
         Id consectetur excepteur consectetur adipisicing ex non cupidatat id ad
         ex. Cupidatat aliqua laborum officia proident eu reprehenderit id ea
@@ -34,8 +34,9 @@ function MyLists({ lists }) {
         ))}
       </div>
 
-      <button className="add-list" onClick={AddNewList}>
-        create a new list
+      <button className="add-list button" onClick={AddNewList}>
+        add a new list
+        <img src="img/star.svg" alt="" className="star-icon" />
       </button>
     </div>
   );
@@ -54,11 +55,10 @@ function ProfileListCard({ list }) {
     <div className="list-card" onClick={goToList}>
       <div className="list-card-bottom">
         <p className="list-name">{list.listName}</p>
-        <img
-          src="img/heart.png"
-          alt="heart button"
-          className="delete-icon"
-        ></img>
+        <div className="card-buttons">
+          <button className="delete-button button">delete</button>
+          <img src="img/arrow-right.svg" className="arrow" alt="arrow button" />
+        </div>
       </div>
     </div>
   );

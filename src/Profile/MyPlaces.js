@@ -16,7 +16,7 @@ function MyPlaces({ places }) {
           As you explore, save places that interest you. You can return to them
           here.
         </p>
-        <button className="button">
+        <button className="button" onClick={handleClick}>
           Explore more
           <img src="img/arrow-up.svg" alt="" className="arrow-icon" />
         </button>
@@ -31,10 +31,6 @@ function MyPlaces({ places }) {
           />
         ))}
       </div>
-
-      <button className="explore-more" onClick={handleClick}>
-        explore more places
-      </button>
     </div>
   );
 }
