@@ -1,6 +1,5 @@
-import "../css/App.css";
-import "../css/Profile.css";
-import React, { useContext, useLayoutEffect } from "react";
+import React, { useContext /* useLayoutEffect */ } from "react";
+import TickerTape from "../Shared/TickerTape";
 import MyPlaces from "./MyPlaces";
 import { Context } from "../Store";
 import {
@@ -22,14 +21,16 @@ import {
 import MyLists from "../Lists/MyLists";
 import MyArticles from "./MyArticles";
 import { articles } from "../Reference/Articles";
+import ProfileHero from "./ProfileHero";
+import PageIntro from "../Shared/PageIntro";
 
 function Profile() {
   const [state] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
 
-  useLayoutEffect(() => {
+  /*   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }); */
 
   const newPlaces = places.filter((place) =>
     favouritePlaces.includes(place.cardName)
@@ -107,8 +108,14 @@ function Profile() {
     myArticleNames.includes(article.articleName)
   );
 
+  const pageIntroContent =
+    "Don’t lose any of the places you’ve spotted, articles you’ve read or thoughts you’ve had. Everything you’ve saved can be found here.";
+
   return (
     <div className="profile">
+      <ProfileHero />
+      <TickerTape tickerText={"got the suncream?"} />
+      <PageIntro pageIntroContent={pageIntroContent} />
       <MyPlaces places={allPlaces} />
       <MyLists lists={state.myLists} />
       <MyArticles articles={myArticleList} />

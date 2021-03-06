@@ -1,6 +1,3 @@
-import "../css/Layout.css";
-import "../css/Profile.css";
-
 import React, { useContext } from "react";
 import { Context } from "../Store";
 import { useHistory } from "react-router-dom";
@@ -13,19 +10,24 @@ function MyPlaces({ places }) {
 
   return (
     <div className="place-card-grid">
-      <h1>My Places</h1>
-      <p className="my-places-introduction">
-        Id consectetur excepteur consectetur adipisicing ex non cupidatat id ad
-        ex. Cupidatat aliqua laborum officia proident eu reprehenderit id ea
-        minim nisi voluptate nisi. Amet et reprehenderit qui qui est anim. Esse
-        tempor incididunt consectetur ad et esse consectetur fugiat veniam.
-      </p>
+      <h2>My Places</h2>
+      <div className="intro__button">
+        <p className="my-places-introduction">
+          As you explore, save places that interest you. You can return to them
+          here.
+        </p>
+        <button className="button">
+          Explore more
+          <img src="img/arrow-up.svg" alt="" className="arrow-icon" />
+        </button>
+      </div>
       <div className="place-cards">
         {places.map((place) => (
           <ProfilePlaceCard
             cardCaption={place.cardCaption}
             cardName={place.cardName}
             key={place.cardName}
+            src={place.src}
           />
         ))}
       </div>
@@ -37,7 +39,7 @@ function MyPlaces({ places }) {
   );
 }
 
-function ProfilePlaceCard({ cardCaption, cardName }) {
+function ProfilePlaceCard({ cardName, src }) {
   const [state, setState] = useContext(Context);
   function handleClick() {
     const favouritePlaces = state.favouritePlaces;
@@ -49,17 +51,15 @@ function ProfilePlaceCard({ cardCaption, cardName }) {
 
   return (
     <div className="my-place-card">
-      <div className="my-place-card-image">
-        <p className="my-place-card-caption">{cardCaption}</p>
-      </div>
-      <div className="my-place-card-bottom">
-        <p className="card-name">{cardName}</p>
-        <img
-          src="img/heart.png"
-          alt="heart button"
-          onClick={handleClick}
-          className="delete-icon"
-        ></img>
+      <img src={src} className="card-image" alt="china" />
+      <div className="card-text">
+        <h6 className="card-name">{cardName}</h6>
+        <div className="card-buttons">
+          <button className="delete-button button" onClick={handleClick}>
+            delete
+          </button>
+          <img src="img/arrow-right.svg" className="arrow" alt="arrow button" />
+        </div>
       </div>
     </div>
   );

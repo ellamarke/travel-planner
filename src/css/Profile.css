@@ -1,4 +1,4 @@
-.place-card-grid, .list-grid {
+/* .place-card-grid, .list-grid {
     background-color: rgb(236, 251, 255);
     width: 100vw;
     text-align: center;
@@ -7,17 +7,17 @@
   .place-card-grid .my-places-introduction,
   .list-grid .my-lists-introduction {
       margin: 60px, 200px;
-  }
+  } */
 
-  .place-cards,
+/*   .place-cards,
   .list-cards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       width: 100vw;
       margin: 60px;
-  }
+  } */
 
-  .my-place-card,
+  /* .my-place-card,
   .list-card {
     max-width: 300px;
     height: 300px;
@@ -68,7 +68,7 @@
   .delete-icon {
     width: 30px;
   }
-
+ */
 
   /* MY LISTS */
 

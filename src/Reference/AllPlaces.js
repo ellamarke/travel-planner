@@ -247,20 +247,24 @@ export const istanbulPlaces = [
     cardName: "Hagia Sophia",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+    src: "/img/place-squares/istanbul/hagia-sophia.jpg",
   },
   {
     cardName: "Topkapi Palace",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+    src: "/img/place-squares/istanbul/topkapi.jpg",
   },
   {
     cardName: "Rumeli Fortress",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    src: "/img/place-squares/istanbul/rumeli.jpg",
   },
   {
-    cardName: "Basillica Cistern",
+    cardName: "Basilica Cistern",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    src: "/img/place-squares/istanbul/basilica-cistern.jpg",
   },
 ];
 
@@ -269,20 +273,24 @@ export const tokyoPlaces = [
     cardName: "Harajuku",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+    src: "/img/place-squares/tokyo/harajuku.jpg",
   },
   {
     cardName: "Minato",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+    src: "/img/place-squares/tokyo/minato.jpg",
   },
   {
     cardName: "Chiyoda",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    src: "/img/place-squares/tokyo/chiyoda.jpg",
   },
   {
     cardName: "Taito",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    src: "/img/place-squares/tokyo/taito.jpg",
   },
 ];
 
@@ -291,20 +299,24 @@ export const austriaPlaces = [
     cardName: "Vienna",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+    src: "/img/place-squares/austria/vienna.jpg",
   },
   {
     cardName: "Salzburg",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+    src: "/img/place-squares/austria/salzburg.jpg",
   },
   {
     cardName: "Innsbruck",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    src: "/img/place-squares/austria/innsbruck.jpg",
   },
   {
     cardName: "Graz",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    src: "/img/place-squares/austria/graz.jpg",
   },
 ];
 
@@ -313,20 +325,24 @@ export const indiaPlaces = [
     cardName: "Jaipur",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+    src: "/img/place-squares/india/jaipur.jpg",
   },
   {
     cardName: "New Delhi",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+    src: "/img/place-squares/india/new-delhi.jpg",
   },
   {
     cardName: "Mumbai",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    src: "/img/place-squares/india/mumbai.jpg",
   },
   {
     cardName: "Mahabaleshwar",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    src: "/img/place-squares/india/mahabaleshwar.jpg",
   },
 ];
 
@@ -335,20 +351,24 @@ export const marrakechPlaces = [
     cardName: "Atlas Mountains",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+    src: "/img/place-squares/marrakech/atlas-mountains.jpg",
   },
   {
     cardName: "Jardin Majorelle",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+    src: "/img/place-squares/marrakech/jardin.jpg",
   },
   {
     cardName: "Medina of Marrakesh",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    src: "/img/place-squares/marrakech/medina.jpg",
   },
   {
     cardName: "Musee Yves Saint Laurent Marrakech",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    src: "/img/place-squares/marrakech/musee-yves.jpg",
   },
 ];
 
@@ -357,20 +377,24 @@ export const mexicoCityPlaces = [
     cardName: "Museo Frida Kahlo",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+    src: "/img/place-squares/mexico-city/museo.jpg",
   },
   {
     cardName: "Palacio de Bellas Artes",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+    src: "/img/place-squares/mexico-city/palacio.jpg",
   },
   {
     cardName: "Floating Gardens of Xochimilco",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    src: "/img/place-squares/mexico-city/floating-gardens.jpg",
   },
   {
     cardName: "Arena Mexico",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    src: "/img/place-squares/mexico-city/arena-mexico.jpg",
   },
 ];
 
@@ -379,20 +403,24 @@ export const siemReapPlaces = [
     cardName: "Ta Prohm",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+    src: "/img/place-squares/siem-reap/ta-prohm.jpg",
   },
   {
     cardName: "Banteay Srei",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
+    src: "/img/place-squares/siem-reap/banteay.jpg",
   },
   {
     cardName: "Angkor Thom",
     cardCaption:
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
+    src: "/img/place-squares/siem-reap/angkor-thom.jpg",
   },
   {
     cardName: "Bayon Temple",
     cardCaption:
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
+    src: "/img/place-squares/siem-reap/bayon.jpg",
   },
 ];
 
