@@ -25,23 +25,26 @@ function Spotlight({ cardName, cardCaption, country, src, alt }) {
 
   return (
     <div className="spotlight-container">
-      <h5>Place Spotlight.</h5>
-      <div className="place-case-study">
-        <img className="case-study-image" src={src} alt={alt}></img>
-        <div className="case-study-text">
-          <h1 className="place-name">{cardName}</h1>
-          <p className="case-study-body">{cardCaption}</p>
-          <div className="tags">
+      <img className="spotlight-image" src={src} alt={alt}></img>
+      <div className="spotlight-text">
+        <h5>Place Spotlight.</h5>
+        <h6 className="place-name">{cardName}</h6>
+        <p className="case-study-body">{cardCaption}</p>
+        <div className="buttons">
+          <button
+            className={favourite ? "button saved-button" : "button save-button"}
+            onClick={handleClick}
+          >
+            {favourite ? "Saved!" : "Save"}
             <img
-              src="img/heart.png"
-              alt="heart button"
-              onClick={handleClick}
-              className={
-                favourite ? "favourite-icon-selected" : "favourite-icon"
-              }
-            ></img>
-            <button className="see-more">See more of {country}</button>
-          </div>
+              src={favourite ? "img/star-thick.svg" : "img/star-grey-thick.svg"}
+              alt="save button"
+            />
+          </button>
+          <button className="see-more-button button">
+            See more of {country}
+            <img src="img/arrow-up-grey.svg" alt="see more button" />
+          </button>
         </div>
       </div>
     </div>

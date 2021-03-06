@@ -39,7 +39,7 @@ function ExplorePlacesPage() {
         cardCaption={jaipurSpotlight.cardCaption}
         country={jaipurSpotlight.country}
         route={jaipurSpotlight.route}
-        imgSrc={jaipurSpotlight.src}
+        src={jaipurSpotlight.src}
         alt={jaipurSpotlight.alt}
       />
       <WhereNext title="Need more inspiration?" />

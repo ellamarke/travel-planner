@@ -1,4 +1,56 @@
 .spotlight-container {
     background-color: $olive;
     color: $grey;
+    display: flex;
+
+    .spotlight-image {
+        width: 40%;
+    }
+
+    .spotlight-text {
+        padding: 5em;
+
+        h5 {
+            font-size: 2rem;
+        }
+
+        h6 {
+            font-size: 5rem;
+            text-align: left;
+            margin-top: 0.7em;
+            margin-bottom: 0.7em;
+        }
+
+        p {
+            margin-left: 2.3em;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5em;
+    }
+
+    .save-button {
+        color: $grey;
+        border: 0.09em solid $grey;
+    }
+
+    .saved-button {
+        border: 0.09em solid $peach; 
+    }
+
+    .see-more-button {
+        background-color: inherit;
+        color: $grey;
+        border: 0.09em solid $grey;
+        font-size: 1.5rem;
+        img {
+            width: 0.8em;
+            margin-left: 0.6em;
+            margin-bottom: 0.2em;
+        }
+        margin-right: 10em;
+    }
 }

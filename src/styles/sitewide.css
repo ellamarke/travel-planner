@@ -708,6 +708,65 @@ button:focus {
 .spotlight-container {
   background-color: #3B413C;
   color: #D4D4D4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spotlight-container .spotlight-image {
+  width: 40%;
+}
+
+.spotlight-container .spotlight-text {
+  padding: 5em;
+}
+
+.spotlight-container .spotlight-text h5 {
+  font-size: 2rem;
+}
+
+.spotlight-container .spotlight-text h6 {
+  font-size: 5rem;
+  text-align: left;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+.spotlight-container .spotlight-text p {
+  margin-left: 2.3em;
+}
+
+.spotlight-container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5em;
+}
+
+.spotlight-container .save-button {
+  color: #D4D4D4;
+  border: 0.09em solid #D4D4D4;
+}
+
+.spotlight-container .saved-button {
+  border: 0.09em solid #FF917D;
+}
+
+.spotlight-container .see-more-button {
+  background-color: inherit;
+  color: #D4D4D4;
+  border: 0.09em solid #D4D4D4;
+  font-size: 1.5rem;
+  margin-right: 10em;
+}
+
+.spotlight-container .see-more-button img {
+  width: 0.8em;
+  margin-left: 0.6em;
+  margin-bottom: 0.2em;
 }
 
 h1 {
