@@ -1,0 +1,20 @@
+.key-stats {
+    background-color: $grey;
+    padding: 5em;
+    text-align: center;
+
+    .globe-icon {
+        width: 4em;
+        margin-top: 3em;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 0.8em;
+
+        .highlighted {
+            color: $peach;
+        }
+    }
+}

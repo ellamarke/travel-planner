@@ -1,17 +1,33 @@
-import "../css/Place.css";
 import React, { useState, useEffect } from "react";
 
-function PlaceHero({ placeName, imgCaption, weatherCityName }) {
+function PlaceHero({
+  placeName,
+  imgCaption,
+  weatherCityName,
+  src,
+  placeIntro,
+}) {
   return (
     <div className="place-hero">
-      <h1>{placeName}</h1>
-      <p className="img-caption">{imgCaption}</p>
-      <Weather city={weatherCityName} />
-      <img
-        className="hero-image"
-        src="img/grey-rectangle.jpg"
-        alt="Tokyo"
-      ></img>
+      <div className="text-container">
+        <h1 className="place-name">{placeName}</h1>
+        <div className="text-content">
+          <p className="place-intro">{placeIntro}</p>
+          <table className="weather-block">
+            <tr>
+              <td>
+                <p className="currently">currently</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <Weather city={weatherCityName} />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <img src={src} alt={placeName} className="place-hero-image" />
     </div>
   );
 }
@@ -30,8 +46,9 @@ function Weather({ city }) {
   return (
     <div>
       <div className="weather-box">
-        <div className="temp">{Math.round(weather.temperature)}°C</div>
-        <div className="weather">{weather.condition}</div>
+        <div className="temp">
+          {Math.round(weather.temperature)}°C, {weather.condition}
+        </div>
       </div>
     </div>
   );

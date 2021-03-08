@@ -5,9 +5,11 @@ import PlaceIntroduction from "./PlaceIntroduction";
 import KeyStats from "./KeyStats";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleHero from "../Shared/ArticleHero";
-import PlacePageCaseStudy from "./PlacePageCaseStudy";
 import { tokyoPlaces } from "../Reference/AllPlaces";
 import { articles } from "../Reference/Articles";
+import TickerTape from "../Shared/TickerTape";
+import Spotlight from "../ExplorePlaces/Spotlight";
+const meijiSpotlight = tokyoPlaces[0];
 
 function Tokyo() {
   useLayoutEffect(() => {
@@ -16,6 +18,10 @@ function Tokyo() {
 
   const tokyoArticle = articles[3];
 
+  const placeIntro = ` Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional,
+  from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto
+  Shrine is known for its towering gate and surrounding woods.`;
+
   const shortDescription = ` Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional,
   from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto
   Shrine is known for its towering gate and surrounding woods. The
@@ -23,14 +29,15 @@ function Tokyo() {
   offer exhibits ranging from classical art (in the Tokyo National Museum)
   to a reconstructed kabuki theater (in the Edo-Tokyo Museum).`;
 
-  const longDescription = `Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous
+  const longDescriptionPara1 = `Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous
   metropolis. It is also one of Japan's 47 prefectures, consisting of 23
   central city wards and multiple cities, towns and villages west of the
   city center. The Izu and Ogasawara Islands are also part of Tokyo.
   Prior to 1868, Tokyo was known as Edo. A small castle town in the 16th
   century, Edo became Japan's political center in 1603 when Tokugawa
-  Ieyasu established his feudal government there.
-  ${(<br />)}A few decades later, Edo had grown into one of the world's most
+  Ieyasu established his feudal government there.`;
+
+  const longDescriptionPara2 = `A few decades later, Edo had grown into one of the world's most
   populous cities. With the Meiji Restoration of 1868, the emperor and
   capital moved from Kyoto to Edo, which was renamed Tokyo ("Eastern
   Capital"). Large parts of Tokyo were destroyed in the Great Kanto
@@ -47,24 +54,40 @@ function Tokyo() {
   return (
     <div className="place">
       <PlaceHero
+        src="img/place-squares/tokyo-2.jpg"
         placeName="Tokyo, Japan"
         imgCaption="Harajuku"
         weatherCityName="Tokyo"
+        placeIntro={placeIntro}
       />
+      <TickerTape tickerText="Tokyo" />
       <PlaceIntroduction
         shortDescription={shortDescription}
-        longDescription={longDescription}
+        longDescription={
+          <div>
+            <p className="read-more-content">{longDescriptionPara1}</p>
+            <p className="read-more-content">{longDescriptionPara2}</p>
+          </div>
+        }
       />
       <KeyStats language="Japanese" currency="Yen" population="9.2 million" />
-      <PlaceCarousel title={"The very best of tokyo"} places={tokyoPlaces} />
-      <PlacePageCaseStudy
-        cardName="Meiji Jingu Shrine"
-        cardCaption="Two, large gates frame the entrance to this Shinto shrine that was dedicated to Emperor and Empress Meiji. Completed in 1920, repairs were required after the shrine was damaged during World War II."
-        country="Japan"
+      <PlaceCarousel
+        title={"The very best of Tokyo."}
+        places={tokyoPlaces.filter((tokyoPlace, index) => index > 0)}
+      />
+      <Spotlight
+        cardName={meijiSpotlight.cardName}
+        cardCaption={meijiSpotlight.cardCaption}
+        country={meijiSpotlight.country}
+        route={meijiSpotlight.route}
+        src={meijiSpotlight.src}
+        alt={meijiSpotlight.alt}
       />
       <ArticleHero
         articleName={tokyoArticle.articleName}
+        authorName={tokyoArticle.authorName}
         contentTag={tokyoArticle.contentTag}
+        imgSrc={tokyoArticle.imgSrc}
       />
     </div>
   );

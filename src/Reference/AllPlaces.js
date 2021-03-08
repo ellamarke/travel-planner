@@ -270,6 +270,15 @@ export const istanbulPlaces = [
 
 export const tokyoPlaces = [
   {
+    cardName: "Meiji Jingu Shrine",
+    cardCaption:
+      "Two, large gates frame the entrance to this Shinto shrine that was dedicated to Emperor and Empress Meiji. Completed in 1920, repairs were required after the shrine was damaged during World War II.",
+    country: "japan",
+    route: "/tokyo",
+    src: "img/place-squares/tokyo/meiji.jpg",
+    alt: "barrels of sake at the entrance to meiji jingu shrine",
+  },
+  {
     cardName: "Harajuku",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
@@ -322,10 +331,13 @@ export const austriaPlaces = [
 
 export const indiaPlaces = [
   {
-    cardName: "Jaipur",
+    cardName: "Jaipur, India",
     cardCaption:
-      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
-    src: "/img/place-squares/india/jaipur.jpg",
+      "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color.",
+    country: "india",
+    route: "/india",
+    src: "img/place-squares/jaipur.jpg",
+    alt: "holi celebrations in jaipur",
   },
   {
     cardName: "New Delhi",
@@ -347,6 +359,16 @@ export const indiaPlaces = [
 ];
 
 export const marrakechPlaces = [
+  {
+    cardName: "Menara Gardens, Marrakech",
+    cardCaption:
+      "With a surface of more than 100 hectares, the Menara Gardens are a generously laid-out park with many lanes meandering between countless olive trees where the visitors can recline for a moment in the shade.",
+    country: "Morocco",
+    route: "/Morocco",
+    src: "img/place-squares/marrakech/menara.jpg",
+    alt: "a view of the menara gardens overlooking the atlas mountains",
+  },
+
   {
     cardName: "Atlas Mountains",
     cardCaption:
@@ -473,17 +495,5 @@ export const hardCodedPlaces = [
       "Pariatur sunt non proident aliquip. Proident dolore fugiat est nisi sit. Lorem in tempor occaecat irure est ut.",
     route: "/siem-reap",
     src: "/img/place-squares/siem-reap.jpg",
-  },
-];
-
-export const spotlights = [
-  {
-    cardName: "Jaipur, India",
-    cardCaption:
-      "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color.",
-    country: "india",
-    route: "/india",
-    src: "img/place-squares/jaipur.jpg",
-    alt: "holi celebrations in jaipur",
   },
 ];

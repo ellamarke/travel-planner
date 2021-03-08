@@ -3,6 +3,7 @@ import ArticlePageContent from "./ArticlePageContent";
 import React, { useContext } from "react";
 import { Context } from "../Store";
 import { articles } from "../Reference/Articles";
+import TickerTape from "../Shared/TickerTape";
 
 function ArticlePage() {
   const [state] = useContext(Context);
@@ -12,6 +13,7 @@ function ArticlePage() {
   );
   return (
     <div className="article-page">
+      <TickerTape tickerText={currentArticle.contentTag} />
       <ArticlePageHero
         articleName={currentArticle.articleName}
         authorName={currentArticle.authorName}

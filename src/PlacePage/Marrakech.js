@@ -5,13 +5,21 @@ import PlaceIntroduction from "./PlaceIntroduction";
 import KeyStats from "./KeyStats";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleHero from "../Shared/ArticleHero";
-import PlacePageCaseStudy from "./PlacePageCaseStudy";
 import { marrakechPlaces } from "../Reference/AllPlaces";
+import Spotlight from "../ExplorePlaces/Spotlight";
+import { articles } from "../Reference/Articles";
+import TickerTape from "../Shared/TickerTape";
 
 function Marrakech() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const menaraSpotlight = marrakechPlaces[0];
+  const moroccoArticle = articles[6];
+
+  const placeIntro =
+    "Founded almost a thousand years ago, Marrakech is one of the great cities of the Maghreb. Somehow this bursting-at-the-seams city exists on the edge of the Sahara Desert, its pink pise (rammed earth) palaces framed by the snow-capped High Atlas.";
 
   const shortDescription = `Colourful souks, Moorish architecture, intimate gardens and boutique hotels--Marrakesh is unforgettable. Spend your days exploring the quiet courtyards and snaking alleyways of the historic Medina, walking through the serene Jardin Majorelle or taking in the beauty of the city’s mosques before ending the evening at a one-of-a-kind riad.`;
 
@@ -25,23 +33,32 @@ function Marrakech() {
         placeName="Marrakech, Morocco"
         imgCaption="Medina of Marrakech"
         weatherCityName="Marrakech"
+        src="/img/place-squares/morocco.jpg"
+        placeIntro={placeIntro}
       />
+      <TickerTape tickerText="Marrakech" />
       <PlaceIntroduction
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
       <KeyStats language="Arabic" currency="Dirham" population="929,000" />
       <PlaceCarousel
-        title={"The very best of Marrakech"}
-        places={marrakechPlaces}
+        title={"The very best of Marrakech."}
+        places={marrakechPlaces.filter((marrakechPlace, index) => index > 0)}
       />
-      <PlacePageCaseStudy
-        cardName="Jardin Majorelle"
-        cardCaption="French fashion designer Yves Saint Laurent and his partner Pierre Bergé bought Jardin Majorelle in 1984 to preserve the vision of its original owner, French landscape painter Jacques Majorelle, and keep it open to the public. The garden, started in 1924, contains a psychedelic desert mirage of 300 plant species from five continents."
+      <Spotlight
+        cardName={menaraSpotlight.cardName}
+        cardCaption={menaraSpotlight.cardCaption}
+        country={menaraSpotlight.country}
+        route={menaraSpotlight.route}
+        src={menaraSpotlight.src}
+        alt={menaraSpotlight.alt}
       />
       <ArticleHero
-        articleName="Marrakech's riads represent a possible future of architecture"
-        contentTag="architecture"
+        articleName={moroccoArticle.articleName}
+        authorName={moroccoArticle.authorName}
+        contentTag={moroccoArticle.contentTag}
+        imgSrc={moroccoArticle.imgSrc}
       />
     </div>
   );

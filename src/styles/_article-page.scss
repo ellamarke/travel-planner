@@ -1,0 +1,36 @@
+.article-page {
+    background-color: $grey;
+
+    .article-page-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .article-page-title {
+        text-align: center;
+        max-width: 60%;
+        margin: 1em auto 0.5em auto;
+    }
+
+    .name__save {
+        display: flex;
+        margin: 0 auto;
+
+        .author-name {
+            font-size: 2rem;
+            margin-right: 3em;
+        }
+    }
+
+    .article-page-content {
+        padding: 5em;
+    }
+
+    .p-content {
+        max-width: 45em;
+        p {
+            margin-top: 1.5em;
+        }
+    }
+}

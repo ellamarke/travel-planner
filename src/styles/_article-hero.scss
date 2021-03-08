@@ -6,6 +6,7 @@
 
     .article-image {
         width: 35em;
+        object-fit: cover; // fixes aspect ratio
     }
 
     .article-text {

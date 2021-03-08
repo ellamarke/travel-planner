@@ -7,7 +7,6 @@ function ArticlePageHero({ articleName, authorName, contentTag }) {
   const myArticles = state.myArticles;
 
   function handleClick() {
-    console.log("CLICKED!!!!");
     const newFavourite = !myArticles.includes(articleName);
     if (newFavourite) {
       myArticles.push(articleName);
@@ -27,18 +26,16 @@ function ArticlePageHero({ articleName, authorName, contentTag }) {
 
   return (
     <div className="article-page-hero">
-      <h1 className="article-page-title">{articleName}</h1>
-      <h2 className="author-name">{authorName}</h2>
-      <div className="tags">
-        <p className="content-tag">{contentTag}</p>
-        <img
+      <h2 className="article-page-title">{articleName}</h2>
+      <div className="name__save">
+        <h6 className="author-name">{authorName}</h6>
+        <button
+          className={favourite ? "button saved-button" : "button save-button"}
           onClick={handleClick}
-          className={
-            favourite ? "reading-list-icon-selected" : "reading-list-icon"
-          }
-          src="img/reading-list-icon.png"
-          alt="article"
-        ></img>
+        >
+          {favourite ? "Saved!" : "Save"}
+          <img src="img/star.svg" alt="save button" />
+        </button>
       </div>
     </div>
   );

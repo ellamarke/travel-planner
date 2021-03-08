@@ -16,6 +16,7 @@
 
         h6 {
             font-size: 5rem;
+            line-height: 90%;
             text-align: left;
             margin-top: 0.7em;
             margin-bottom: 0.7em;
@@ -35,17 +36,19 @@
     .save-button {
         color: $grey;
         border: 0.09em solid $grey;
+        font-size: 1.3rem;
     }
 
     .saved-button {
         border: 0.09em solid $peach; 
+        font-size: 1.3rem;
     }
 
     .see-more-button {
         background-color: inherit;
         color: $grey;
         border: 0.09em solid $grey;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         img {
             width: 0.8em;
             margin-left: 0.6em;

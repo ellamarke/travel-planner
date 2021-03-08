@@ -53,4 +53,13 @@ export const articles = [
     alt: "the pink caves of petra",
     publishDate: "May 2021",
   },
+  {
+    articleName: "The history of the Morrocan Riad",
+    authorName: "Georgia Ali",
+    contentTag: "Architecture",
+    relevantPlace: "Morroco",
+    imgSrc: "img/articles/riad.jpg",
+    alt: "a comfortable chair in a moroccan riad",
+    publishDate: "September 2020",
+  },
 ];

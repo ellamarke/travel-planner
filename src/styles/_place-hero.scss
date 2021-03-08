@@ -1,0 +1,54 @@
+.place-hero {
+    background-color: $grey;
+    display: flex;
+
+    .text-container {
+        padding: 3em;
+        width: 50%;
+    }
+
+    .place-name {
+        font-size: 5rem;
+        line-height: 80%;
+        text-align: left;
+    }
+
+    .text-content {
+        margin-left: 3em;
+        margin-top: 2em;
+
+        .place-intro {
+            width: 80%;
+        }
+    }
+
+    .place-hero-image {
+        width: 50%;
+        display: block;
+        object-fit: cover;
+    }
+
+
+    .weather-block {
+        margin-top: 4em;
+    }
+
+    td {
+        p {
+            font-size: inherit;
+        }
+        @include roc-standard;
+        font-size: 1.5rem;
+        text-align: center;
+        border: 0.1em solid $olive;
+        padding: 0.3em 0.7em 0.2em 0.7em;
+    }
+
+    table, td {
+        border-collapse: collapse;
+    }
+}
+
+.weather-box {
+    display: flex;
+}

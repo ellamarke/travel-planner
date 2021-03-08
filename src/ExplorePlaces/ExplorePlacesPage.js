@@ -6,13 +6,13 @@ import WhereNext from "../HomePage/WhereNext";
 import ArticleHero from "../Shared/ArticleHero";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleCarousel from "../Shared/ArticleCarousel";
-import { hardCodedPlaces, spotlights } from "../Reference/AllPlaces";
+import { hardCodedPlaces, indiaPlaces } from "../Reference/AllPlaces";
 import PageIntro from "../Shared/PageIntro";
 import { articles } from "../Reference/Articles";
 import Spotlight from "./Spotlight";
 
 const petraArticle = articles[5];
-const jaipurSpotlight = spotlights[0];
+const jaipurSpotlight = indiaPlaces[0];
 
 const pageIntroContent =
   "Fugiat ullamco cillum consectetur laboris veniam sint occaecat eu commodo pariatur. Quis do id elit duis est. Ut est do sit dolor voluptate ipsum esse amet excepteur proident laboris. Laboris exercitation dolore eiusmod eiusmod esse velit ad ad dolor et exercitation. Qui incididunt laborum duis dolor nostrud anim commodo sint ex amet.";
