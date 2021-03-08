@@ -13,13 +13,17 @@ function ArticlePage() {
   );
   return (
     <div className="article-page">
-      <TickerTape tickerText={currentArticle.contentTag} />
       <ArticlePageHero
         articleName={currentArticle.articleName}
         authorName={currentArticle.authorName}
         contentTag={currentArticle.contentTag}
       />
-      <ArticlePageContent />
+      <TickerTape tickerText={currentArticle.contentTag} />
+      <ArticlePageContent
+        imgSrc={currentArticle.imgSrc}
+        imgSrc2={currentArticle.imgSrc2}
+        alt={currentArticle.alt}
+      />
     </div>
   );
 }

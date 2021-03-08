@@ -26,6 +26,7 @@ function ArticlePageHero({ articleName, authorName, contentTag }) {
 
   return (
     <div className="article-page-hero">
+      {/*       <img src="img/drawn-elements/arrow-2.svg" alt="" className="arrow" /> */}
       <h2 className="article-page-title">{articleName}</h2>
       <div className="name__save">
         <h6 className="author-name">{authorName}</h6>
@@ -34,7 +35,10 @@ function ArticlePageHero({ articleName, authorName, contentTag }) {
           onClick={handleClick}
         >
           {favourite ? "Saved!" : "Save"}
-          <img src="img/star.svg" alt="save button" />
+          <img
+            src={favourite ? "img/star-thick.svg" : "img/star-grey-thick.svg"}
+            alt="save button"
+          />
         </button>
       </div>
     </div>
