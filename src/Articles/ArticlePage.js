@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import { Context } from "../Store";
 import { articles } from "../Reference/Articles";
 import TickerTape from "../Shared/TickerTape";
+import ArticleFooter from "./ArticleFooter";
 
 function ArticlePage() {
   const [state] = useContext(Context);
@@ -24,6 +25,7 @@ function ArticlePage() {
         imgSrc2={currentArticle.imgSrc2}
         alt={currentArticle.alt}
       />
+      <ArticleFooter />
     </div>
   );
 }

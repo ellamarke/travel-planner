@@ -21,6 +21,7 @@ function LakePage() {
       <CuratedPlaceHero
         curatedPlacesName={"Great Lakes"}
         heroImageName={"Lake Superior, USA"}
+        curatedPlacesImage="img/lakes/lake-hero.jpg"
       />
       <CuratedPlaceIntro
         introText={
@@ -30,7 +31,7 @@ function LakePage() {
       {lakes
         .map((lake) => <LakeCaseStudy lake={lake} key={lake.cardName} />)
         .filter((lake, index) => index < 3)}
-      <LakeCarousel title={"YOU CAN ALSO FIND LAKES HERE"} lakes={lakes} />
+      <LakeCarousel title={"You can also find lakes here"} lakes={lakes} />
       <WhereNext />
     </div>
   );
