@@ -29,7 +29,7 @@ function JunglePage() {
           .filter((jungle, index) => index < 3)}
       </div>
       <JungleCarousel
-        title={"YOU CAN ALSO FIND JUNGLES HERE"}
+        title={"You can also find jungles here."}
         jungles={jungles}
       />
       <div className="where-next-curated">

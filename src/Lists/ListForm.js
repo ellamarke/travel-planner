@@ -35,16 +35,18 @@ function ListForm(props) {
         </>
       ) : (
         <>
-          (
           <input
             className="list-input"
             type="text"
-            placeholder="Add something to list!"
+            placeholder="New list item"
             value={input}
             name="text"
             onChange={handleChange}
           />
-          <button className="list-button">Add to list</button>)
+          <button className="list-button button">
+            <p>Add to list </p>
+            <img src="img/arrow-up.svg" alt="" className="button-icon" />{" "}
+          </button>
         </>
       )}
     </form>

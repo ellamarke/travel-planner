@@ -704,6 +704,8 @@ button:focus {
 
 .article-card h6 {
   margin-top: 1em;
+  font-size: 2.7rem;
+  line-height: 90%;
 }
 
 .article-card .arrow {
@@ -1161,6 +1163,166 @@ button:focus {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*     justify-content: flex-start; */
+  width: 38em;
+  min-height: 50em;
+  background: #D4D4D4;
+  text-align: center;
+  margin: 128px auto;
+  padding-bottom: 32px;
+  border: 2px solid #3B413C;
+}
+
+.list-title {
+  font-family: roc-grotesk, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  font-size: 2.3rem;
+  color: #3B413C;
+  background-color: #FF917D;
+  border: none;
+  border-bottom: 2px solid #3B413C;
+  padding: 0.1em 0.5em 0 0.5em;
+}
+
+.list-items h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.list-form {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.list-input {
+  font-family: work-sans, sans-serif;
+  font-weight: 300;
+  padding: 14px 32px 14px 16px;
+  border: 2px solid #3B413C;
+  outline: none;
+  width: 20em;
+  background: transparent;
+  color: #3B413C;
+  margin-right: 1em;
+}
+
+.list-input::-webkit-input-placeholder {
+  color: #3B413C;
+  opacity: 0.4;
+}
+
+.list-input:-ms-input-placeholder {
+  color: #3B413C;
+  opacity: 0.4;
+}
+
+.list-input::-ms-input-placeholder {
+  color: #3B413C;
+  opacity: 0.4;
+}
+
+.list-input::placeholder {
+  color: #3B413C;
+  opacity: 0.4;
+}
+
+.list-button {
+  cursor: pointer;
+  outline: none;
+  background: #FF917D;
+  color: #3B413C;
+  height: 1.5em;
+}
+
+.list-button p {
+  font-size: 1.2rem;
+}
+
+.list-button .button-icon {
+  width: 0.5em;
+  margin-left: 0.3em;
+  margin-bottom: 0.1em;
+}
+
+.list-input.edit {
+  border: 2px solid #149fff;
+}
+
+.list-button.edit {
+  background: -webkit-gradient(linear, left top, right top, from(#149fff), to(#117aff));
+  background: linear-gradient(90deg, #149fff 0%, #117aff 100%);
+  padding: 16px 22px;
+}
+
+/*   .list-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  } */
+.listItem-row {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px auto;
+  color: #3B413C;
+  border: 2px solid #3B413C;
+  background: inherit;
+  padding: 16px;
+  width: 90%;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #3B413C;
+}
+
+.edit-icon {
+  color: #3B413C;
+}
+
+body {
+  background-color: #C0C0C0;
 }
 
 h1 {

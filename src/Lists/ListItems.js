@@ -93,6 +93,7 @@ function ListItems({ list }) {
         value={list.listName}
         name="text"
         onChange={changeListName}
+        className="list-title"
       />
       <ListForm onSubmit={addListItem} />
       <List

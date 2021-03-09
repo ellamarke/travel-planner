@@ -1,0 +1,125 @@
+.list-items {
+    display: flex;
+    flex-direction: column;
+/*     justify-content: flex-start; */
+    width: 38em;
+    min-height: 50em;
+    background: $grey;
+    text-align: center;
+    margin: 128px auto;
+    padding-bottom: 32px;
+    border: 2px solid $olive;
+  }
+
+  .list-title {
+      @include roc-standard;
+      text-align: center;
+      font-size: 2.3rem;
+      color: $olive;
+      background-color: $peach;
+      border: none;
+      border-bottom: 2px solid $olive;
+      padding: 0.1em 0.5em 0 0.5em;
+  }
+  
+  .list-items h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .list-form {
+    margin-bottom: 32px;
+    display: flex;
+    padding: 2em;
+    margin: 0 auto;
+  }
+  
+  .list-input {
+    @include work-standard;
+    padding: 14px 32px 14px 16px;
+    border: 2px solid $olive;
+    outline: none;
+    width: 20em;
+    background: transparent;
+    color: $olive;
+    margin-right: 1em;
+  }
+  
+  .list-input::placeholder {
+    color: $olive;
+    opacity: 0.4;
+  }
+  
+  .list-button {
+    cursor: pointer;
+    outline: none;
+    background: $peach;
+    color: $olive;
+    p {
+        font-size: 1.2rem;
+    }
+    height: 1.5em;
+    .button-icon {
+        width: 0.5em;
+        margin-left: 0.3em;
+        margin-bottom: 0.1em;
+    }
+  }
+  
+  .list-input.edit {
+    border: 2px solid #149fff;
+  }
+  
+  .list-button.edit {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+    padding: 16px 22px;
+  }
+  
+/*   .list-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  } */
+  
+  .listItem-row {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: $olive;
+    border: 2px solid $olive;
+    background: inherit;
+  
+    padding: 16px;
+    width: 90%;
+  }
+  
+  
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: $olive;
+  }
+  
+  .edit-icon {
+    color: $olive;
+  }

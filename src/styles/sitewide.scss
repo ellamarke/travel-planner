@@ -17,6 +17,11 @@
 @import "./key-stats";
 @import "./article-page";
 @import "./curated-place";
+@import "./lists";
+
+body {
+    background-color: $dark-grey;
+}
 
 
 h1 {
