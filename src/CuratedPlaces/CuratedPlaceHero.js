@@ -1,13 +1,13 @@
-function CuratedPlaceHero({
-  curatedPlacesName,
-  heroImageName,
-  curatedPlacesImage,
-}) {
+function CuratedPlaceHero({ placeName, src, placeIntro }) {
   return (
-    <div className="hero">
-      <h1>{curatedPlacesName}</h1>
-      <p className="img-caption">{heroImageName}</p>
-      <img className="hero-image" src={curatedPlacesImage} alt="China"></img>
+    <div className="place-hero">
+      <div className="text-container">
+        <h1 className="place-name">{placeName}</h1>
+        <div className="text-content">
+          <p className="place-intro">{placeIntro}</p>
+        </div>
+      </div>
+      <img src={src} alt={placeName} className="place-hero-image" />
     </div>
   );
 }

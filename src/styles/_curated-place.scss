@@ -1,0 +1,30 @@
+.case-study-container {
+    color: $olive;
+
+    .spotlight-container:nth-child(odd) {
+        background-color: $grey;
+        color: $olive;
+        
+        button {
+            color: $olive;
+            border: 2px solid $olive;
+        }
+    }
+
+    .spotlight-container:nth-child(even) {
+        background-color: $dark-grey;
+        color: $olive;
+
+        button {
+            color: $olive;
+            border: 2px solid $olive;
+        }
+
+        .spotlight-image {
+            order: 2;
+        }
+        .spotlight-text {
+            order: 1;
+        }
+    }
+}

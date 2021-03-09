@@ -502,6 +502,10 @@ button:focus {
   display: block;
 }
 
+.where-next-curated .where-next {
+  background-color: #D4D4D4;
+}
+
 .article-hero {
   position: relative;
   display: -webkit-box;
@@ -639,6 +643,11 @@ button:focus {
   color: #DEDEDE;
   text-align: center;
   padding: 3em 10em;
+}
+
+.page-intro .intro-title {
+  color: #DEDEDE;
+  font-size: 8rem;
 }
 
 .page-intro .read-more-content {
@@ -1116,6 +1125,42 @@ button:focus {
   width: 40%;
   height: 40%;
   margin-top: 15%;
+}
+
+.case-study-container {
+  color: #3B413C;
+}
+
+.case-study-container .spotlight-container:nth-child(odd) {
+  background-color: #D4D4D4;
+  color: #3B413C;
+}
+
+.case-study-container .spotlight-container:nth-child(odd) button {
+  color: #3B413C;
+  border: 2px solid #3B413C;
+}
+
+.case-study-container .spotlight-container:nth-child(even) {
+  background-color: #C0C0C0;
+  color: #3B413C;
+}
+
+.case-study-container .spotlight-container:nth-child(even) button {
+  color: #3B413C;
+  border: 2px solid #3B413C;
+}
+
+.case-study-container .spotlight-container:nth-child(even) .spotlight-image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.case-study-container .spotlight-container:nth-child(even) .spotlight-text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 h1 {

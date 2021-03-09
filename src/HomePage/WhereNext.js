@@ -9,7 +9,7 @@ export function WhereNext({ title }) {
     { placeTitle: "Misty Mountains", route: "/mountains" },
     { placeTitle: "Crumbling Temples", route: "/temples" },
     { placeTitle: "Dark Jungles", route: "/jungles" },
-    { placeTitle: "Desert Cities", route: "/deserts" },
+    { placeTitle: "Wild Deserts", route: "/deserts" },
   ];
 
   const [place, setPlace] = useState(places[0]);

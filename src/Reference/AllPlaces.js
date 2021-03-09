@@ -88,6 +88,14 @@ export const temples = [
     src: "img/temples/erechtheion.jpg",
     alt: "Sulamani Temple",
   },
+  {
+    cardName: "Qasr al-Bint Temple",
+    country: "Jordan",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
+    src: "img/articles/petra-2.jpg",
+    alt: "Qasr al-Bint Temple",
+  },
   /* {
     cardName: "Shwe Dagon Pagoda",
     country: "Myanmar",
@@ -149,6 +157,14 @@ export const jungles = [
     src: "img/jungles/maui.jpg",
     alt: "Maui Rainforest",
   },
+  {
+    cardName: "Guanacaste National Park",
+    country: "Costa Rica",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+    src: "img/jungles/guanacaste.jpg",
+    alt: "Guanacaste National Park",
+  },
 ];
 
 export const deserts = [
@@ -191,6 +207,14 @@ export const deserts = [
       "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
     src: "img/deserts/dubai.jpg",
     alt: "Dubai",
+  },
+  {
+    cardName: "The Sahara",
+    country: "North Africa",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+    src: "img/deserts/sahara.jpg",
+    alt: "The Sahara",
   },
 ];
 
@@ -285,6 +309,14 @@ export const lakes = [
       "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
     src: "img/lakes/jacques-cartier.jpg",
     alt: "Lhotse",
+  },
+  {
+    cardName: "Lake Titicaca",
+    country: "Bolivia",
+    cardCaption:
+      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+    src: "img/lakes/titicaca.jpg",
+    alt: "Lake Titicaca",
   },
 ];
 

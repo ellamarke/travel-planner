@@ -7,7 +7,7 @@ import { Context } from "../Store";
 function MountainCaseStudy({ mountain }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
-  const { cardName, cardCaption, country } = mountain;
+  const { cardName, cardCaption, country, src, alt } = mountain;
 
   function handleClick() {
     const favourite = !favouritePlaces.includes(cardName);
@@ -28,23 +28,23 @@ function MountainCaseStudy({ mountain }) {
   const favourite = favouritePlaces.includes(cardName);
 
   return (
-    <div className="place-case-study">
-      <img
-        className="case-study-image"
-        src="img/grey-rectangle-small.jpg"
-        alt="place"
-      ></img>
-      <div className="case-study-text">
-        <h1 className="place-name">{cardName}</h1>
+    <div className="spotlight-container">
+      <img className="spotlight-image" src={src} alt={alt}></img>
+      <div className="spotlight-text">
+        <h6 className="place-name">{cardName}</h6>
         <p className="case-study-body">{cardCaption}</p>
-        <div className="tags">
-          <img
-            src="img/heart.png"
-            alt="heart button"
+        <div className="buttons">
+          <button
+            className={favourite ? "button saved-button" : "button save-button"}
             onClick={handleClick}
-            className={favourite ? "favourite-icon-selected" : "favourite-icon"}
-          ></img>
-          <button className="see-more">See more of {country}</button>
+          >
+            {favourite ? "Saved!" : "Save"}
+            <img src="img/star-thick.svg" alt="save button" />
+          </button>
+          <button className="see-more-button button">
+            See more of {country}
+            <img src="img/arrow-up.svg" alt="see more button" />
+          </button>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import { Context } from "../Store";
 function DesertCarousel({ title, deserts }) {
   return (
     <div className="place-carousel">
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <div className="card-carousel">
         {deserts
           .map((desert) => (
@@ -14,6 +14,8 @@ function DesertCarousel({ title, deserts }) {
               key={desert.cardName}
               cardCaption={desert.cardCaption}
               cardName={desert.cardName}
+              src={desert.src}
+              alt={desert.alt}
             />
           ))
           .filter((desert, index) => index > 2)}
@@ -22,7 +24,7 @@ function DesertCarousel({ title, deserts }) {
   );
 }
 
-function PlaceCard({ cardCaption, cardName }) {
+function PlaceCard({ cardName, src, alt }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
 
@@ -46,17 +48,23 @@ function PlaceCard({ cardCaption, cardName }) {
 
   return (
     <div className="place-card">
-      <div className="card-image">
-        <p className="card-caption">{cardCaption}</p>
-      </div>
-      <div className="card-bottom">
-        <p className="card-name">{cardName}</p>
-        <img
-          src="img/heart.png"
-          alt="heart button"
-          onClick={handleClick}
-          className={favourite ? "favourite-icon-selected" : "favourite-icon"}
-        ></img>
+      <img src={src} className="card-image" alt={alt} />
+      <div className="card-text">
+        <h6 className="card-name">{cardName}</h6>
+        <div className="card-buttons">
+          <button
+            className={
+              favourite
+                ? "button saved-button small-button"
+                : "button save-button small-button"
+            }
+            onClick={handleClick}
+          >
+            {favourite ? "Saved!" : "Save"}
+            <img src="img/star.svg" alt="save button" />
+          </button>
+          <img src="img/arrow-right.svg" className="arrow" alt="arrow button" />
+        </div>
       </div>
     </div>
   );
