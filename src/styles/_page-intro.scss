@@ -26,6 +26,7 @@
         width: 3em;
         margin: 0 auto;
     }
+
 }
 
 .place-introduction {
@@ -37,5 +38,38 @@
         color: $peach;
         margin: 0 auto;
         font-size: 1.2rem;
+    }
+}
+
+.basic-place-page {
+
+    .place-name {
+        margin: 8em 0;
+    }
+
+    .wiki-text {
+        @include work-standard;
+        color: $light-grey;
+        text-align: center;
+        white-space: pre-wrap;
+        padding: 0 5em;
+
+        p {
+            margin-top: 1.5em;
+        }
+    }
+
+    /* Hiding unecessary elements from Wiki API */
+
+    span[title="Representation in the International Phonetic Alphabet (IPA)"] {
+        display: none;
+    }
+
+    .mw-empty-elt {
+        display: none;
+    }
+
+    small {
+        display: none; 
     }
 }

@@ -673,6 +673,39 @@ button:focus {
   font-size: 1.2rem;
 }
 
+.basic-place-page {
+  /* Hiding unecessary elements from Wiki API */
+}
+
+.basic-place-page .place-name {
+  margin: 8em 0;
+}
+
+.basic-place-page .wiki-text {
+  font-family: work-sans, sans-serif;
+  font-weight: 300;
+  color: #DEDEDE;
+  text-align: center;
+  white-space: pre-wrap;
+  padding: 0 5em;
+}
+
+.basic-place-page .wiki-text p {
+  margin-top: 1.5em;
+}
+
+.basic-place-page span[title="Representation in the International Phonetic Alphabet (IPA)"] {
+  display: none;
+}
+
+.basic-place-page .mw-empty-elt {
+  display: none;
+}
+
+.basic-place-page small {
+  display: none;
+}
+
 .article-carousel {
   background-color: #C0C0C0;
   padding: 5em;
