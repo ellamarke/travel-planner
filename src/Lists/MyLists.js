@@ -36,6 +36,11 @@ function MyLists({ lists }) {
         {lists.map((list) => (
           <ProfileListCard list={list} key={list.listName} />
         ))}
+        {lists.length === 0 && (
+          <h3 className="no-content-warning">
+            Oops, you haven't saved any lists yet! Create a new list now.
+          </h3>
+        )}
       </div>
     </div>
   );
@@ -50,13 +55,30 @@ function ProfileListCard({ list }) {
     history.push("/ListEdit");
   }
 
+  function handleClick() {
+    const myLists = state.myLists;
+    const newMyLists = myLists.filter(
+      (myList) => myList.listName !== list.listName
+    );
+    setState({ ...state, myLists: newMyLists });
+  }
+
   return (
     <div className="list-card-container">
-      <div className="list-card" onClick={goToList}>
-        <h6 className="list-name">{list.listName}</h6>
+      <div className="list-card">
+        <h6 className="list-name" onClick={goToList}>
+          {list.listName}
+        </h6>
         <div className="card-buttons">
-          <button className="delete-button button">delete</button>
-          <img src="img/arrow-right.svg" className="arrow" alt="arrow button" />
+          <button className="delete-button button" onClick={handleClick}>
+            delete
+          </button>
+          <img
+            src="img/arrow-right.svg"
+            className="arrow"
+            alt="arrow button"
+            onClick={goToList}
+          />
         </div>
       </div>
     </div>

@@ -1,8 +1,7 @@
-/* import "../css/App.css";
-import "../css/Layout.css"; */
 import { useHistory } from "react-router-dom";
 import { useContext, useState } from "react";
 import { Context } from "../Store";
+import { hardCodedPlaces } from "../Reference/AllPlaces";
 
 function HomeSearch() {
   const history = useHistory();
@@ -14,13 +13,21 @@ function HomeSearch() {
   };
 
   async function handleClick() {
-    const searchedPlace = await doSearch(searchTerm);
-    setState({
-      ...state,
-      currentSearchedPlace: searchedPlace,
-    });
+    const place = hardCodedPlaces.find(
+      (place) => place.searchWord.toLowerCase() === searchTerm.toLowerCase()
+    );
 
-    history.push("/searched-place");
+    if (place) {
+      history.push(place.route);
+    } else {
+      const searchedPlace = await doSearch(searchTerm);
+      setState({
+        ...state,
+        currentSearchedPlace: searchedPlace,
+      });
+
+      history.push("/searched-place");
+    }
   }
 
   async function doSearch(term) {

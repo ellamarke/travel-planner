@@ -1,7 +1,7 @@
 function PageIntro({ pageIntroContent }) {
   return (
     <div className="page-intro">
-      <p>{pageIntroContent}</p>
+      <p className="main-p">{pageIntroContent}</p>
       <img src="img/star-peach.svg" alt="" />
     </div>
   );

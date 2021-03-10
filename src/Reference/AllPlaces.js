@@ -546,12 +546,14 @@ export const hardCodedPlaces = [
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
     route: "/marrakech",
     src: "/img/place-squares/morocco.jpg",
+    searchWord: "marrakech",
   },
   {
     cardName: "Tokyo, Japan",
     cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
     route: "/tokyo",
     src: "/img/place-squares/tokyo-2.jpg",
+    searchWord: "tokyo",
   },
   {
     cardName: "India",
@@ -560,6 +562,7 @@ export const hardCodedPlaces = [
     route: "/india",
     country: "India",
     src: "/img/place-squares/india.jpg",
+    searchWord: "india",
   },
   {
     cardName: "Istanbul, Turkey",
@@ -567,6 +570,7 @@ export const hardCodedPlaces = [
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
     route: "/istanbul",
     src: "/img/place-squares/istanbul.jpg",
+    searchWord: "istanbul",
   },
   {
     cardName: "Austria",
@@ -574,6 +578,7 @@ export const hardCodedPlaces = [
       "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
     route: "/austria",
     src: "/img/place-squares/austria.jpg",
+    searchWord: "austria",
   },
   {
     cardName: "Mexico City, Mexico",
@@ -581,6 +586,7 @@ export const hardCodedPlaces = [
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
     route: "/mexico-city",
     src: "/img/place-squares/mexico-city.jpg",
+    searchWord: "mexico city",
   },
   {
     cardName: "Siem Reap, Cambodia",
@@ -588,5 +594,6 @@ export const hardCodedPlaces = [
       "Pariatur sunt non proident aliquip. Proident dolore fugiat est nisi sit. Lorem in tempor occaecat irure est ut.",
     route: "/siem-reap",
     src: "/img/place-squares/siem-reap.jpg",
+    searchWord: "siem reap",
   },
 ];

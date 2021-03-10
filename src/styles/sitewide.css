@@ -345,7 +345,7 @@ button:focus {
   border-top: solid 2px #3B413C;
   padding-bottom: 0.2em;
   padding-top: 0.3em;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   overflow: hidden;
   width: 100vw;
   background-color: #FF917D;
@@ -641,7 +641,23 @@ button:focus {
           flex-direction: column;
 }
 
-.page-intro .intro-text {
+.page-intro .descriptions {
+  color: #DEDEDE;
+  text-align: center;
+  padding: 3em 10em;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.page-intro .long-description {
+  padding-top: 0;
+}
+
+.page-intro .short-description {
+  padding-bottom: 0;
+}
+
+.page-intro .intro-text, .page-intro p {
   color: #DEDEDE;
   text-align: center;
   padding: 3em 10em;
@@ -787,6 +803,8 @@ button:focus {
 
 .spotlight-container .spotlight-image {
   width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .spotlight-container .spotlight-text {
@@ -956,6 +974,8 @@ button:focus {
 .place-card-grid .article-card,
 .list-grid .article-card {
   width: 22em;
+  margin: 1.5em 0;
+  height: 38em;
 }
 
 .place-card-grid .article-card .card-image, .place-card-grid .article-card .card-buttons, .place-card-grid .article-card .card-text,
@@ -987,6 +1007,11 @@ button:focus {
 
 .grey-background {
   background-color: #C0C0C0;
+}
+
+.no-content-warning {
+  margin: 3em;
+  padding: 0 3em;
 }
 
 .place-hero {
@@ -1476,6 +1501,10 @@ p {
   border: 2px solid #3B413C;
   padding: 0.5em 0.6em 0.3em 0.6em;
   cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.5;
 }
 
 .button .arrow-icon {

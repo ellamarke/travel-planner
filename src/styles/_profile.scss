@@ -71,11 +71,12 @@
 
     .article-card {
         width: 22em;
+        margin: 1.5em 0;
+        height: 38em;
 
         .card-image, .card-buttons, .card-text {
             width: 19.4em;
         }
-
 
     }
 }
@@ -101,4 +102,9 @@
 
 .grey-background {
     background-color: $dark-grey;
+}
+
+.no-content-warning {
+    margin: 3em;
+    padding: 0 3em;
 }

@@ -41,7 +41,7 @@ function Marrakech() {
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
-      <KeyStats language="Arabic" currency="Dirham" population="929,000" />
+      <KeyStats language="Arabic" currency="Dirham" population="929000" />
       <PlaceCarousel
         title={"The very best of Marrakech."}
         places={marrakechPlaces.filter((marrakechPlace, index) => index > 0)}

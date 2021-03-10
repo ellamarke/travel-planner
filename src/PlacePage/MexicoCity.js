@@ -43,7 +43,7 @@ function MexicoCity() {
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
-      <KeyStats language="Spanish" currency="Peso" population="8.8 million" />
+      <KeyStats language="Spanish" currency="Peso" population="9209944" />
       <PlaceCarousel
         title={"The very best of Mexico City."}
         places={mexicoCityPlaces.filter((mexicoCityPlace, index) => index > 0)}

@@ -105,7 +105,7 @@ function ListItems({ list }) {
         />
         <div className="button-container">
           <button onClick={returnToLists} className="button return-button">
-            <p>Back to profile</p>
+            <p>Save and Back</p>
             <img src="img/arrow-down.svg" alt="" className="button-icon" />
           </button>
         </div>

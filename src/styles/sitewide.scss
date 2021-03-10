@@ -88,6 +88,10 @@ p {
     border: 2px solid $olive;
     padding: 0.5em 0.6em 0.3em 0.6em;
 
+    &:hover {
+        opacity: 0.5;
+    }
+
     cursor: pointer;
 
     .arrow-icon {

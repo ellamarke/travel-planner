@@ -44,7 +44,7 @@ function SiemReap() {
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
-      <KeyStats language="Khmer" currency="Riel" population="2 million" />
+      <KeyStats language="Khmer" currency="Riel" population="245494" />
       <PlaceCarousel
         title={"The very best of Siem Reap"}
         places={siemReapPlaces.filter((siemReap, index) => index > 0)}

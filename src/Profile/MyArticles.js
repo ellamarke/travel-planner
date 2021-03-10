@@ -32,6 +32,12 @@ function MyArticles({ articles }) {
             alt={article.alt}
           />
         ))}
+        {articles.length === 0 && (
+          <h3 className="no-content-warning">
+            Oops, you haven't saved any articles yet! Explore new places and
+            start saving.
+          </h3>
+        )}
       </div>
     </div>
   );
@@ -46,6 +52,7 @@ function ProfileArticleCard({
 }) {
   const [state, setState] = useContext(Context);
   const history = useHistory();
+
   function handleClick() {
     const myArticles = state.myArticles;
     const newMyArticles = myArticles.filter(

@@ -42,7 +42,7 @@ function India() {
       <KeyStats
         language="447 languages, including English, Hindi and Bengali"
         currency="Rupee"
-        population="1.3 billion"
+        population="1380004385"
       />
       <PlaceCarousel
         title={"The very best of India"}

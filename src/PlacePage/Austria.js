@@ -44,7 +44,7 @@ function Austria() {
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
-      <KeyStats language="German" currency="Euro" population="8.8 million" />
+      <KeyStats language="German" currency="Euro" population="9006398" />
       <PlaceCarousel
         title={"The very best of Austria"}
         places={austriaPlaces.filter((austriaPlace, index) => index > 0)}

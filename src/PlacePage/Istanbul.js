@@ -42,7 +42,7 @@ function Istanbul() {
       <KeyStats
         language="Turkish"
         currency="Turkish Lira"
-        population="15.5 million"
+        population="15462452"
       />
       <PlaceCarousel
         title={"The very best of istanbul"}

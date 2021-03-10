@@ -30,6 +30,12 @@ function MyPlaces({ places }) {
             src={place.src}
           />
         ))}
+        {places.length === 0 && (
+          <h3 className="no-content-warning">
+            Oops, you haven't saved any places yet! Explore more places and get
+            saving.
+          </h3>
+        )}
       </div>
     </div>
   );

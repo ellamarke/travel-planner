@@ -69,7 +69,7 @@ function Tokyo() {
           </div>
         }
       />
-      <KeyStats language="Japanese" currency="Yen" population="9.2 million" />
+      <KeyStats language="Japanese" currency="Yen" population="13960236" />
       <PlaceCarousel
         title={"The very best of Tokyo."}
         places={tokyoPlaces.filter((tokyoPlace, index) => index > 0)}
