@@ -14,16 +14,18 @@ function PlaceHero({
         <div className="text-content">
           <p className="place-intro">{placeIntro}</p>
           <table className="weather-block">
-            <tr>
-              <td>
-                <p className="currently">currently</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <Weather city={weatherCityName} />
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <p className="currently">currently</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <Weather city={weatherCityName} />
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>

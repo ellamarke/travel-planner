@@ -15,12 +15,14 @@ function PlaceIntroduction({ shortDescription, longDescription }) {
   return (
     <div className="place-introduction page-intro">
       <img src="img/star-peach.svg" alt="" />
-      <p className="intro-text">
-        <div className="short-description">{shortDescription}</div>
+      <div className="intro-text">
+        <div className="short-description">
+          <p>{shortDescription}</p>
+        </div>
         <span className={readMore ? "read-more-displayed" : "read-more-hidden"}>
-          {longDescription}
+          <p>{longDescription}</p>
         </span>
-      </p>
+      </div>
       <div className="button-container">
         <button className="read-more button" onClick={handleClick}>
           {readMore ? "Read Less" : "Read More"}

@@ -5,13 +5,21 @@ import PlaceIntroduction from "./PlaceIntroduction";
 import KeyStats from "./KeyStats";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleHero from "../Shared/ArticleHero";
-import PlacePageCaseStudy from "./PlacePageCaseStudy";
+import TickerTape from "../Shared/TickerTape";
 import { austriaPlaces } from "../Reference/AllPlaces";
+import Spotlight from "../ExplorePlaces/Spotlight";
+import { articles } from "../Reference/Articles";
 
 function Austria() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const spotlightContent = austriaPlaces[0];
+  const articleContent = articles[8];
+
+  const placeIntro =
+    "No country waltzes so effortlessly between urban and outdoors as Austria. One day you’re cresting alpine summits, the next you’re swanning around imperial Vienna.";
 
   const shortDescription = `As home to majestic mountains, opulent palaces, and high culture, Austria's attractions are classically sumptuous and enduring. But beyond the waltzes, the strudels, the alpine summits, and Habsburg architecture, its modern cities are proof of just how easily Austria combines the contemporary with the historic.`;
 
@@ -27,7 +35,11 @@ function Austria() {
         placeName="Austria"
         imgCaption="Vienna"
         weatherCityName="Vienna"
+        src="img/place-squares/austria.jpg"
+        alt="A snowy Austrian mountain"
+        placeIntro={placeIntro}
       />
+      <TickerTape tickerText="Austria" />
       <PlaceIntroduction
         shortDescription={shortDescription}
         longDescription={longDescription}
@@ -35,15 +47,21 @@ function Austria() {
       <KeyStats language="German" currency="Euro" population="8.8 million" />
       <PlaceCarousel
         title={"The very best of Austria"}
-        places={austriaPlaces}
+        places={austriaPlaces.filter((austriaPlace, index) => index > 0)}
       />
-      <PlacePageCaseStudy
-        cardName="Schloss Ambras"
-        cardCaption="Picturesquely perched on a hill and set among beautiful gardens, this Renaissance pile was acquired in 1564 by Archduke Ferdinand II, then ruler of Tyrol, who transformed it from a fortress into a palace. Don't miss the centrepiece Spanische Saal (Spanish Hall), the dazzling Armour Collection and the gallery's Velázquez and Van Dyck originals."
+      <Spotlight
+        cardName={spotlightContent.cardName}
+        cardCaption={spotlightContent.cardCaption}
+        country={spotlightContent.country}
+        route={spotlightContent.route}
+        src={spotlightContent.src}
+        alt={spotlightContent.alt}
       />
       <ArticleHero
-        articleName="If you're not already obsessed with Austrian food, you will be soon"
-        contentTag="food"
+        articleName={articleContent.articleName}
+        authorName={articleContent.authorName}
+        contentTag={articleContent.contentTag}
+        imgSrc={articleContent.imgSrc}
       />
     </div>
   );

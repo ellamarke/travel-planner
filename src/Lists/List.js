@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "../css/Layout.css";
 import "../css/Profile.css";
 import "../css/lists.css";
-import { RiCloseCircleLine } from "react-icons/ri";
-import { TiEdit } from "react-icons/ti";
 import ListForm from "./ListForm";
 
 function List({ listItems, completeListItem, removeListItem, updateList }) {

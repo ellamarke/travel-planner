@@ -5,13 +5,21 @@ import PlaceIntroduction from "./PlaceIntroduction";
 import KeyStats from "./KeyStats";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleHero from "../Shared/ArticleHero";
-import PlacePageCaseStudy from "./PlacePageCaseStudy";
+import Spotlight from "../ExplorePlaces/Spotlight";
 import { mexicoCityPlaces } from "../Reference/AllPlaces";
+import TickerTape from "../Shared/TickerTape";
+import { articles } from "../Reference/Articles";
 
 function MexicoCity() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const spotlightContent = mexicoCityPlaces[0];
+  const articleContent = articles[7];
+
+  const placeIntro =
+    "Mexico City is, and has always been, the sun in the Mexican solar system. Though much-maligned in the past, these days the city is cleaning up its act. Revamped public spaces are springing back to life, the culinary scene is exploding and a cultural renaissance is flourishing.";
 
   const shortDescription = `
   Vibrant food, nightlife, art, and culture—all anchored by an ancient history
@@ -27,23 +35,32 @@ function MexicoCity() {
         placeName="Mexico City, Mexico"
         imgCaption="Floating Gardens of Xochimilco"
         weatherCityName="Mexico City"
+        src="/img/place-squares/mexico-city.jpg"
+        placeIntro={placeIntro}
       />
+      <TickerTape tickerText="Mexico City" />
       <PlaceIntroduction
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
       <KeyStats language="Spanish" currency="Peso" population="8.8 million" />
       <PlaceCarousel
-        title={"The very best of Mexico City"}
-        places={mexicoCityPlaces}
+        title={"The very best of Mexico City."}
+        places={mexicoCityPlaces.filter((mexicoCityPlace, index) => index > 0)}
       />
-      <PlacePageCaseStudy
-        cardName="Museo Nacional de Antropologia"
-        cardCaption="Mexico City’s gigantic Museo Nacional de Antropología (MNA) is a well-loved museum with a rich and fascinating story that begins centuries before its doors officially opened. MNA is the most visited museum in the country, boasting one of the world’s largest collections of pre-Columbian relics, artefacts and art."
+      <Spotlight
+        cardName={spotlightContent.cardName}
+        cardCaption={spotlightContent.cardCaption}
+        country={spotlightContent.country}
+        route={spotlightContent.route}
+        src={spotlightContent.src}
+        alt={spotlightContent.alt}
       />
       <ArticleHero
-        articleName="Exploring Mexico City's history of Baroque architecture"
-        contentTag="architecture"
+        articleName={articleContent.articleName}
+        authorName={articleContent.authorName}
+        contentTag={articleContent.contentTag}
+        imgSrc={articleContent.imgSrc}
       />
     </div>
   );

@@ -43,15 +43,16 @@ app.listen(8080);
 
 async function wikipediaSearch(searchTerm) {
   const apiResponse = await fetch(
-    `https://en.wikipedia.org/w/api.php?action=query&titles=${searchTerm}&prop=extracts&format=json&exintro=1`
+    `https://en.wikipedia.org/w/api.php?action=query&titles=${searchTerm.toLowerCase()}&prop=extracts&format=json&exintro=1`
   );
 
   const result = await apiResponse.json();
+  console.log(JSON.stringify(result));
   const pages = result.query.pages;
   const keys = Object.keys(pages);
   const firstPageKey = keys[0];
   const place = {
-    placeName: result.query.normalized[0].to,
+    placeName: result?.query?.normalized[0]?.to || searchTerm,
     content: pages[firstPageKey].extract,
   };
 

@@ -324,8 +324,11 @@ export const istanbulPlaces = [
   {
     cardName: "Hagia Sophia",
     cardCaption:
-      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+      "Hagia Sophia, officially the Hagia Sophia Holy Grand Mosque and formerly the Church of Hagia Sophia, is a Late Antique place of worship in Istanbul, designed by the Greek geometers Isidore of Miletus and Anthemius of Tralles.",
     src: "/img/place-squares/istanbul/hagia-sophia.jpg",
+    country: "Turkey",
+    route: "/Turkey",
+    alt: "The minarets of Hagia Sophia",
   },
   {
     cardName: "Topkapi Palace",
@@ -385,8 +388,11 @@ export const austriaPlaces = [
   {
     cardName: "Vienna",
     cardCaption:
-      "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
+      "Baroque streetscapes and imperial palaces set the stage for Vienna's artistic and musical masterpieces alongside its coffee-house culture and vibrant epicurean and design scenes.",
     src: "/img/place-squares/austria/vienna.jpg",
+    country: "Austria",
+    route: "/Austria",
+    alt: "a rainy day in Vienna",
   },
   {
     cardName: "Salzburg",
@@ -474,10 +480,22 @@ export const marrakechPlaces = [
 
 export const mexicoCityPlaces = [
   {
+    cardName: "Arena Mexico",
+    cardCaption:
+      "Discover the colourful world of lucha libre at Arena Mexico. Don't forget to get a tray of their iconic tacos (the more lime the better!).",
+    src: "/img/place-squares/mexico-city/arena-mexico.jpg",
+    country: "Mexico",
+    route: "/Mexico",
+    alt: "Tacos at the Arena Mexico",
+  },
+  {
     cardName: "Museo Frida Kahlo",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
     src: "/img/place-squares/mexico-city/museo.jpg",
+    country: "Mexico",
+    route: "/Mexico",
+    alt: "",
   },
   {
     cardName: "Palacio de Bellas Artes",
@@ -490,25 +508,22 @@ export const mexicoCityPlaces = [
       "Velit et incididunt reprehenderit anim duis nisi cillum et tempor est. Commodo voluptate laboris ut anim.",
     src: "/img/place-squares/mexico-city/floating-gardens.jpg",
   },
-  {
-    cardName: "Arena Mexico",
-    cardCaption:
-      "Sit cupidatat exercitation do esse quis culpa anim duis nisi cillum et tempor est.",
-    src: "/img/place-squares/mexico-city/arena-mexico.jpg",
-  },
 ];
 
 export const siemReapPlaces = [
+  {
+    cardName: "Banteay Srei",
+    cardCaption: `“The lady temple”, “the tiny temple”, “the pink temple”; Banteay Srei goes by many nicknames, an indication of the distinctiveness of this little gem of a temple, which feels so different to the imposing grandeur of the main Angkorian complex.`,
+    src: "/img/place-squares/siem-reap/banteay.jpg",
+    country: "Cambodia",
+    route: "/Cambodia",
+    alt: "The intricate carvings on the temple door",
+  },
   {
     cardName: "Ta Prohm",
     cardCaption:
       "Commodo voluptate laboris ut anim. Labore consectetur cillum proident Lorem ex Lorem dolor.",
     src: "/img/place-squares/siem-reap/ta-prohm.jpg",
-  },
-  {
-    cardName: "Banteay Srei",
-    cardCaption: "Excepteur ipsum ipsum laboris quis do tempor dolor occaecat.",
-    src: "/img/place-squares/siem-reap/banteay.jpg",
   },
   {
     cardName: "Angkor Thom",

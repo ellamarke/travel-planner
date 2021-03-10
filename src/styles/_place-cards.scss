@@ -11,9 +11,6 @@
     margin: 5em 3em;
     position: relative;
 
-    h6 {
-        margin-top: 1em;
-    }
     
     .arrow {
         width: 1.6em;
@@ -26,6 +23,12 @@
     .card-text {
         position: absolute;
         bottom: 1em;
+        max-width: 25em;
+
+        .card-name {
+            margin-top: 1em;
+            font-size: 2.8rem;
+        }
     }
 
 

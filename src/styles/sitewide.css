@@ -551,10 +551,6 @@ button:focus {
   position: relative;
 }
 
-.place-card h6 {
-  margin-top: 1em;
-}
-
 .place-card .arrow {
   width: 1.6em;
 }
@@ -566,6 +562,12 @@ button:focus {
 .place-card .card-text {
   position: absolute;
   bottom: 1em;
+  max-width: 25em;
+}
+
+.place-card .card-text .card-name {
+  margin-top: 1em;
+  font-size: 2.8rem;
 }
 
 .place-card .card-buttons {
@@ -639,7 +641,7 @@ button:focus {
           flex-direction: column;
 }
 
-.page-intro p {
+.page-intro .intro-text {
   color: #DEDEDE;
   text-align: center;
   padding: 3em 10em;

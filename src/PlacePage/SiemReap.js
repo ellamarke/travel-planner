@@ -5,13 +5,21 @@ import PlaceIntroduction from "./PlaceIntroduction";
 import KeyStats from "./KeyStats";
 import PlaceCarousel from "../Shared/PlaceCarousel";
 import ArticleHero from "../Shared/ArticleHero";
-import PlacePageCaseStudy from "./PlacePageCaseStudy";
 import { siemReapPlaces } from "../Reference/AllPlaces";
+import TickerTape from "../Shared/TickerTape";
+import Spotlight from "../ExplorePlaces/Spotlight";
+import { articles } from "../Reference/Articles";
 
 function SiemReap() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const spotlightContent = siemReapPlaces[0];
+  const articleContent = articles[11];
+
+  const placeIntro =
+    "The life-support system and gateway for the temples of Angkor, Siem Reap was always destined for great things. Visitors come here to see the temples, of course, but there is plenty to do in and around the city when you're templed out.";
 
   const shortDescription = `
   Siem Reap, a resort town in northwestern Cambodia, is the gateway to the ruins of Angkor, the seat of the Khmer kingdom from the 9th–15th centuries. Angkor’s vast complex of intricate stone buildings includes preserved Angkor Wat, the main temple, which is pictured on Cambodia’s flag. Giant, mysterious faces are carved into the Bayon Temple at Angkor Thom.`;
@@ -28,7 +36,10 @@ function SiemReap() {
         placeName="Siem Reap, Cambodia"
         imgCaption="Angkor Wat"
         weatherCityName="Siem Reap"
+        src="/img/place-squares/siem-reap.jpg"
+        placeIntro={placeIntro}
       />
+      <TickerTape tickerText="Siem Reap" />
       <PlaceIntroduction
         shortDescription={shortDescription}
         longDescription={longDescription}
@@ -36,15 +47,21 @@ function SiemReap() {
       <KeyStats language="Khmer" currency="Riel" population="2 million" />
       <PlaceCarousel
         title={"The very best of Siem Reap"}
-        places={siemReapPlaces}
+        places={siemReapPlaces.filter((siemReap, index) => index > 0)}
       />
-      <PlacePageCaseStudy
-        cardName="Angkor Wat"
-        cardCaption="Angkor is one of the most important archaeological sites in South-East Asia. Stretching over some 400 km2, including forested area, Angkor Archaeological Park contains the magnificent remains of the different capitals of the Khmer Empire, from the 9th to the 15th century. They include the famous Temple of Angkor Wat and, at Angkor Thom, the Bayon Temple with its countless sculptural decorations."
+      <Spotlight
+        cardName={spotlightContent.cardName}
+        cardCaption={spotlightContent.cardCaption}
+        country={spotlightContent.country}
+        route={spotlightContent.route}
+        src={spotlightContent.src}
+        alt={spotlightContent.alt}
       />
       <ArticleHero
-        articleName="The French colonial history of Cambodia"
-        contentTag="history"
+        articleName={articleContent.articleName}
+        authorName={articleContent.authorName}
+        contentTag={articleContent.contentTag}
+        imgSrc={articleContent.imgSrc}
       />
     </div>
   );
