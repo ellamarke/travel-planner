@@ -20,7 +20,7 @@
         padding-bottom: 0;
     }
 
-    .intro-text, p {
+    .intro-text, .main-p {
         color: $light-grey;
         text-align: center;
         padding: 3em 10em;
@@ -88,5 +88,17 @@
 
     small {
         display: none; 
+    }
+
+    span:empty {
+        display: none;
+    }
+
+    p:empty {
+        display: none;
+    }
+
+    div:empty {
+        display: none;
     }
 }

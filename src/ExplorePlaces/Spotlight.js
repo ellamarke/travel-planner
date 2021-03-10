@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import { useHistory } from "react-router-dom";
+import { useContext } from "react";
 import { Context } from "../Store";
 
 function Spotlight({ cardName, cardCaption, country, src, alt }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
+  const history = useHistory();
 
   function handleClick() {
     const favourite = !favouritePlaces.includes(cardName);
@@ -20,6 +22,22 @@ function Spotlight({ cardName, cardCaption, country, src, alt }) {
       });
     }
   }
+
+  async function doSearch(country) {
+    const response = await fetch(`/search-place?searchTerm=${country}`);
+    const result = await response.json();
+    return result;
+  }
+
+  const goToCountry = async () => {
+    const searchedPlace = await doSearch(country);
+    setState({
+      ...state,
+      currentSearchedPlace: searchedPlace,
+    });
+
+    history.push("/searched-place");
+  };
 
   const favourite = favouritePlaces.includes(cardName);
 
@@ -41,7 +59,7 @@ function Spotlight({ cardName, cardCaption, country, src, alt }) {
               alt="save button"
             />
           </button>
-          <button className="see-more-button button">
+          <button className="see-more-button button" onClick={goToCountry}>
             See more of {country}
             <img src="img/arrow-up-grey.svg" alt="see more button" />
           </button>

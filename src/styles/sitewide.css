@@ -657,7 +657,7 @@ button:focus {
   padding-bottom: 0;
 }
 
-.page-intro .intro-text, .page-intro p {
+.page-intro .intro-text, .page-intro .main-p {
   color: #DEDEDE;
   text-align: center;
   padding: 3em 10em;
@@ -719,6 +719,18 @@ button:focus {
 }
 
 .basic-place-page small {
+  display: none;
+}
+
+.basic-place-page span:empty {
+  display: none;
+}
+
+.basic-place-page p:empty {
+  display: none;
+}
+
+.basic-place-page div:empty {
   display: none;
 }
 

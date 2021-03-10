@@ -1,13 +1,12 @@
-import "../css/App.css";
-import "../css/Layout.css";
-import "../css/CuratedPlaces.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
+import { useHistory } from "react-router-dom";
 
 function MountainCaseStudy({ mountain }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
   const { cardName, cardCaption, country, src, alt } = mountain;
+  const history = useHistory();
 
   function handleClick() {
     const favourite = !favouritePlaces.includes(cardName);
@@ -27,6 +26,22 @@ function MountainCaseStudy({ mountain }) {
 
   const favourite = favouritePlaces.includes(cardName);
 
+  async function doSearch(country) {
+    const response = await fetch(`/search-place?searchTerm=${country}`);
+    const result = await response.json();
+    return result;
+  }
+
+  const goToCountry = async () => {
+    const searchedPlace = await doSearch(country);
+    setState({
+      ...state,
+      currentSearchedPlace: searchedPlace,
+    });
+
+    history.push("/searched-place");
+  };
+
   return (
     <div className="spotlight-container">
       <img className="spotlight-image" src={src} alt={alt}></img>
@@ -41,7 +56,7 @@ function MountainCaseStudy({ mountain }) {
             {favourite ? "Saved!" : "Save"}
             <img src="img/star-thick.svg" alt="save button" />
           </button>
-          <button className="see-more-button button">
+          <button className="see-more-button button" onClick={goToCountry}>
             See more of {country}
             <img src="img/arrow-up.svg" alt="see more button" />
           </button>
