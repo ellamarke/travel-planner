@@ -1219,10 +1219,11 @@ button:focus {
 .list-input {
   font-family: work-sans, sans-serif;
   font-weight: 300;
-  padding: 14px 32px 14px 16px;
+  font-size: 1.2em;
+  padding: 0.6em 1em 0.6em 0.6em;
   border: 2px solid #3B413C;
   outline: none;
-  width: 20em;
+  width: 17em;
   background: transparent;
   color: #3B413C;
   margin-right: 1em;
@@ -1253,7 +1254,6 @@ button:focus {
   outline: none;
   background: #FF917D;
   color: #3B413C;
-  height: 1.5em;
 }
 
 .list-button p {
@@ -1266,14 +1266,31 @@ button:focus {
   margin-bottom: 0.1em;
 }
 
+.return-button {
+  margin: 0 auto;
+  margin-top: 2em;
+  height: 1.5em;
+  background-color: inherit;
+}
+
+.return-button p {
+  font-size: 1.2rem;
+}
+
+.return-button .button-icon {
+  width: 0.5em;
+  margin-left: 0.4em;
+  margin-bottom: 0.1em;
+}
+
 .list-input.edit {
-  border: 2px solid #149fff;
+  border: 2px solid #3B413C;
 }
 
 .list-button.edit {
-  background: -webkit-gradient(linear, left top, right top, from(#149fff), to(#117aff));
-  background: linear-gradient(90deg, #149fff 0%, #117aff 100%);
-  padding: 16px 22px;
+  border: 2px solid #3B413C;
+  background-color: #FF917D;
+  padding: 0.1em 0.5em 0 0.5em;
 }
 
 /*   .list-container {
@@ -1293,12 +1310,20 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 4px auto;
+  margin: 0.5em auto;
   color: #3B413C;
   border: 2px solid #3B413C;
   background: inherit;
-  padding: 16px;
+  padding: 0.8em;
   width: 90%;
+}
+
+.colour-bar {
+  border-left: #FF917D solid 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .icons {
@@ -1312,13 +1337,31 @@ button:focus {
   cursor: pointer;
 }
 
-.delete-icon {
-  margin-right: 5px;
-  color: #3B413C;
+.icons button {
+  border: 2px solid #B46766;
+  font-size: 0.9rem;
+  background-color: inherit;
 }
 
-.edit-icon {
+.icons .delete-icon {
+  margin-right: 0.5em;
+  color: #B46766;
+}
+
+.icons .delete-icon .cross-icon {
+  width: 0.7em;
+  margin-left: 0.4em;
+  margin-bottom: 0.1em;
+}
+
+.icons .edit-icon {
+  border: 2px solid #3B413C;
   color: #3B413C;
+  margin-right: 1em;
+}
+
+.icons .edit-icon .arrow-icon {
+  width: 1.05em;
 }
 
 body {

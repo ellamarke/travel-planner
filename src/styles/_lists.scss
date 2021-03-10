@@ -42,10 +42,11 @@
   
   .list-input {
     @include work-standard;
-    padding: 14px 32px 14px 16px;
+    font-size: 1.2em;
+    padding: 0.6em 1em 0.6em 0.6em;
     border: 2px solid $olive;
     outline: none;
-    width: 20em;
+    width: 17em;
     background: transparent;
     color: $olive;
     margin-right: 1em;
@@ -64,25 +65,40 @@
     p {
         font-size: 1.2rem;
     }
-    height: 1.5em;
+
+
     .button-icon {
         width: 0.5em;
         margin-left: 0.3em;
         margin-bottom: 0.1em;
     }
   }
+
+  .return-button {
+    margin: 0 auto;
+    margin-top: 2em;
+    height: 1.5em;
+    background-color: inherit;
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .button-icon {
+        width: 0.5em;
+        margin-left: 0.4em;
+        margin-bottom: 0.1em;
+    }
+}
   
   .list-input.edit {
-    border: 2px solid #149fff;
+    border: 2px solid $olive;
   }
   
   .list-button.edit {
-    background: linear-gradient(
-      90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
-    );
-    padding: 16px 22px;
+    border: 2px solid $olive;
+    background-color: $peach;
+    padding: 0.1em 0.5em 0 0.5em;
   }
   
 /*   .list-container {
@@ -97,14 +113,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4px auto;
+    margin: 0.5em auto;
     color: $olive;
     border: 2px solid $olive;
     background: inherit;
+
+    
   
-    padding: 16px;
+    padding: 0.8em;
     width: 90%;
   }
+
+  .colour-bar {
+    border-left: $peach solid 0.5em;
+    display: flex;
+    width: 100%;
+}
   
   
   
@@ -113,13 +137,35 @@
     align-items: center;
     font-size: 24px;
     cursor: pointer;
+
+    button {
+        border: 2px solid $red;
+        font-size: 0.9rem;
+        background-color: inherit;
+    }
+
+    .delete-icon {
+        margin-right: 0.5em;
+        color: $red;
+
+        .cross-icon {
+            width: 0.7em;
+            margin-left: 0.4em;
+            margin-bottom: 0.1em;
+        }
+        
+      }
+
+      .edit-icon {
+        border: 2px solid $olive;
+        color: $olive;
+        margin-right: 1em;
+
+        .arrow-icon {
+            width: 1.05em;
+        }
+      }
   }
   
-  .delete-icon {
-    margin-right: 5px;
-    color: $olive;
-  }
-  
-  .edit-icon {
-    color: $olive;
-  }
+
+

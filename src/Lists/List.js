@@ -33,14 +33,19 @@ function List({ listItems, completeListItem, removeListItem, updateList }) {
         {listItem.text}
       </div>
       <div className="icons">
-        <RiCloseCircleLine
-          onClick={() => removeListItem(listItem.id)}
-          className="delete-icon"
-        />
-        <TiEdit
+        <button
           onClick={() => setEdit({ id: listItem.id, value: listItem.text })}
-          className="edit-icon"
-        />
+          className="edit-icon button"
+        >
+          edit <img src="img/arrow-right.svg" alt="" className="arrow-icon" />
+        </button>
+        <button
+          onClick={() => removeListItem(listItem.id)}
+          className="delete-icon button"
+        >
+          delete{" "}
+          <img src="img/cross-red-thick.svg" alt="" className="cross-icon" />
+        </button>
       </div>
     </div>
   ));

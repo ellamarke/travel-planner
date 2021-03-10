@@ -1,11 +1,10 @@
 import React, { useState, useContext } from "react";
-import "../css/Layout.css";
-import "../css/Profile.css";
 import ListForm from "./ListForm";
 import List from "./List";
 import { useEffect } from "react";
 import { Context } from "../Store";
 import { useHistory } from "react-router-dom";
+import TickerTape from "../Shared/TickerTape";
 
 function ListItems({ list }) {
   const [state, setState] = useContext(Context);
@@ -87,22 +86,30 @@ function ListItems({ list }) {
   };
 
   return (
-    <div className="list-items">
-      <input
-        type="text"
-        value={list.listName}
-        name="text"
-        onChange={changeListName}
-        className="list-title"
-      />
-      <ListForm onSubmit={addListItem} />
-      <List
-        listItems={listItems}
-        completeListItem={completeListItem}
-        removeListItem={removeListItem}
-        updateList={updateList}
-      />
-      <button onClick={returnToLists}>Back to profile</button>
+    <div className="list-container">
+      <TickerTape tickerText="don't forget!" />
+      <div className="list-items">
+        <input
+          type="text"
+          value={list.listName}
+          name="text"
+          onChange={changeListName}
+          className="list-title"
+        />
+        <ListForm onSubmit={addListItem} />
+        <List
+          listItems={listItems}
+          completeListItem={completeListItem}
+          removeListItem={removeListItem}
+          updateList={updateList}
+        />
+        <div className="button-container">
+          <button onClick={returnToLists} className="button return-button">
+            <p>Back to profile</p>
+            <img src="img/arrow-down.svg" alt="" className="button-icon" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

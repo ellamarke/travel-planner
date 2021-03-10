@@ -31,14 +31,17 @@ function ListForm(props) {
             name="text"
             onChange={handleChange}
           />
-          <button className="list-button edit">Update!</button>
+          <button className="list-button  button edit">
+            <p>Update</p>
+            <img src="img/star.svg" alt="" className="button-icon" />
+          </button>
         </>
       ) : (
         <>
           <input
             className="list-input"
             type="text"
-            placeholder="New list item"
+            placeholder="New item"
             value={input}
             name="text"
             onChange={handleChange}
