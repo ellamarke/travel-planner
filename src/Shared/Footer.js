@@ -5,21 +5,21 @@ function Footer() {
       <div className="logo__links">
         <img src="img/logo-text-only.svg" alt="voyage logo" className="logo" />
         <ul className="links">
-          <Link to="/">
-            <li className="link">
+          <li className="link">
+            <Link to="/">
               <h6>Home</h6>
-            </li>
-          </Link>
-          <Link to="/explore">
-            <li className="link">
+            </Link>
+          </li>
+          <li className="link">
+            <Link to="/explore">
               <h6>Explore</h6>
-            </li>
-          </Link>
-          <Link to="/profile">
-            <li className="link">
+            </Link>
+          </li>
+          <li className="link">
+            <Link to="/profile">
               <h6>Profile</h6>
-            </li>
-          </Link>
+            </Link>
+          </li>
         </ul>
       </div>
       <img src="img/logo-img-only.svg" alt="voyage logo" className="globe" />

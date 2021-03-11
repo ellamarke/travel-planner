@@ -15,7 +15,7 @@ function NavBar() {
         </div>
 
         <div className="nav-links">
-          <Link to="/explore" className="button">
+          <Link to="/explore" className="button explore-button">
             <li>Explore</li>
             <img
               src="img/arrow-up.svg"

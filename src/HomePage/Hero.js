@@ -17,7 +17,7 @@ function Hero() {
           <br /> an adventure!
         </h1>
 
-        <p className="place-tag">Sydney, Australia</p>
+        {/*         <p className="place-tag">Sydney, Australia</p> */}
 
         <img
           src="img/home/surfer-1.png"

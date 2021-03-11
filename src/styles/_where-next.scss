@@ -3,6 +3,9 @@
     width: 100vw;
     background-color: $dark-grey;
 
+    display: flex;
+    flex-direction: column;
+
     .button {
         background-color: $peach;
         margin: 0 auto;
@@ -12,6 +15,10 @@
   .dropdown-sentence {
     display: flex;
     margin: 7em auto;
+
+    h4 {
+      font-size: 4.2rem;
+    }
   }
   
   .dd-header-title {

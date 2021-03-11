@@ -8,7 +8,7 @@ function ProfileHero() {
           <br /> new
         </h1>
 
-        <p className="place-tag">The Sahara Desert</p>
+        {/* <p className="place-tag">The Sahara Desert</p> */}
       </div>
     </div>
   );

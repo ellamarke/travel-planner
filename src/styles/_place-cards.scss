@@ -1,8 +1,8 @@
-.place-carousel {
+/* .place-carousel {
     background-color: $dark-grey;
     padding: 5em;
 }
-
+ */
 .place-card {
     background-color: $light-grey;
     padding: 1.3em;
@@ -31,7 +31,6 @@
         }
     }
 
-
     .card-buttons {
         width: 25em;
         display: flex;
@@ -41,9 +40,58 @@
     }
 }
 
-.card-carousel {
+/* .card-carousel {
     display: flex;
     overflow-x: scroll;
+  } */
+
+  .cards {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
   }
   
+.scrolling-cards::-webkit-scrollbar,
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card-carousel {
+    overflow-x: auto;
+    margin-left: -70px;
+}
+
+.card-carousel .cards {
+    float: left;
+    margin-left: 70px;
+}
+
+/* .card-carousel {
+    overflow-x: auto;
+    margin-right: -70px;
+}
+
+.card-carousel .cards {
+    float: left;
+    margin-right: 70px;
+} */
+
+
+.card-carousel .cards .place-card:first-child{
+    margin-left: 6em;
+}
+
+.card-carousel .cards:last-child::after {
+    content:" ";
+    white-space: pre;
+    padding-right: 3em;
+}
+
+.card-carousel .cards .place-card{
+    margin-left: 2em;
+}
+
+.place-carousel {
+    padding-top:6em;
+}
 

@@ -7,15 +7,17 @@ function PlaceCarousel({ title, places }) {
     <div className="place-carousel">
       <h3>{title}</h3>
       <div className="card-carousel">
-        {places.map((place) => (
-          <PlaceCard
-            key={place.cardName}
-            cardCaption={place.cardCaption}
-            cardName={place.cardName}
-            route={place.route}
-            src={place.src}
-          />
-        ))}
+        <div className="cards">
+          {places.map((place) => (
+            <PlaceCard
+              key={place.cardName}
+              cardCaption={place.cardCaption}
+              cardName={place.cardName}
+              route={place.route}
+              src={place.src}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

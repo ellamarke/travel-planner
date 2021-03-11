@@ -15,7 +15,7 @@ function ExploreHero() {
           <br /> new!
         </h1>
 
-        <p className="place-tag">Iceland</p>
+        {/*  <p className="place-tag">Iceland</p> */}
       </div>
     </div>
   );
