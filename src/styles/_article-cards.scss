@@ -1,7 +1,7 @@
-.article-carousel {
+/* .article-carousel {
     background-color: $dark-grey;
     padding: 5em;
-}
+} */
 
 .article-card {
     background-color: $light-grey;
@@ -55,5 +55,13 @@
     display: flex;
     overflow-x: scroll;
   }
+
+  .article-carousel .cards .article-card:first-child{
+    margin-left: 6em;
+}
+
+.article-carousel {
+    padding-top:4em;
+}
   
 

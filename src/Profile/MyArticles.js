@@ -12,7 +12,7 @@ function MyArticles({ articles }) {
   }
   return (
     <div className="place-card-grid grey-background">
-      <h6>My Articles</h6>
+      <h2>My Articles</h2>
       <div className="intro__button">
         <p className="my-places-introduction">{articleIntroduction}</p>
         <button className="button" onClick={handleClick}>

@@ -7,17 +7,19 @@ function ArticleCarousel({ title, articles }) {
     <div className="article-carousel">
       <h3>{title}</h3>
       <div className="card-carousel">
-        {articles.map((article) => (
-          <ArticleCard
-            key={article.articleName}
-            articleName={article.articleName}
-            authorName={article.authorName}
-            contentTag={article.contentTag}
-            imgSrc={article.imgSrc}
-            publishDate={article.publishDate}
-            alt={article.alt}
-          />
-        ))}
+        <div className="cards">
+          {articles.map((article) => (
+            <ArticleCard
+              key={article.articleName}
+              articleName={article.articleName}
+              authorName={article.authorName}
+              contentTag={article.contentTag}
+              imgSrc={article.imgSrc}
+              publishDate={article.publishDate}
+              alt={article.alt}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

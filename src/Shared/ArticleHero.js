@@ -45,15 +45,17 @@ function ArticleHero({ articleName, authorName, imgSrc }) {
           {articleName}
         </h2>
 
-        <h5 className="author-name">{authorName}</h5>
+        <div className="name__button">
+          <h5 className="author-name">{authorName}</h5>
 
-        <button
-          className={favourite ? "button saved-button" : "button save-button"}
-          onClick={handleClick}
-        >
-          {favourite ? "Saved!" : "Save"}
-          <img src="img/star.svg" alt="save button" />
-        </button>
+          <button
+            className={favourite ? "button saved-button" : "button save-button"}
+            onClick={handleClick}
+          >
+            {favourite ? "Saved!" : "Save"}
+            <img src="img/star.svg" alt="save button" />
+          </button>
+        </div>
       </div>
 
       <img

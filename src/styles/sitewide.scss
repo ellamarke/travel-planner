@@ -18,6 +18,7 @@
 @import "./article-page";
 @import "./curated-place";
 @import "./lists";
+@import "./media-queries";
 
 body {
     background-color: $dark-grey;
@@ -29,7 +30,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 11rem;
-    line-height: 9rem;
+    line-height: 85%;
     text-align: center;
 }
 
@@ -38,7 +39,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 6.5rem;
-    line-height: 5.5rem;
+    line-height: 85%;
     text-align: left;
 }
 
@@ -60,6 +61,7 @@ h5 {
     @include work-standard;
     font-weight: 200;
     font-size: 2.5rem;
+    line-height: 85%;
 }
 
 h6 {
@@ -159,3 +161,389 @@ p {
 }
 
 
+.home-page,
+ .profile{
+    overflow: hidden;
+}
+
+// Media Queries
+
+@media screen and (max-width: 480px) {
+    
+    // Fonts
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6em;
+        hyphens: auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.3rem;
+    }
+
+    h6 {
+        font-size: 1.3rem;
+    }
+
+    .ticker-tape {
+        .ticker-list {
+            font-size: 1.5rem;
+        }
+    }
+
+    // Buttons
+
+    .button {
+        font-size: 1rem;
+    }
+
+    // Nav 
+
+    .nav-container {
+        display: flex;
+
+        .logo-search {
+            margin: 0 auto;
+    
+            .logo {
+                width: 6em;
+            }
+        }
+
+        .nav-links {
+            margin: 0 auto;
+        }
+    
+        .button {
+            font-size: 0.85rem;
+            border: 1px solid $olive;
+        }
+
+        .search-bar-container {
+            display: none;
+        }
+    }
+
+    // Footer
+
+    .footer {
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 1em 0;
+
+        h6 {
+            font-size: 1.2rem;
+            margin: 0 1em;
+        }
+
+        .logo__links {
+           order: 2;
+           margin: 0 auto;
+        }
+
+        .links {
+            display: flex;
+            margin-left: 0;
+            justify-content: space-between;
+        }
+        .logo {
+            display: none;
+        }
+
+        .globe {
+            width: 2em;
+            order: 1;
+            margin: 0 auto;
+
+        }
+    }
+
+    // Heroes
+
+    .hero {
+        height: 20em;
+
+        .hero-image-surfers {
+            width: 150%;
+        }
+    }
+
+    // Home Search
+
+    .home-search {
+        padding: 2em 0;
+
+        .search-bar-container {
+            img {
+                width: 1em;
+            }
+
+            .colour-bar {
+                border-left: $peach solid 0.3em;
+            }
+
+        }
+
+        .search-bar-main {
+            font-size: 1rem;
+        }
+    }
+
+    // Where Next
+
+    .where-next {
+        padding: 2em 0;
+
+        .dropdown-sentence {
+            margin: 5em auto;
+        
+            h4 {
+              font-size: 1.5rem;
+            }
+          }
+
+          .dd-header-title {
+              img {
+                  width: 2em;
+              }
+          }
+
+          .dd-list {
+              li {
+                  font-size: 1.5rem;
+              }
+          }
+    }
+
+    .article-hero {
+        padding: 0;
+
+        flex-direction: column;
+
+        .name__button {
+            padding: 0 1em;
+            margin-top: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                height: 2em;
+                border: 1.7px solid;
+            } 
+        }
+
+        .article-text {
+            order: 2;
+            padding: 1em 1em;
+        }
+
+        .article-image {
+            order: 1;
+            width: 90%;
+            margin: 1.3em auto;
+        }
+    }
+
+    // Place carousel
+
+    .place-carousel, 
+    .article-carousel {
+        padding: 2em 0;
+    }
+    .place-card, 
+    .article-card {
+        padding: 1.3em;
+        width: 20em;
+        height: 28em;
+        margin: 3em 1em;
+        position: relative;
+
+        .card-text {
+            max-width: 15em;
+            .card-name,
+            .article-name {
+                font-size: 2rem;
+                line-height: 85%;
+            }
+        }
+
+        .card-image {
+            width: 15em;
+        }
+
+        .card-buttons {
+            width: 15em;
+
+            .arrow {
+                width: 1.2em;
+            }
+        }
+    }
+
+    .article-card {
+        height: 32em;
+
+        .publish-info {
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .card-carousel {
+        margin-left: 0;
+    }
+    
+    .card-carousel .cards {
+        margin-left: 0
+    }
+
+    .card-carousel .cards .place-card:first-child,
+    .article-carousel .cards .article-card:first-child {
+        margin-left: 2em;
+    }
+
+
+    // Page Intro
+
+    .page-intro{
+        padding: 3em 1.5em;
+
+        .main-p {
+            padding: 0;
+            text-align: left;
+        }
+
+        img {
+            width: 1.7em;
+            margin-top: 2em;
+        }
+    }
+
+    // Spotlight 
+
+    .spotlight-container {
+        flex-direction: column;
+
+        .spotlight-image {
+            width: 90%;
+            margin: 1.3em auto;
+        }
+
+        .spotlight-text {
+            padding: 0;
+            text-align: center;
+
+            h6 {
+                text-align: center;
+                margin: 0.3em 0;
+                margin-top: 0.5em;
+            }
+
+            p {
+                margin: 0;
+                text-align: left;
+                padding: 0 1em;
+            }
+        }
+
+        .buttons {
+            margin: 2em 1em;
+            margin-bottom: 3em;
+
+            button {
+                font-size: 1rem;
+            }
+
+            .see-more-button {
+                margin-right: 0;
+            }
+        }
+    }
+
+    // Profile
+
+    .place-card-grid, 
+    .list-grid {
+        padding: 1em;
+
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 0.5em auto;
+        }
+
+        .intro__button {
+            flex-direction: column;
+
+            .button {
+                font-size: 1rem;
+                margin-top: 2em;
+                border: solid 1.5px;
+            }
+        }
+
+        .my-places-introduction,
+        .my-lists-introduction {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .my-place-card,
+        .list-card,
+        .article-card { 
+            width: 20em;
+            height: 28em;
+
+            .card-image {
+                width: 100%;
+            }
+
+            .card-text {
+                max-width: 17.5em;
+                
+                h6 {
+                    font-size: 2rem;
+                }
+            }
+
+            .card-buttons {
+                max-width: 17.5em;
+            }
+
+            .arrow {
+                width: 1.3em;
+            }
+        }
+
+        .list-card {
+            height: 15em;
+        }
+
+        .article-card {
+            height: 32em;
+    
+            .publish-info {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

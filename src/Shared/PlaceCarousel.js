@@ -23,7 +23,7 @@ function PlaceCarousel({ title, places }) {
   );
 }
 
-function PlaceCard({ cardCaption, cardName, route, src }) {
+function PlaceCard({ cardName, route, src }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
   const history = useHistory();

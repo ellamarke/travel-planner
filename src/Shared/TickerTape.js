@@ -1,5 +1,3 @@
-import "../styles/sitewide.css";
-
 function TickerTape({ tickerText }) {
   return (
     <div className="ticker-parent">

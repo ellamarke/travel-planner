@@ -1,0 +1,75 @@
+// nav
+@media screen and (max-width: 480px) {
+    .nav-container {
+        padding: 0;
+        background-color: red;
+
+        .logo-search {
+            margin-right: auto;
+            margin-left: 4em;
+            display: flex;
+            align-items: center;
+    
+            .logo {
+                width: 1em;
+            }
+        }
+    }
+}
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $mint;
+    padding: 1.2em 0;
+
+    .logo-search {
+        margin-right: auto;
+        margin-left: 4em;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            width: 11em;
+        }
+    }
+
+    input {
+        @include work-standard;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 0.6em;
+        border: 0;
+        width: 15em;
+        margin-left: 0.5em;
+        background-color: inherit;
+        color: $olive;
+        
+    }
+
+    .search-bar-container {
+        display: flex;
+        border: 2px solid $olive;        
+        margin-left: 3em;
+
+        img {
+            width: 1.3em;
+            margin-left: 1em;
+        }
+    }
+
+    ::placeholder {
+        color: $olive;
+        opacity: 0.5;
+    }
+
+    .nav-links {
+        display: flex;
+        margin-right: 3em;
+    }
+
+    .button {
+        margin: 0 0.5em;
+        font-size: 1.3rem;
+    }
+}
