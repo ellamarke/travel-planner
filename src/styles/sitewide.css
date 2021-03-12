@@ -202,6 +202,8 @@ button:focus {
           animation: floating1 30s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-filter: drop-shadow(1px 5px 5px #12373d);
+          filter: drop-shadow(1px 5px 5px #12373d);
 }
 
 .surfer-2 {
@@ -209,6 +211,8 @@ button:focus {
           animation: floating2 35s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-filter: drop-shadow(1px 5px 5px #12373d);
+          filter: drop-shadow(1px 5px 5px #12373d);
 }
 
 .surfer-3 {
@@ -216,6 +220,8 @@ button:focus {
           animation: floating3 32s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-filter: drop-shadow(1px 5px 5px #12373d);
+          filter: drop-shadow(1px 5px 5px #12373d);
 }
 
 .surfer-4 {
@@ -223,6 +229,8 @@ button:focus {
           animation: floating4 27s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-filter: drop-shadow(1px 5px 5px #1b4c53);
+          filter: drop-shadow(1px 5px 5px #1b4c53);
 }
 
 @-webkit-keyframes floating1 {
@@ -1666,7 +1674,7 @@ p {
 
 .home-page,
 .profile {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 599px) {

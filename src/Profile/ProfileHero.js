@@ -3,9 +3,9 @@ function ProfileHero() {
     <div className="hero-container">
       <div className="hero profile-hero">
         <h1>
-          Discover
-          <br /> somewhere
-          <br /> new
+          Let's
+          <br /> get
+          <br /> planning!
         </h1>
 
         {/* <p className="place-tag">The Sahara Desert</p> */}

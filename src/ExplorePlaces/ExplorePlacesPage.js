@@ -15,7 +15,7 @@ const petraArticle = articles[5];
 const jaipurSpotlight = indiaPlaces[0];
 
 const pageIntroContent =
-  "Fugiat ullamco cillum consectetur laboris veniam sint occaecat eu commodo pariatur. Quis do id elit duis est. Ut est do sit dolor voluptate ipsum esse amet excepteur proident laboris. Laboris exercitation dolore eiusmod eiusmod esse velit ad ad dolor et exercitation. Qui incididunt laborum duis dolor nostrud anim commodo sint ex amet.";
+  "Turns out the world is a pretty big place. This does mean that knowing exactly where to go (and when to do it) can be overwhelming. All is not lost, though! We've collated the absolute best of travel to make your travel planning that much smoother. Find inspiration, read a lot and start organising.";
 
 function ExplorePlacesPage() {
   useLayoutEffect(() => {
@@ -27,7 +27,7 @@ function ExplorePlacesPage() {
       <TickerTape tickerText="Let's go travelling" />
       <PageIntro pageIntroContent={pageIntroContent} />
       <PlaceCarousel
-        title={"Off the beaten track"}
+        title={"Our current favourites."}
         places={hardCodedPlaces.filter((hardCodedPlace, index) => index > 3)}
       />
       <ArticleHero

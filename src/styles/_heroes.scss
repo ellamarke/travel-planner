@@ -64,21 +64,25 @@
   .surfer-1{
     animation: floating1 30s;
     animation-iteration-count: infinite;
+    filter: drop-shadow(1px 5px 5px #12373d);
   }
 
   .surfer-2{
     animation: floating2 35s;
     animation-iteration-count: infinite;
+    filter: drop-shadow(1px 5px 5px #12373d);
   }
 
   .surfer-3{
     animation: floating3 32s;
     animation-iteration-count: infinite;
+    filter: drop-shadow(1px 5px 5px #12373d);
   }
 
   .surfer-4{
     animation: floating4 27s;
     animation-iteration-count: infinite;
+    filter: drop-shadow(1px 5px 5px #1b4c53);
   }
   
   @keyframes floating1 {
