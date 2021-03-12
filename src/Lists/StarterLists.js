@@ -21,5 +21,11 @@ export default initialLists;
 
 export const newList = {
   listName: "New List",
-  items: [{ text: "Skirts", isComplete: false, id: 1 }], // how to deal with IDs
+  items: [
+    {
+      text: "Skirts",
+      isComplete: false,
+      id: Math.floor(Math.random() * 10000),
+    },
+  ], // creating t
 };
