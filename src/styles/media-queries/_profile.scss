@@ -1,0 +1,174 @@
+// Profile
+@media screen and (max-width: 599px) {
+.place-card-grid, 
+.list-grid {
+    padding: 1em;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin: 0.5em auto;
+    }
+
+    .intro__button {
+        flex-direction: column;
+
+        .button {
+            font-size: 1rem;
+            margin-top: 2em;
+            border: solid 1.5px;
+        }
+    }
+
+    .my-places-introduction,
+    .my-lists-introduction {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .my-place-card,
+    .list-card,
+    .article-card { 
+        width: 20em;
+        height: 28em;
+
+        .card-image {
+            width: 100%;
+        }
+
+        .card-text {
+            max-width: 17.5em;
+            
+            h6 {
+                font-size: 2rem;
+            }
+        }
+
+        .card-buttons {
+            max-width: 17.5em;
+        }
+
+        .arrow {
+            width: 1.3em;
+        }
+    }
+
+    .list-card {
+        height: 15em;
+    }
+
+    .article-card {
+        height: 32em;
+
+        .publish-info {
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+ 
+    // New list
+
+    .list-container {
+        overflow-x: hidden;
+
+        .ticker-parent {
+            display: none;
+        }
+
+        .list-title {
+            border-bottom: 1px solid $olive;
+        }
+    }
+
+    .list-items {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: none;
+        border-top: 1px solid $olive;
+
+        .listItem-row {
+            border: 1px solid $olive;
+            font-size: 1.2rem;
+
+            .icons {
+
+                .edit-icon {
+                    border: 1px solid $olive;
+                }
+
+                .delete-icon {
+                    border: 1px solid $red;
+                }
+            }
+        }
+    }
+
+    .list-form {
+        display: block;
+        margin: 1em auto;
+        padding: 1em 0;
+
+        .list-input {
+            margin: 0;
+            border: 1px solid $olive;
+        }
+
+        .list-button {
+            margin: 1em auto;
+            border: 1px solid $olive;
+
+                .button-icon {
+                    width: 0.9em;
+                    margin-left: 0.8em;
+                    margin-bottom: 0.2em;
+                }
+        }
+    }
+
+    .return-button {
+        padding: 1em;
+        padding-top: 1.3em;
+
+        .button-icon {
+            width: 0.75em;
+            margin-bottom: 0.4em;
+            margin-left: 0.8em;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) { 
+    .place-card-grid, 
+    .list-grid {
+        padding: 1em;
+    
+        h2 {
+            text-align: center;
+            font-size: 6rem;
+            margin: 0.5em auto 0 auto;
+        }
+    
+        .intro__button {
+            flex-direction: column;
+    
+            .button {
+                font-size: 1.5rem;
+                margin-top: 2em;
+                border: solid 1.5px;
+            }
+        }
+    }
+
+    .my-places-introduction,
+    .my-lists-introduction {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    
+}

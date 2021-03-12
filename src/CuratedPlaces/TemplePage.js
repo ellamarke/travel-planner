@@ -33,7 +33,7 @@ function TemplePage() {
         temples={temples}
       />
       <div className="where-next-curated">
-        <WhereNext />
+        <WhereNext title="Want to get away from temples?" />
       </div>
     </div>
   );

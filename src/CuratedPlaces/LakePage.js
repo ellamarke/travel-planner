@@ -32,7 +32,7 @@ function LakePage() {
       </div>
       <LakeCarousel title={"You can also find lakes here"} lakes={lakes} />
       <div className="where-next-curated">
-        <WhereNext />
+        <WhereNext title="Over lakes?" />
       </div>
     </div>
   );

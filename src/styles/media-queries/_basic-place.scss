@@ -1,0 +1,36 @@
+@media screen and (max-width: 599px) {
+    .basic-place-page {
+        .place-name {
+            margin: 4em 0;
+        }
+
+        .wiki-text {
+            padding: 0;
+            text-align: left;
+        }
+
+        .key-stats {
+            padding: 1em;
+
+            .globe-icon {
+                width: 3rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            h2 {
+                font-size: 2.8rem;
+                line-height: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) { 
+    .basic-place-page {
+        .wiki-text {
+            padding: 0;
+        }
+    }  
+
+}

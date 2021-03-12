@@ -1,0 +1,139 @@
+// --------- Articles --------------
+@media screen and (max-width: 599px) {
+.article-page {
+    overflow-x: hidden;
+
+    .article-page-hero {
+        padding: 1em;
+        padding-bottom: 3em;
+
+        .article-page-title {
+            font-size: 2.5rem;
+            max-width: none;
+        }
+    }
+
+        .name__save {
+            flex-direction: column;
+
+            .author-name {
+                margin: 0;
+                margin-bottom: 1em;
+                font-size: 1.5rem;
+            }
+
+            .save-button {
+                border: 1px solid $grey;
+                margin: 0 auto;
+            }
+
+            .saved-button {
+                margin: 0 auto;
+            }
+        }
+    
+    .article-page-content {
+        padding: 2em;
+
+        .text__image-left,
+        .text__image-right {
+            display: block;
+
+            .article-image {
+                order: 1;
+                width: 100%;
+            }
+
+            .p-content, .content-left {
+                order: 2;
+            }
+        }
+
+        .text__image-right {
+            .article-image {
+                margin-top: 0;
+            }
+        }
+
+
+        .p-content {
+            p {
+                margin-right: 0;
+                margin-left: 0;
+                order: 2;
+            }
+        }
+    }
+
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) { 
+    .article-page-content {
+        padding: 2em;
+
+        .text__image-left,
+        .text__image-right {
+            display: block;
+
+            .article-image {
+                order: 1;
+                width: 100%;
+            }
+
+            .p-content, .content-left {
+                order: 2;
+            }
+        }
+
+        .text__image-right {
+            .article-image {
+                margin-top: 0;
+            }
+        }
+
+
+        .p-content {
+            p {
+                margin-right: 0;
+                margin-left: 0;
+                order: 2;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) { 
+    .article-page-content {
+        padding: 2em;
+
+        .text__image-left,
+        .text__image-right {
+            display: block;
+
+            .article-image {
+                order: 1;
+                width: 100%;
+            }
+
+            .p-content, .content-left {
+                order: 2;
+            }
+        }
+
+        .text__image-right {
+            .article-image {
+                margin-top: 0;
+            }
+        }
+
+
+        .p-content {
+            p {
+                margin-right: 0;
+                margin-left: 0;
+                order: 2;
+            }
+        }
+    }
+}

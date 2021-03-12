@@ -1,0 +1,60 @@
+@media screen and (max-width: 599px) {
+ // Place carousel
+
+ .place-carousel, 
+ .article-carousel {
+     padding: 2em 0;
+ }
+ .place-card, 
+ .article-card {
+     padding: 1.3em;
+     width: 20em;
+     height: 28em;
+     margin: 3em 1em;
+     position: relative;
+
+     .card-text {
+         max-width: 15em;
+         .card-name,
+         .article-name {
+             font-size: 2rem;
+             line-height: 85%;
+         }
+     }
+
+     .card-image {
+         width: 15em;
+     }
+
+     .card-buttons {
+         width: 15em;
+
+         .arrow {
+             width: 1.2em;
+         }
+     }
+ }
+
+ .article-card {
+     height: 32em;
+
+     .publish-info {
+         p {
+             font-size: 0.8rem;
+         }
+     }
+ }
+
+ .card-carousel {
+     margin-left: 0;
+ }
+ 
+ .card-carousel .cards {
+     margin-left: 0
+ }
+
+ .card-carousel .cards .place-card:first-child,
+ .article-carousel .cards .article-card:first-child {
+     margin-left: 2em;
+ }
+}

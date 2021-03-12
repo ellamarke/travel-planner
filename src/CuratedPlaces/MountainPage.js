@@ -31,7 +31,7 @@ function MountainPage() {
         mountains={mountains}
       />
       <div className="where-next-curated">
-        <WhereNext />
+        <WhereNext title="Want to move on from mountains?" />
       </div>
     </div>
   );

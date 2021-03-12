@@ -1,0 +1,102 @@
+@media screen and (max-width: 599px) {
+    .spotlight-container {
+        flex-direction: column;
+
+        .spotlight-image {
+            width: 90%;
+            margin: 1.3em auto;
+        }
+
+        .spotlight-text {
+            padding: 0;
+            text-align: center;
+
+            h6 {
+                text-align: center;
+                margin: 0.3em 0;
+                margin-top: 0.5em;
+            }
+
+            p {
+                margin: 0;
+                text-align: left;
+                padding: 0 1em;
+            }
+        }
+
+        .buttons {
+            margin: 2em 1em;
+            margin-bottom: 3em;
+
+            button {
+                font-size: 1rem;
+            }
+
+            .see-more-button {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) { 
+    .spotlight-container {
+        flex-direction: column;
+
+        .spotlight-image {
+            width: 90%;
+            margin: 2em auto;
+        }
+
+        .spotlight-text {
+            padding: 0;
+            text-align: center;
+
+            h6 {
+                text-align: center;
+                margin: 0.3em 0;
+                margin-top: 0.5em;
+            }
+
+            p {
+                margin: 0;
+                text-align: left;
+                padding: 0 1em;
+            }
+        }
+
+        .buttons {
+            margin: 2em 1em;
+            margin-bottom: 3em;
+
+            button {
+                font-size: 1rem;
+            }
+
+            .see-more-button {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) { 
+    .buttons {
+        margin: 2em 1em;
+        margin-bottom: 3em;
+
+        button {
+            font-size: 1rem;
+        }
+
+        .see-more-button {
+            margin-right: 0;
+            font-size: 1rem;
+        }
+
+        .save-button,
+        .saved-button {
+            font-size: 1rem;  
+        }
+    }
+}

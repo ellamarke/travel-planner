@@ -1,0 +1,152 @@
+// ----------- Place page
+@media screen and (max-width: 599px) {
+.place {
+    overflow: hidden;
+
+    .place-hero {
+        flex-direction: column;
+
+        td {
+            font-size: 1.3rem;
+            border: 1px solid $olive;
+        }
+
+        .weather-block {
+            margin: 2em auto;
+        }
+
+        .text-container {
+            order: 2;
+            width: 100%;
+            padding: 3em 2em;
+
+            .place-name {
+                text-align: center;
+                font-size: 3.2rem;
+            }
+
+            .text-content {
+                margin: 0;
+
+                .place-intro {
+                    width:100%;
+                    text-align: center;
+                    margin-top: 2em;
+                }
+            }
+        }
+
+        .place-hero-image {
+            width: 100%;
+            order: 1;
+        }
+    }
+
+    .page-intro {
+        padding: 1em 0;
+
+        .descriptions {
+            padding: 3em 2em;
+            font-size: 1rem;
+            line-height: 1.6em;
+            hyphens: auto;
+            text-align: left;
+        }
+
+        .button-container {
+            margin-bottom: 3em;
+        }
+    }
+
+    .spotlight-container {
+        .spotlight-text {
+
+            h6 {
+                font-size: 3.2rem;
+                margin-top: 0.6em;
+            }
+        }
+    }
+
+    .key-stats {
+        padding: 1em;
+
+        .globe-icon {
+            width: 3rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+        }
+    }
+
+    .place-carousel {
+        h3 {
+            padding: 1em 2em 0 2em;
+            line-height: 120%;
+        }
+    }
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) { 
+    .place {
+        overflow: hidden;
+    
+        .place-hero {
+            flex-direction: column;
+    
+            td {
+                font-size: 1.3rem;
+                border: 1px solid $olive;
+            }
+    
+            .weather-block {
+                margin: 2em auto;
+            }
+    
+            .text-container {
+                order: 2;
+                width: 100%;
+                padding: 3em 2em;
+    
+                .place-name {
+                    text-align: center;
+                    font-size: 3.2rem;
+                }
+    
+                .text-content {
+                    margin: 0;
+    
+                    .place-intro {
+                        width:100%;
+                        text-align: center;
+                        margin-top: 2em;
+                    }
+                }
+            }
+    
+            .place-hero-image {
+                width: 100%;
+                order: 1;
+            }
+        }
+    
+        .page-intro {
+            padding: 1em 0;
+    
+            .descriptions {
+                padding: 3em 2em;
+                font-size: 1.5rem;
+                line-height: 1.6em;
+                hyphens: auto;
+            }
+    
+            .button-container {
+                margin-bottom: 3em;
+            }
+        }
+}
+}

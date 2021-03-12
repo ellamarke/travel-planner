@@ -33,7 +33,7 @@ function DesertPage() {
         deserts={deserts}
       />
       <div className="where-next-curated">
-        <WhereNext />
+        <WhereNext title="Tired of deserts?" />
       </div>
     </div>
   );

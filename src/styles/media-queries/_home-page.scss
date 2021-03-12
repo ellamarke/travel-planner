@@ -1,0 +1,154 @@
+@media screen and (max-width: 599px) {
+    
+    // Home Search
+    .home-search {
+        padding: 2em 0;
+        padding-bottom: 3em;
+
+        .search-bar-container {
+            width: 90%;
+            padding: 0;
+            margin: 2em auto;
+            border: 1px solid;
+
+            img {
+                width: 1em;
+                margin-left: 1em;
+            }
+
+            .colour-bar {
+                border-left: $peach solid 0.2em;
+            }
+        }
+
+        .search-bar-main {
+            font-size: 1.2rem;
+        }
+    }
+
+    // Where Next
+
+    .where-next {
+        padding: 2em 1em;
+
+        .dropdown-sentence {
+            margin: 3em auto;
+        
+            h4 {
+              font-size: 1.13rem;
+            }
+          }
+
+          .dd-header-title {
+              padding: 0.3em 0.3em;
+              border: 1px solid;
+
+
+              img {
+                  width: 1.1em;
+                  margin: 0 0.5em;
+              }
+          }
+
+          .dd-list {
+            border: $olive solid 1px;
+              li {
+                  font-size: 1.13rem;
+              }
+          }
+
+          .dd-wrapper {
+            margin-left: 0.7em;
+          }
+    }
+   
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) { 
+
+    .home-search {
+        padding: 4em;
+        .search-bar-container {
+            width: 100%;
+    }
+
+    .search-bar-main {
+        font-size: 2.5rem;
+    }
+    }
+
+    
+    .where-next {
+        padding: 2em 1em;
+
+        .dropdown-sentence {
+            margin: 4em auto;
+        
+            h4 {
+              font-size: 1.8rem;
+            }
+          }
+
+          .dd-header-title {
+              padding: 0.6em 1.5em;
+              border: 2px solid;
+
+
+              img {
+                  width: 1.7em;
+                  margin: 0 0.9em;
+              }
+          }
+
+          .dd-list {
+            border: $olive solid 2px;
+              li {
+                  font-size: 1.13rem;
+              }
+          }
+
+          .dd-wrapper {
+            margin-left: 0.7em;
+          }
+
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) { 
+    .where-next {
+        padding: 2em 1em;
+
+        .dropdown-sentence {
+            margin: 4em auto;
+        
+            h4 {
+              font-size: 3em;
+            }
+          }
+
+          .dd-header-title {
+              padding: 0.6em 1.5em;
+              border: 2px solid;
+
+
+              img {
+                  width: 1.7em;
+                  margin: 0 0.9em;
+              }
+          }
+
+          .dd-list {
+            border: $olive solid 2px;
+              li {
+                  font-size: 2.5rem;
+              }
+          }
+
+          .dd-wrapper {
+            margin-left: 0.7em;
+          }
+
+    }
+
+}

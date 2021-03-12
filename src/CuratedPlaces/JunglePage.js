@@ -33,7 +33,7 @@ function JunglePage() {
         jungles={jungles}
       />
       <div className="where-next-curated">
-        <WhereNext />
+        <WhereNext title="Done with jungles?" />
       </div>
     </div>
   );
