@@ -27,7 +27,7 @@ export function WhereNext({ title }) {
       <div className="dropdown-sentence">
         <h4>I want to see</h4>
 
-        <div className="dd-wrapper">
+        <div className="dd-wrapper" data-cy="dropdown">
           <div className="dd-header">
             <button className="dd-header-title">
               <h4>{place.placeTitle}</h4>
@@ -45,6 +45,7 @@ export function WhereNext({ title }) {
                   <li
                     key={placeInList.placeTitle}
                     onClick={() => setPlace(placeInList)}
+                    data-cy="place-type"
                   >
                     {placeInList.placeTitle}
                   </li>

@@ -50,6 +50,7 @@ function SearchBar() {
         value={searchTerm}
         onChange={changeSearchTerm}
         className="search-bar-input"
+        data-cy="quick-search-bar"
       />
     </form>
   );

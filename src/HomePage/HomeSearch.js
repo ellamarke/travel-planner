@@ -39,7 +39,7 @@ function HomeSearch() {
   return (
     <div className="home-search">
       <h3>Search for a country.</h3>
-      <div className="search-bar-container">
+      <div className="search-bar-container" data-cy="main-search-bar">
         <div className="colour-bar">
           <img src="img/search-icon-light.svg" alt="search icon" />
           <input

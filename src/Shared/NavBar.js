@@ -15,7 +15,11 @@ function NavBar() {
         </div>
 
         <div className="nav-links">
-          <Link to="/explore" className="button explore-button">
+          <Link
+            to="/explore"
+            className="button explore-button"
+            data-cy="explore-nav"
+          >
             <li>Explore</li>
             <img
               src="img/arrow-up.svg"
@@ -24,7 +28,7 @@ function NavBar() {
             ></img>
           </Link>
 
-          <Link to="/profile" className="button">
+          <Link to="/profile" className="button" data-cy="profile-nav">
             <li>Profile</li>
             <img src="img/star.svg" className="star-icon" alt="star icon"></img>
           </Link>

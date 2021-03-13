@@ -1,6 +1,6 @@
 function TickerTape({ tickerText }) {
   return (
-    <div className="ticker-parent">
+    <div className="ticker-parent" data-cy="ticker-tape">
       <div className="ticker-tape">
         <div className="ticker-list">
           <span>{tickerText}</span>
