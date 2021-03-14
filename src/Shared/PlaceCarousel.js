@@ -52,8 +52,14 @@ function PlaceCard({ cardName, route, src }) {
   }
 
   return (
-    <div className="place-card">
-      <img src={src} className="card-image" onClick={goToPlace} alt="china" />
+    <div className="place-card" data-testid="place-card">
+      <img
+        src={src}
+        className="card-image"
+        data-testid="card-image"
+        onClick={goToPlace}
+        alt="china"
+      />
       <div className="card-text">
         <h6 className="card-name" onClick={goToPlace}>
           {cardName}
