@@ -25,7 +25,6 @@ function ArticlePageHero({ articleName, authorName, contentTag }) {
 
   return (
     <div className="article-page-hero">
-      {/*       <img src="img/drawn-elements/arrow-2.svg" alt="" className="arrow" /> */}
       <h2 className="article-page-title">{articleName}</h2>
       <div className="name__save">
         <h6 className="author-name">{authorName}</h6>

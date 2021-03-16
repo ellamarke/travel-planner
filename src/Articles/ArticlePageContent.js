@@ -31,10 +31,20 @@ function ArticlePageContent({ imgSrc, imgSrc2, alt }) {
             duis. Ex dolor mollit et enim exercitation.
           </p>
         </div>
-        <img src={imgSrc} alt={alt} className="article-image" />
+        <img
+          src={imgSrc}
+          alt={alt}
+          className="article-image"
+          data-testid="main-image"
+        />
       </div>
       <div className="text__image-right">
-        <img src={imgSrc2} alt={alt} className="article-image" />
+        <img
+          src={imgSrc2}
+          alt={alt}
+          className="article-image"
+          data-testid="secondary-image"
+        />
         <div className="p-content content-right">
           <p>
             Fugiat fugiat nulla et esse officia dolor deserunt ullamco

@@ -11,7 +11,6 @@ test("renders a H3", () => {
 });
 
 describe("with 2 places", () => {
-  var container;
   var queryAllByTestId;
   beforeEach(() => {
     const places = [
@@ -35,7 +34,6 @@ describe("with 2 places", () => {
       </Store>
     );
 
-    container = result.container;
     queryAllByTestId = result.queryAllByTestId;
   });
 

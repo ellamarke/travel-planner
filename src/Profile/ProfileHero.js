@@ -7,8 +7,6 @@ function ProfileHero() {
           <br /> get
           <br /> planning!
         </h1>
-
-        {/* <p className="place-tag">The Sahara Desert</p> */}
       </div>
     </div>
   );

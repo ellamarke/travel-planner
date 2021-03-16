@@ -22,10 +22,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:server": "jest  --config ./server/jest.config.js ./server",
     "eject": "react-scripts eject",
     "cypress": "cypress run --config video=false",
-    "cypress-ui": "cypress open"
-
+    "cypress-ui": "cypress open",
+    "start-server": "nodemon ./server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,8 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^6.6.0"
+    "cypress": "^6.6.0",
+    "jest-fetch-mock": "^3.0.3",
+    "nodemon": "^2.0.7"
   }
 }
