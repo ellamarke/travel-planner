@@ -1,8 +1,6 @@
 const fetch = require("node-fetch");
-const api = {
-  key: "aff4e10456509422554d2d27827deed3",
-  base: "https://api.openweathermap.org/data/2.5/",
-};
+
+const apiKey = process.env.WEATHER_API_KEY;
 
 exports.getWeather = async function (req, response) {
   const city = req.query.city;
@@ -10,7 +8,7 @@ exports.getWeather = async function (req, response) {
   console.log(`Getting weather for ${city}`);
 
   const apiResponse = await fetch(
-    `${api.base}weather?q=${city}&units=metric&APPID=${api.key}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${apiKey}`
   );
 
   const result = await apiResponse.json();

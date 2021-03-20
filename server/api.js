@@ -1,5 +1,3 @@
-const fetch = require("node-fetch");
-
 const weatherApi = require("./weather");
 const countryAPI = require("./place-search");
 
