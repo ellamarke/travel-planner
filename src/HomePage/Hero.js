@@ -4,7 +4,7 @@ function Hero() {
       <div className="hero" id="bg">
         <h1>
           Let&apos;s go on
-          <br /> an adventure!
+          <br /> an adventure!!!!!
         </h1>
 
         <img
