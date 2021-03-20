@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useLayoutEffect } from "react";
 import PlaceHero from "./PlaceHero";
 import PlaceIntroduction from "./PlaceIntroduction";
@@ -41,7 +40,12 @@ function Marrakech() {
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
-      <KeyStats language="Arabic" currency="Dirham" population="929000" />
+      <KeyStats
+        language="Arabic"
+        currency="Dirham"
+        population="929000"
+        place="Marrakech"
+      />
       <PlaceCarousel
         title={"The very best of Marrakech."}
         places={marrakechPlaces.filter((marrakechPlace, index) => index > 0)}

@@ -1,12 +1,15 @@
 import React, { useState, useContext } from "react";
 import ListForm from "./ListForm";
 import List from "./List";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { Context } from "../Store";
 import { useHistory } from "react-router-dom";
 import TickerTape from "../Shared/TickerTape";
 
 function ListItems({ list }) {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const [state, setState] = useContext(Context);
   const [listItems, setListItems] = useState([]);
   useEffect(() => setListItems(list.items), [list.items]);

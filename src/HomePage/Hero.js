@@ -1,14 +1,4 @@
-import "../styles/sitewide.css";
-
 function Hero() {
-  /*const bg = document.getElementById("bg");
-  const surfers = document.getElementById("surfers");
-
-     window.addEventListener("scroll", function () {
-    const value = window.scrollY;
-    //  bg.style.top = value + "px";
-    surfers.style.top = value * 0.5 + "px";
-  }); */
   return (
     <div className="hero-container">
       <div className="hero" id="bg">

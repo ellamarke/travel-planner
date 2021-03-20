@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useLayoutEffect } from "react";
 import ExploreHero from "./ExploreHero";
 import TickerTape from "../Shared/TickerTape";

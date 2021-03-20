@@ -1,5 +1,3 @@
-import "../css/WhereNext.css";
-import "../css/Layout.css";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 

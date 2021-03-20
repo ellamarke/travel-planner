@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "../css/Layout.css";
-import "../css/Profile.css";
 
 function ListForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : ""); // this keeps the user inputted value when we go to edit -- otherwise it would be an empty string

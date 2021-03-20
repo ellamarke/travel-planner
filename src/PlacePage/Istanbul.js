@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useLayoutEffect } from "react";
 import PlaceHero from "./PlaceHero";
 import PlaceIntroduction from "./PlaceIntroduction";
@@ -43,6 +42,7 @@ function Istanbul() {
         language="Turkish"
         currency="Turkish Lira"
         population="15462452"
+        place="Istanbul"
       />
       <PlaceCarousel
         title={"The very best of istanbul"}

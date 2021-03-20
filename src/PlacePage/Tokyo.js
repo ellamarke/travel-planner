@@ -17,18 +17,15 @@ function Tokyo() {
 
   const tokyoArticle = articles[3];
 
-  const placeIntro = ` Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional,
-  from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto
-  Shrine is known for its towering gate and surrounding woods.`;
+  const placeIntro = `There really is no place like Tokyo. The ultramodern and the traditional collide; Mount Fuji stands imposingly over the bright neon signs that pour pink and blue light over winding streets and historic temples. In the spring, cherry blossom form pink clouds across the city, drawing in tourists from all over the world. Even when the blossoms are gone, you'll always feel enthralled by the hyper-colourful world of Tokyo.`;
 
-  const shortDescription = ` Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional,
-  from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto
+  const shortDescription = `Tokyo is a city bursting with life, culture and art. The opulent Meiji Shinto
   Shrine is known for its towering gate and surrounding woods. The
   Imperial Palace sits amid large public gardens. The city's many museums
   offer exhibits ranging from classical art (in the Tokyo National Museum)
   to a reconstructed kabuki theater (in the Edo-Tokyo Museum).`;
 
-  const longDescriptionPara1 = `Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous
+  const longDescriptionPara1 = `When you arrive, you can immediately feel its position as the world's most populous
   metropolis. It is also one of Japan's 47 prefectures, consisting of 23
   central city wards and multiple cities, towns and villages west of the
   city center. The Izu and Ogasawara Islands are also part of Tokyo.
@@ -69,7 +66,12 @@ function Tokyo() {
           </div>
         }
       />
-      <KeyStats language="Japanese" currency="Yen" population="13960236" />
+      <KeyStats
+        language="Japanese"
+        currency="Yen"
+        population="13960236"
+        place="Tokyo"
+      />
       <PlaceCarousel
         title={"The very best of Tokyo."}
         places={tokyoPlaces.filter((tokyoPlace, index) => index > 0)}

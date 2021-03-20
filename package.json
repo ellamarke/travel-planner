@@ -26,7 +26,8 @@
     "eject": "react-scripts eject",
     "cypress": "cypress run --config video=false",
     "cypress-ui": "cypress open",
-    "start-server": "nodemon ./server.js"
+    "start-server": "nodemon ./server.js",
+    "start-server-production": "NODE_ENV=production node ./server.js"
   },
   "eslintConfig": {
     "extends": [

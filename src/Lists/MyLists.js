@@ -1,5 +1,3 @@
-import "../css/Profile.css";
-import "../css/Layout.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
 import { useHistory } from "react-router-dom";

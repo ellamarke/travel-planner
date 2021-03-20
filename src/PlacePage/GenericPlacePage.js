@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useLayoutEffect } from "react";
 import PlaceHero from "./PlaceHero";
 import PlaceIntroduction from "./PlaceIntroduction";

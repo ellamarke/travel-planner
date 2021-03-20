@@ -1,6 +1,3 @@
-import "../css/App.css";
-import "../css/Layout.css";
-import "../css/CuratedPlaces.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
 

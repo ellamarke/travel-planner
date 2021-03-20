@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useLayoutEffect } from "react";
 import PlaceHero from "./PlaceHero";
 import PlaceIntroduction from "./PlaceIntroduction";
@@ -43,7 +42,12 @@ function MexicoCity() {
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
-      <KeyStats language="Spanish" currency="Peso" population="9209944" />
+      <KeyStats
+        language="Spanish"
+        currency="Peso"
+        population="9209944"
+        place="Mexico City"
+      />
       <PlaceCarousel
         title={"The very best of Mexico City."}
         places={mexicoCityPlaces.filter((mexicoCityPlace, index) => index > 0)}

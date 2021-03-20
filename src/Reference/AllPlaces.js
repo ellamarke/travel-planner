@@ -121,7 +121,7 @@ export const jungles = [
     cardName: "Daintree",
     country: "Australia",
     cardCaption:
-      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+      "The ancient Daintree Rainforest, found on the northeast coast of Queensland, is part of the largest area of rainforest in Australia. The feeling of being surrounded by nature as old and enduring as this is quite phenomenal.",
     src: "img/jungles/daintree.jpg",
     alt: "Daintree Forest",
   },
@@ -129,7 +129,7 @@ export const jungles = [
     cardName: "The Amazon",
     country: "Brazil",
     cardCaption:
-      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+      "What is there to say about the Amazon that hasn't already been said? Certainly the most famous rainforest in the world, the Amazon could never disappoint: the biodiversity makes it one of the most exciting places on Earth to visit.",
     src: "img/jungles/amazon.jpg",
     alt: "The Amazon",
   },
@@ -137,7 +137,7 @@ export const jungles = [
     cardName: "Sinharaja Forest Reserve",
     country: "Sri Lanka",
     cardCaption:
-      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris sint ullamco.",
+      "Literally translated as The Lion King, Sinharaja Forest Reserve is one of the few remaining virgin forests left in the world, making it an eco-tourism hotspot. Don't miss the incredible purple faced languar monkey or the elusive leopard.",
     src: "img/jungles/sinharaja.jpg",
     alt: "Sinharaja Forest",
   },

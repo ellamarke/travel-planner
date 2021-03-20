@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useState } from "react";
 
 function PlaceIntroduction({ shortDescription, longDescription }) {

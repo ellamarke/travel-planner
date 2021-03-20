@@ -1,5 +1,3 @@
-import "../styles/sitewide.css";
-
 function ExploreHero() {
   return (
     <div className="hero-container">

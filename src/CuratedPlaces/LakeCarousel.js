@@ -1,5 +1,3 @@
-import "../css/App.css";
-import "../css/Layout.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
 
@@ -8,17 +6,19 @@ function LakeCarousel({ title, lakes }) {
     <div className="place-carousel">
       <h3>{title}</h3>
       <div className="card-carousel">
-        {lakes
-          .map((lake) => (
-            <PlaceCard
-              key={lake.cardName}
-              cardCaption={lake.cardCaption}
-              cardName={lake.cardName}
-              src={lake.src}
-              alt={lake.alt}
-            />
-          ))
-          .filter((lake, index) => index > 2)}
+        <div className="cards">
+          {lakes
+            .map((lake) => (
+              <PlaceCard
+                key={lake.cardName}
+                cardCaption={lake.cardCaption}
+                cardName={lake.cardName}
+                src={lake.src}
+                alt={lake.alt}
+              />
+            ))
+            .filter((lake, index) => index > 2)}
+        </div>
       </div>
     </div>
   );

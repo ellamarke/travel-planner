@@ -1,5 +1,3 @@
-import "../css/App.css";
-import "../css/Layout.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
 
@@ -8,17 +6,19 @@ function MountainCarousel({ title, mountains }) {
     <div className="place-carousel">
       <h3>{title}</h3>
       <div className="card-carousel">
-        {mountains
-          .map((mountain) => (
-            <PlaceCard
-              key={mountain.cardName}
-              cardCaption={mountain.cardCaption}
-              cardName={mountain.cardName}
-              src={mountain.src}
-              alt={mountain.alt}
-            />
-          ))
-          .filter((mountain, index) => index > 2)}
+        <div className="cards">
+          {mountains
+            .map((mountain) => (
+              <PlaceCard
+                key={mountain.cardName}
+                cardCaption={mountain.cardCaption}
+                cardName={mountain.cardName}
+                src={mountain.src}
+                alt={mountain.alt}
+              />
+            ))
+            .filter((mountain, index) => index > 2)}
+        </div>
       </div>
     </div>
   );

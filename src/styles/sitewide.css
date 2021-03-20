@@ -177,18 +177,10 @@ button:focus {
 
 .explore-hero {
   background-image: url(./background-imgs/jungle.jpg);
-  /*   .hero-overlay {
-    z-index: 10;
-    margin-bottom: 7em;
-  } */
 }
 
 .profile-hero {
-  background-image: url(./background-imgs/desert-hero.jpg);
-}
-
-.profile-hero h1 {
-  color: #3B413C;
+  background-image: url(./background-imgs/skyline-2.jpg);
 }
 
 @media only screen and (min-width: 1955px) {
@@ -508,7 +500,7 @@ button:focus {
   display: none;
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   background-color: #DEDEDE;
   border: #3B413C solid 2px;
   border-top: none;
@@ -570,11 +562,6 @@ button:focus {
   left: 27em;
 }
 
-/* .place-carousel {
-    background-color: $dark-grey;
-    padding: 5em;
-}
- */
 .place-card {
   background-color: #DEDEDE;
   padding: 1.3em;
@@ -617,10 +604,6 @@ button:focus {
   margin-top: 1.2em;
 }
 
-/* .card-carousel {
-    display: flex;
-    overflow-x: scroll;
-  } */
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,10 +791,6 @@ button:focus {
   display: none;
 }
 
-/* .article-carousel {
-    background-color: $dark-grey;
-    padding: 5em;
-} */
 .article-card {
   background-color: #DEDEDE;
   padding: 1.3em;
@@ -855,6 +834,7 @@ button:focus {
 .article-card .card-text {
   position: absolute;
   bottom: 1em;
+  width: 25em;
 }
 
 .article-card .card-buttons {

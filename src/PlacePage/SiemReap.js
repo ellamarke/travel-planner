@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useLayoutEffect } from "react";
 import PlaceHero from "./PlaceHero";
 import PlaceIntroduction from "./PlaceIntroduction";
@@ -44,7 +43,12 @@ function SiemReap() {
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
-      <KeyStats language="Khmer" currency="Riel" population="245494" />
+      <KeyStats
+        language="Khmer"
+        currency="Riel"
+        population="245494"
+        place="Siem Reap"
+      />
       <PlaceCarousel
         title={"The very best of Siem Reap"}
         places={siemReapPlaces.filter((siemReap, index) => index > 0)}

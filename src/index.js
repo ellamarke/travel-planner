@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Store from "./Store";
 
-import "./css/index.css";
+import "./styles/sitewide.css";
 
 import HomePage from "./HomePage/HomePage";
 import Profile from "./Profile/Profile";

@@ -1,5 +1,3 @@
-import "../css/App.css";
-import "../css/Layout.css";
 import React, { useContext } from "react";
 import { Context } from "../Store";
 
@@ -8,17 +6,19 @@ function JungleCarousel({ title, jungles }) {
     <div className="place-carousel">
       <h3>{title}</h3>
       <div className="card-carousel">
-        {jungles
-          .map((jungle) => (
-            <PlaceCard
-              key={jungle.cardName}
-              cardCaption={jungle.cardCaption}
-              cardName={jungle.cardName}
-              alt={jungle.alt}
-              src={jungle.src}
-            />
-          ))
-          .filter((jungle, index) => index > 2)}
+        <div className="cards">
+          {jungles
+            .map((jungle) => (
+              <PlaceCard
+                key={jungle.cardName}
+                cardCaption={jungle.cardCaption}
+                cardName={jungle.cardName}
+                alt={jungle.alt}
+                src={jungle.src}
+              />
+            ))
+            .filter((jungle, index) => index > 2)}
+        </div>
       </div>
     </div>
   );

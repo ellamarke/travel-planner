@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useLayoutEffect } from "react";
 import PlaceHero from "./PlaceHero";
 import PlaceIntroduction from "./PlaceIntroduction";
@@ -43,6 +42,7 @@ function India() {
         language="447 languages, including English, Hindi and Bengali"
         currency="Rupee"
         population="1380004385"
+        place="India"
       />
       <PlaceCarousel
         title={"The very best of India"}

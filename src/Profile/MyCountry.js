@@ -1,4 +1,3 @@
-import "../css/App.css";
 import HomeSearch from "./HomeSearch";
 import Hero from "./Hero";
 import WhereNext from "../WhereNext";

@@ -1,7 +1,3 @@
-import "../css/App.css";
-import "../css/Profile.css";
-import "../css/CuratedPlaces.css";
-
 import React, { useLayoutEffect } from "react";
 
 import CuratedPlaceIntro from "./CuratedPlaceIntro";
@@ -21,7 +17,7 @@ function LakePage() {
       <CuratedPlaceIntro
         introTitle="Great Lakes"
         introText={
-          "A lake is an area filled with water, localized in a basin, surrounded by land, apart from any river or other outlet that serves to feed or drain the lake. Lakes lie on land and are not part of the ocean, although like the much larger oceans, they form part of earth's water cycle. Lakes are distinct from lagoons which are generally coastal parts of the ocean. They are generally larger and deeper than ponds, which also lie on land, though there are no official or scientific definitions. Lakes can be contrasted with rivers or streams, which are usually flowing in a channel on land. Most lakes are fed and drained by rivers and streams."
+          "Who doesn't love a lake? Some of the most beautiful landscapes on Earth are those filled with glistening water. Lakes lie on land and are not part of the ocean, although like the much larger oceans, they form part of earth's water cycle. Lakes are distinct from lagoons which are generally coastal parts of the ocean. They are generally larger and deeper than ponds, which also lie on land, though there are no official or scientific definitions. Lakes can be contrasted with rivers or streams, which are usually flowing in a channel on land. Most lakes are fed and drained by rivers and streams."
         }
       />
       <TickerTape tickerText="Great lakes" />

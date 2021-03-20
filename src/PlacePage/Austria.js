@@ -1,4 +1,3 @@
-import "../css/App.css";
 import { useLayoutEffect } from "react";
 import PlaceHero from "./PlaceHero";
 import PlaceIntroduction from "./PlaceIntroduction";
@@ -19,7 +18,7 @@ function Austria() {
   const articleContent = articles[8];
 
   const placeIntro =
-    "No country waltzes so effortlessly between urban and outdoors as Austria. One day you’re cresting alpine summits, the next you’re swanning around imperial Vienna.";
+    "Austria is a country of breathtaking contrasts: rugged, snow-capped mountains overlook brightly painted and beautifully crafted streets. One second, you'll be enthralled by shimmering lakes overlooked by log cabins and the next you'll be waltzing through the contemporary design scene in Vienna. If there's one thing for sure, it's that whatever you're looking at will be beautiful.";
 
   const shortDescription = `As home to majestic mountains, opulent palaces, and high culture, Austria's attractions are classically sumptuous and enduring. But beyond the waltzes, the strudels, the alpine summits, and Habsburg architecture, its modern cities are proof of just how easily Austria combines the contemporary with the historic.`;
 
@@ -44,7 +43,12 @@ function Austria() {
         shortDescription={shortDescription}
         longDescription={longDescription}
       />
-      <KeyStats language="German" currency="Euro" population="9006398" />
+      <KeyStats
+        language="German"
+        currency="Euro"
+        population="9006398"
+        place="Austria"
+      />
       <PlaceCarousel
         title={"The very best of Austria"}
         places={austriaPlaces.filter((austriaPlace, index) => index > 0)}

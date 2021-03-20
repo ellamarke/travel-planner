@@ -17,7 +17,7 @@ function JunglePage() {
       <CuratedPlaceIntro
         introTitle="Dark Jungles"
         introText={
-          "A jungle is land covered with dense forest and tangled vegetation, usually in tropical climates. Application of the term has varied greatly during the past recent centuries. Before the 1970s, tropical forests were generally referred to as jungles, but this terminology has fallen out of usage."
+          "There is nothing quite like the feeling of being surrounded by dense jungle, bathed in dappled light and hearing the sounds of a thousand different animals all at once. The skyscrapers and highways of the nearest city will always feel a million miles away as you're reminded that rainforests and jungles have existed in this way for thousands of years and will, hopefully, exist for thousands of years more."
         }
       />
       <TickerTape tickerText="Dark Jungles" />
