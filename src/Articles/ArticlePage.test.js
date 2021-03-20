@@ -1,4 +1,4 @@
-import { getByTestId, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import ArticlePageHero from "./ArticlePageHero";
 import TickerTape from "../Shared/TickerTape";
 import Store from "../Store";

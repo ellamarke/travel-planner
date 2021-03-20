@@ -3,7 +3,7 @@ function ProfileHero() {
     <div className="hero-container">
       <div className="hero profile-hero">
         <h1>
-          Let's get
+          Let&apos;s get
           <br /> planning!
         </h1>
       </div>

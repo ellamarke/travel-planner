@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../Store";
 
-function CaseStudy({ cardName, cardCaption, country }) {
+function CaseStudy({ cardName, cardCaption }) {
   const [state, setState] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
 

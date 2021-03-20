@@ -52,7 +52,7 @@ function HomeSearch() {
         </div>
       </div>
       <button className="button" onClick={handleClick}>
-        Let's explore!
+        Let&apos;s explore!
         <img
           src="img/arrow-up.svg"
           className="arrow-icon"

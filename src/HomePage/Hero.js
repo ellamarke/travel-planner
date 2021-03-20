@@ -3,7 +3,7 @@ function Hero() {
     <div className="hero-container">
       <div className="hero" id="bg">
         <h1>
-          Let's go on
+          Let&apos;s go on
           <br /> an adventure!
         </h1>
 

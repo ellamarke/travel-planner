@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function PlaceHero({
-  placeName,
-  imgCaption,
-  weatherCityName,
-  src,
-  placeIntro,
-}) {
+function PlaceHero({ placeName, weatherCityName, src, placeIntro }) {
   return (
     <div className="place-hero">
       <div className="text-container">

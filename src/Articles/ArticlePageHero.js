@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../Store";
 
-function ArticlePageHero({ articleName, authorName, contentTag }) {
+function ArticlePageHero({ articleName, authorName }) {
   const [state, setState] = useContext(Context);
   const myArticles = state.myArticles;
 

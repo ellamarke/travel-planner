@@ -36,7 +36,7 @@ function MyLists({ lists }) {
         ))}
         {lists.length === 0 && (
           <h3 className="no-content-warning">
-            Oops, you haven't saved any lists yet! Create a new list now.
+            Oops, you haven&apos;t saved any lists yet! Create a new list now.
           </h3>
         )}
       </div>

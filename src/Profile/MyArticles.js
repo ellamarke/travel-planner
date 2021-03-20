@@ -34,8 +34,8 @@ function MyArticles({ articles }) {
         ))}
         {articles.length === 0 && (
           <h3 className="no-content-warning">
-            Oops, you haven't saved any articles yet! Explore new places and
-            start saving.
+            Oops, you haven&apos;t saved any articles yet! Explore new places
+            and start saving.
           </h3>
         )}
       </div>
