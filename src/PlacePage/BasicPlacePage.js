@@ -25,7 +25,7 @@ function BasicPlacePage() {
       <div className="place-introduction page-intro">
         <img src="img/star-peach.svg" alt="" />
         <div className="wiki-text-container">
-          <pre className="wiki-text">
+          <pre className="wiki-text" data-cy="content">
             {renderHTML(currentSearchedPlace.content)}
           </pre>
         </div>

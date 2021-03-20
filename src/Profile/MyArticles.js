@@ -11,7 +11,7 @@ function MyArticles({ articles }) {
     history.push("/explore");
   }
   return (
-    <div className="place-card-grid grey-background">
+    <div className="place-card-grid grey-background" data-cy="my-articles">
       <h2>My Articles</h2>
       <div className="intro__button">
         <p className="my-places-introduction">{articleIntroduction}</p>
