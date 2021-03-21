@@ -1,7 +1,6 @@
 .list-items {
     display: flex;
     flex-direction: column;
-/*     justify-content: flex-start; */
     width: 38em;
     min-height: 50em;
     background: $grey;
@@ -101,12 +100,6 @@
     padding: 0.1em 0.5em 0 0.5em;
   }
   
-/*   .list-container {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  } */
-  
   .listItem-row {
     font-size: 1.5rem;
     font-weight: 500;
@@ -117,9 +110,6 @@
     color: $olive;
     border: 2px solid $olive;
     background: inherit;
-
-    
-  
     padding: 0.8em;
     width: 90%;
   }

@@ -96,33 +96,3 @@ function ArticleCard({ articleName, authorName, imgSrc, publishDate, alt }) {
 }
 
 export default ArticleCarousel;
-
-/*
-<div className="place-card">
-  <img src={src} className="card-image" onClick={goToPlace} alt="china" />
-  <div className="card-text">
-    <h6 className="card-name" onClick={goToPlace}>
-      {cardName}
-    </h6>
-    <div className="card-buttons">
-      <button
-        className={
-          favourite
-            ? "button saved-button small-button"
-            : "button save-button small-button"
-        }
-        onClick={handleClick}
-      >
-        {favourite ? "Saved!" : "Save"}
-        <img src="img/star.svg" alt="save button" />
-      </button>
-      <img
-        src="img/arrow-right.svg"
-        className="arrow"
-        alt="arrow button"
-        onClick={goToPlace}
-      />
-    </div>
-  </div>
-</div>;
-*/

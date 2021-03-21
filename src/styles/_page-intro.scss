@@ -35,6 +35,14 @@
         padding: 1em 0;
     }
 
+    .read-more-hidden {
+        display:none;
+    }
+      
+    .read-more-displayed {
+        display: inline;
+    }
+
     .short-description {
         margin-bottom: 1em;
     }

@@ -27,8 +27,6 @@ function SiemReap() {
 
   Angkor is a place to be savoured, not rushed, and this is the base from which to plan your adventures. Still think three days at the temples is enough? Think again with Siem Reap on the doorstep.`;
 
-  //fix breaks not displaying
-
   return (
     <div className="place">
       <PlaceHero

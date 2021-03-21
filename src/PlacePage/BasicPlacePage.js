@@ -35,7 +35,7 @@ function BasicPlacePage() {
           currency={currentSearchedPlace.countryDetails.currency}
           population={currentSearchedPlace.countryDetails.population}
           language={currentSearchedPlace.countryDetails.language}
-          flagImage={currentSearchedPlace.countryDetails.flagImage}
+          place={currentSearchedPlace.placeName}
         />
       )}
 

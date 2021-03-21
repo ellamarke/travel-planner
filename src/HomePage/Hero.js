@@ -34,14 +34,6 @@ function Hero() {
           alt="the ocean in sydney, australia"
           id="surfers"
         ></img>
-
-        {/*       <div className="hero-image-container">
-        <img
-          className="hero-image"
-          src="img/home/hero.jpg"
-          alt="the ocean in sydney, australia"
-        ></img>
-      </div> */}
       </div>
     </div>
   );

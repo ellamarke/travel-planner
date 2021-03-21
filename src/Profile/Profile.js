@@ -28,10 +28,6 @@ function Profile() {
   const [state] = useContext(Context);
   const favouritePlaces = state.favouritePlaces;
 
-  /*   useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }); */
-
   const newPlaces = places.filter((place) =>
     favouritePlaces.includes(place.cardName)
   );

@@ -26,8 +26,6 @@ function Austria() {
 
   `;
 
-  //fix breaks not displaying
-
   return (
     <div className="place">
       <PlaceHero

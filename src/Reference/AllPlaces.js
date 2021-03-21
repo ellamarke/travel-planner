@@ -96,24 +96,6 @@ export const temples = [
     src: "img/articles/petra-2.jpg",
     alt: "Qasr al-Bint Temple",
   },
-  /* {
-    cardName: "Shwe Dagon Pagoda",
-    country: "Myanmar",
-    cardCaption:
-      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
-  },
-  {
-    cardName: "Sensō-ji",
-    country: "Japan",
-    cardCaption:
-      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
-  },
-  {
-    cardName: "Temple of Bacchus",
-    country: "Lebanon",
-    cardCaption:
-      "Incididunt nisi reprehenderit exercitation in minim laborum sunt laboris.",
-  }, */
 ];
 
 export const jungles = [

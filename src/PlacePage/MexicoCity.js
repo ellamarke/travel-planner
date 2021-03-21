@@ -26,8 +26,6 @@ function MexicoCity() {
 
   const longDescription = `Mexico's capital is both the oldest capital city in the Americas and one of two founded by indigenous people, the other being Quito, Ecuador. The city was originally built on an island of Lake Texcoco by the Aztecs in 1325 as Tenochtitlan, which was almost completely destroyed in the 1521 siege of Tenochtitlan and subsequently redesigned and rebuilt in accordance with the Spanish urban standards. In 1524, the municipality of Mexico City was established, known as México Tenochtitlán, and as of 1585, it was officially known as Ciudad de México (Mexico City). Mexico City was the political, administrative, and financial center of a major part of the Spanish colonial empire. After independence from Spain was achieved, the federal district was created in 1824.`;
 
-  //fix breaks not displaying
-
   return (
     <div className="place">
       <PlaceHero

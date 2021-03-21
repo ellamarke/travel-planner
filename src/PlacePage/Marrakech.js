@@ -24,8 +24,6 @@ function Marrakech() {
 
   const longDescription = `Bahia Palace and the Dar Si Said are a riot of tilework and intricate floral painted-wood ceilings, the Saadian Tombs are enriched by an opulent bounty of marble, while the Musée de Mouassine and Musée de Marrakech are a showcase of swirling stucco and carved-wood design. And if you choose to bed down for a night in a riad, you'll be able to sleep amid some of this splendour too. Marrakesh is a city steeped in ancient artistry that continues to thrive, kept alive by the modern craftspeople of the souqs and the contemporary art and design scene of the Ville Nouvelle.`;
 
-  //fix breaks not displaying
-
   return (
     <div className="place">
       <PlaceHero
