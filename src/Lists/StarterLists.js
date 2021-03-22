@@ -34,10 +34,10 @@ export default initialLists;
 export const newList = {
   listName: "New List",
   items: [
-    /*     {
-      text: "Skirts",
+    {
+      text: "New Item",
       isComplete: false,
       id: Math.floor(Math.random() * 10000),
-    }, */
+    },
   ],
 };
