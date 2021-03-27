@@ -49,19 +49,13 @@ async function countrySearch(searchTerm) {
 
   console.log(result);
 
-  const sortByBiggestFirst = (countryA, countryB) => {
-    if (countryA.population < countryB.population) {
-      return 1;
-    }
-    if (countryA.population > countryB.population) {
-      return -1;
-    }
-    return 0;
+  const byBiggestCountry = (biggestCountry, currentCountry) => {
+    return biggestCountry.population < currentCountry.population
+      ? currentCountry
+      : biggestCountry;
   };
 
-  result.sort(sortByBiggestFirst);
-
-  const country = result[0];
+  const country = result.reduce(byBiggestCountry);
 
   return {
     flagImage: country.flag,
