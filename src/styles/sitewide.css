@@ -185,8 +185,7 @@ button:focus {
           animation: floating1 30s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-filter: drop-shadow(1px 5px 5px #12373d);
-          filter: drop-shadow(1px 5px 5px #12373d);
+  /*     filter: drop-shadow(1px 5px 5px #12373d); */
 }
 
 .surfer-2 {
@@ -194,8 +193,7 @@ button:focus {
           animation: floating2 35s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-filter: drop-shadow(1px 5px 5px #12373d);
-          filter: drop-shadow(1px 5px 5px #12373d);
+  /*     filter: drop-shadow(1px 5px 5px #12373d); */
 }
 
 .surfer-3 {
@@ -203,8 +201,7 @@ button:focus {
           animation: floating3 32s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-filter: drop-shadow(1px 5px 5px #12373d);
-          filter: drop-shadow(1px 5px 5px #12373d);
+  /*     filter: drop-shadow(1px 5px 5px #12373d); */
 }
 
 .surfer-4 {
@@ -212,8 +209,7 @@ button:focus {
           animation: floating4 27s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-filter: drop-shadow(1px 5px 5px #1b4c53);
-          filter: drop-shadow(1px 5px 5px #1b4c53);
+  /*     filter: drop-shadow(1px 5px 5px #1b4c53); */
 }
 
 @-webkit-keyframes floating1 {
@@ -647,6 +643,7 @@ button:focus {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: -10;
 }
 
 .footer .logo {
@@ -2056,6 +2053,8 @@ p {
   }
   .list-container .list-title {
     border-bottom: 1px solid #3B413C;
+    font-size: 1.5rem;
+    overflow-x: scroll;
   }
   .list-items {
     width: 100%;
@@ -2066,7 +2065,8 @@ p {
   }
   .list-items .listItem-row {
     border: 1px solid #3B413C;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: left;
   }
   .list-items .listItem-row .icons .edit-icon {
     border: 1px solid #3B413C;
@@ -2101,6 +2101,12 @@ p {
     margin-bottom: 0.4em;
     margin-left: 0.8em;
   }
+  .no-content-warning {
+    margin: 1em 0.5em;
+    line-height: 100%;
+    padding: 0;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -2131,6 +2137,12 @@ p {
   .my-lists-introduction {
     max-width: 100%;
     text-align: center;
+  }
+  .no-content-warning {
+    margin: 1em 0.5em;
+    padding: 0;
+    line-height: 100%;
+    font-size: 1.5rem;
   }
 }
 
