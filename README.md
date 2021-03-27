@@ -16,6 +16,10 @@ Push to Heroku
 
 Starts live server
 
-### `npm run start-server`
+### `npm run start:dev`
 
-Starts server.js
+Starts both the API sever and React App
+
+### `npm run start-server-production`
+
+To start production server
