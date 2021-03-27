@@ -1629,6 +1629,22 @@ p {
   font-size: 0.9rem;
 }
 
+.error-page {
+  height: 100vh;
+  background-color: #DEDEDE;
+}
+
+.error-page .country-not-found {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.error-page .country-not-found-p {
+  padding-top: 0;
+  text-align: center;
+}
+
 /* || Tags */
 .place-tag {
   font-family: roc-grotesk, sans-serif;

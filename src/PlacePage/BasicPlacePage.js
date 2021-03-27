@@ -19,8 +19,11 @@ function BasicPlacePage() {
 
   if (currentSearchedPlace.notFound) {
     return (
-      <div>
-        <h2>Country not found!</h2>
+      <div className="error-page">
+        <h3 className="country-not-found">Country not found!</h3>
+        <p className="country-not-found-p">
+          Check your spelling and try again.
+        </p>
       </div>
     );
   }

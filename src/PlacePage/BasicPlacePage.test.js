@@ -30,7 +30,7 @@ describe("BasicPlacePage", () => {
         <BasicPlacePage />
       </Store>
     );
-    expect(container.querySelector("h2").textContent).toBe(
+    expect(container.querySelector("h3").textContent).toBe(
       "Country not found!"
     );
   });

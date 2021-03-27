@@ -146,6 +146,22 @@ p {
     font-size: 0.9rem;
 }
 
+.error-page {
+    height: 100vh;
+    background-color: $light-grey;
+
+    .country-not-found {
+        padding-top: 3em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .country-not-found-p  {
+        padding-top: 0;
+        text-align: center;
+    }
+}
+
 /* || Tags */
 
 .place-tag {
