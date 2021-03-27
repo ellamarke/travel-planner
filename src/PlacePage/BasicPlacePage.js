@@ -16,6 +16,14 @@ function BasicPlacePage() {
     React.createElement("div", {
       dangerouslySetInnerHTML: { __html: rawHTML },
     });
+
+  if (currentSearchedPlace.notFound) {
+    return (
+      <div>
+        <h2>Country not found!</h2>
+      </div>
+    );
+  }
   return (
     <div className="basic-place-page">
       <div className="place-name">

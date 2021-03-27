@@ -28,7 +28,9 @@
     "cypress": "cypress run --config video=false",
     "cypress-ui": "cypress open",
     "start-server": "nodemon ./server.js",
-    "start-server-production": "NODE_ENV=production node ./server.js"
+    "start-server-production": "NODE_ENV=production node ./server.js",
+    "start:dev": "concurrently -k -p \"[{name}]\" -n \"React,API\" -c \"yellow.bold,cyan.bold\" \"npm run start\" \"npm run start-server\""
+
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^6.0.0",
     "cypress": "^6.6.0",
     "eslint": "^7.22.0",
     "eslint-plugin-react": "^7.22.0",

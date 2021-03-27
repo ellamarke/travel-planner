@@ -18,8 +18,8 @@ const defaultState = {
 
 export const Context = React.createContext();
 
-const Store = ({ children }) => {
-  const initialState = getFromLocalStorage() || defaultState;
+const Store = ({ children, suppliedState = defaultState }) => {
+  const initialState = getFromLocalStorage() || suppliedState;
   const [state, setState] = useState(initialState);
 
   const mySetState = (newState) => {

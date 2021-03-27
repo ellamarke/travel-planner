@@ -3,15 +3,19 @@ const fetch = require("node-fetch");
 exports.getCountry = async function (req, response) {
   const searchTerm = req.query.searchTerm;
 
-  const wikipediaPlace = await wikipediaSearch(searchTerm);
-
   const restCountry = await countrySearch(searchTerm);
 
-  const details = { ...wikipediaPlace, countryDetails: restCountry };
+  if (restCountry) {
+    const wikipediaPlace = await wikipediaSearch(searchTerm);
 
-  console.log(details);
+    const details = { ...wikipediaPlace, countryDetails: restCountry };
 
-  response.send(JSON.stringify(details));
+    console.log(details);
+
+    response.send(JSON.stringify(details));
+  } else {
+    response.send(JSON.stringify({ notFound: true }));
+  }
 };
 
 async function wikipediaSearch(searchTerm) {
@@ -37,13 +41,25 @@ async function countrySearch(searchTerm) {
     `https://restcountries.eu/rest/v2/name/${searchTerm}`
   );
 
+  if (apiResponse.status === 404) {
+    return null;
+  }
+
   const result = await apiResponse.json();
 
   console.log(result);
 
-  if (result.status === 404) {
-    return null;
-  }
+  const sortByBiggestFirst = (countryA, countryB) => {
+    if (countryA.population < countryB.population) {
+      return 1;
+    }
+    if (countryA.population > countryB.population) {
+      return -1;
+    }
+    return 0;
+  };
+
+  result.sort(sortByBiggestFirst);
 
   const country = result[0];
 
