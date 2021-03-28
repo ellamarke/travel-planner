@@ -20,7 +20,9 @@ exports.getCountry = async function (req, response) {
 
 async function wikipediaSearch(searchTerm) {
   const apiResponse = await fetch(
-    `https://en.wikipedia.org/w/api.php?action=query&titles=${searchTerm.toLowerCase()}&prop=extracts&format=json&exintro=1`
+    `https://en.wikipedia.org/w/api.php?action=query&titles=${capitalise(
+      searchTerm
+    )}&prop=extracts&format=json&exintro=1`
   );
 
   const result = await apiResponse.json();
@@ -29,7 +31,9 @@ async function wikipediaSearch(searchTerm) {
   const keys = Object.keys(pages);
   const firstPageKey = keys[0];
   const place = {
-    placeName: result?.query?.normalized[0]?.to || searchTerm,
+    placeName:
+      (result?.query?.normalized && result?.query?.normalized[0]?.to) ||
+      searchTerm,
     content: pages[firstPageKey].extract,
   };
 
@@ -63,4 +67,14 @@ async function countrySearch(searchTerm) {
     population: country.population,
     language: country.languages[0].name,
   };
+}
+
+function capitalise(country) {
+  const countryWords = country.toLowerCase().split(" ");
+
+  return countryWords.map(capitaliseWord).join(" ");
+}
+
+function capitaliseWord(word) {
+  return word[0].toUpperCase() + word.substring(1);
 }

@@ -56,6 +56,24 @@ test("will return country with biggest population", async () => {
   );
 });
 
+test("will capitalise search term for Wikipedia", async () => {
+  fetch.mockResponseOnce(countryLookupExample);
+  fetch.mockResponseOnce(wikipediaExample);
+  const req = {
+    query: {
+      searchTerm: "uniTeD kingDoM",
+    },
+  };
+  const res = {
+    send: jest.fn(),
+  };
+  await getCountry.getCountry(req, res);
+
+  expect(fetch.mock.calls[1][0]).toEqual(
+    "https://en.wikipedia.org/w/api.php?action=query&titles=United Kingdom&prop=extracts&format=json&exintro=1"
+  );
+});
+
 const wikipediaExample = `{
   "batchcomplete": "",
   "warnings": {
