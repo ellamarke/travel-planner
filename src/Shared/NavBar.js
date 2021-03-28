@@ -27,7 +27,7 @@ function NavBar({ pageState }) {
             <img
               src={
                 pageState === "explore"
-                  ? "img/arrow-up-grey.svg"
+                  ? "img/arrow-up-mint.svg"
                   : "img/arrow-up.svg"
               }
               className="arrow-icon"
@@ -47,7 +47,7 @@ function NavBar({ pageState }) {
             <li>Profile</li>
             <img
               src={
-                pageState === "profile" ? "img/star-grey.svg" : "img/star.svg"
+                pageState === "profile" ? "img/star-mint.svg" : "img/star.svg"
               }
               className="star-icon"
               alt="star icon"
