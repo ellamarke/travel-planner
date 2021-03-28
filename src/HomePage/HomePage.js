@@ -6,12 +6,14 @@ import PlaceCarousel from "../Shared/PlaceCarousel";
 import { hardCodedPlaces } from "../Reference/AllPlaces";
 import { articles } from "../Reference/Articles";
 import TickerTape from "../Shared/TickerTape";
+import SetPageState from "../Shared/setPageState";
 
 const parisArticle = articles[4];
 
 function HomePage() {
   return (
     <div className="home-page">
+      <SetPageState pageState="home" />
       <Hero />
       <TickerTape tickerText="Grab your passport" />
       <HomeSearch />

@@ -4,6 +4,7 @@ import TickerTape from "../Shared/TickerTape";
 import { Context } from "../Store";
 import KeyStats from "./KeyStats";
 import WhereNext from "../HomePage/WhereNext";
+import SetPageState from "../Shared/setPageState";
 
 function BasicPlacePage() {
   useLayoutEffect(() => {
@@ -29,6 +30,7 @@ function BasicPlacePage() {
   }
   return (
     <div className="basic-place-page">
+      <SetPageState pageState="explore" />
       <div className="place-name">
         <h1>{currentSearchedPlace.placeName}</h1>
       </div>

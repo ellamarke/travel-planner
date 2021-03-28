@@ -8,6 +8,7 @@ import { siemReapPlaces } from "../Reference/AllPlaces";
 import TickerTape from "../Shared/TickerTape";
 import Spotlight from "../ExplorePlaces/Spotlight";
 import { articles } from "../Reference/Articles";
+import SetPageState from "../Shared/setPageState";
 
 function SiemReap() {
   useLayoutEffect(() => {
@@ -29,6 +30,7 @@ function SiemReap() {
 
   return (
     <div className="place">
+      <SetPageState pageState="explore" />
       <PlaceHero
         placeName="Siem Reap, Cambodia"
         imgCaption="Angkor Wat"

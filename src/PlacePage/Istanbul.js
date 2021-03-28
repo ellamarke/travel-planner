@@ -8,6 +8,7 @@ import { istanbulPlaces } from "../Reference/AllPlaces";
 import TickerTape from "../Shared/TickerTape";
 import Spotlight from "../ExplorePlaces/Spotlight";
 import { articles } from "../Reference/Articles";
+import SetPageState from "../Shared/setPageState";
 
 function Istanbul() {
   useLayoutEffect(() => {
@@ -26,6 +27,7 @@ function Istanbul() {
 
   return (
     <div className="place">
+      <SetPageState pageState="explore" />
       <PlaceHero
         placeName="Istanbul, Turkey"
         imgCaption="Hagia Sophia"

@@ -8,6 +8,7 @@ import { marrakechPlaces } from "../Reference/AllPlaces";
 import Spotlight from "../ExplorePlaces/Spotlight";
 import { articles } from "../Reference/Articles";
 import TickerTape from "../Shared/TickerTape";
+import SetPageState from "../Shared/setPageState";
 
 function Marrakech() {
   useLayoutEffect(() => {
@@ -26,6 +27,7 @@ function Marrakech() {
 
   return (
     <div className="place">
+      <SetPageState pageState="explore" />
       <PlaceHero
         placeName="Marrakech, Morocco"
         imgCaption="Medina of Marrakech"

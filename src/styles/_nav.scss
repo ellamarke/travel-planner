@@ -53,7 +53,10 @@
     .button {
         margin: 0 0.5em;
         font-size: 1.3rem;
+    }
 
-
+    .profile-button-selected,
+    .explore-button-selected {
+        color: red;
     }
 }

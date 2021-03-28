@@ -121,6 +121,11 @@ button:focus {
   font-size: 1.3rem;
 }
 
+.nav-container .profile-button-selected,
+.nav-container .explore-button-selected {
+  color: red;
+}
+
 .hero-container {
   position: relative;
   width: 100%;

@@ -5,6 +5,7 @@ import DesertCaseStudy from "./DesertCaseStudy";
 import DesertCarousel from "./DesertCarousel";
 import WhereNext from "../HomePage/WhereNext";
 import TickerTape from "../Shared/TickerTape";
+import SetPageState from "../Shared/setPageState";
 
 import { deserts } from "../Reference/AllPlaces";
 
@@ -14,6 +15,7 @@ function DesertPage() {
   });
   return (
     <div className="desertPlaces">
+      <SetPageState pageState="explore" />
       <CuratedPlaceIntro
         introTitle="Wild Deserts"
         introText={

@@ -8,6 +8,7 @@ import Spotlight from "../ExplorePlaces/Spotlight";
 import { mexicoCityPlaces } from "../Reference/AllPlaces";
 import TickerTape from "../Shared/TickerTape";
 import { articles } from "../Reference/Articles";
+import SetPageState from "../Shared/setPageState";
 
 function MexicoCity() {
   useLayoutEffect(() => {
@@ -28,6 +29,7 @@ function MexicoCity() {
 
   return (
     <div className="place">
+      <SetPageState pageState="explore" />
       <PlaceHero
         placeName="Mexico City, Mexico"
         imgCaption="Floating Gardens of Xochimilco"

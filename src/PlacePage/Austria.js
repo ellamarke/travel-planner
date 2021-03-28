@@ -8,6 +8,7 @@ import TickerTape from "../Shared/TickerTape";
 import { austriaPlaces } from "../Reference/AllPlaces";
 import Spotlight from "../ExplorePlaces/Spotlight";
 import { articles } from "../Reference/Articles";
+import SetPageState from "../Shared/setPageState";
 
 function Austria() {
   useLayoutEffect(() => {
@@ -28,6 +29,7 @@ function Austria() {
 
   return (
     <div className="place">
+      <SetPageState pageState="explore" />
       <PlaceHero
         placeName="Austria"
         imgCaption="Vienna"

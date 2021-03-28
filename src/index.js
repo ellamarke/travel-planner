@@ -9,7 +9,7 @@ import "./styles/sitewide.css";
 import HomePage from "./HomePage/HomePage";
 import Profile from "./Profile/Profile";
 import Error from "./Error";
-import NavBar from "./Shared/NavBar";
+import NavBarContainer from "./Shared/NavBarContainer";
 import Footer from "./Shared/Footer";
 import ListEdit from "./Lists/ListEdit";
 import TemplePage from "./CuratedPlaces/TemplePage";
@@ -31,7 +31,7 @@ import SiemReap from "./PlacePage/SiemReap";
 ReactDOM.render(
   <Store>
     <BrowserRouter>
-      <NavBar />
+      <NavBarContainer />
       <Switch>
         <Route path="/" component={HomePage} exact />
         <Route path="/tokyo" component={Tokyo} />

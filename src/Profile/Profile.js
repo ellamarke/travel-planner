@@ -23,6 +23,7 @@ import MyArticles from "./MyArticles";
 import { articles } from "../Reference/Articles";
 import ProfileHero from "./ProfileHero";
 import PageIntro from "../Shared/PageIntro";
+import SetPageState from "../Shared/setPageState";
 
 function Profile() {
   const [state] = useContext(Context);
@@ -109,6 +110,7 @@ function Profile() {
 
   return (
     <div className="profile">
+      <SetPageState pageState="profile" />
       <ProfileHero />
       <TickerTape tickerText={"got the suncream?"} />
       <PageIntro pageIntroContent={pageIntroContent} />

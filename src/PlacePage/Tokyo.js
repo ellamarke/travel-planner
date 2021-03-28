@@ -8,6 +8,7 @@ import { tokyoPlaces } from "../Reference/AllPlaces";
 import { articles } from "../Reference/Articles";
 import TickerTape from "../Shared/TickerTape";
 import Spotlight from "../ExplorePlaces/Spotlight";
+import SetPageState from "../Shared/setPageState";
 const meijiSpotlight = tokyoPlaces[0];
 
 function Tokyo() {
@@ -45,10 +46,9 @@ function Tokyo() {
   a number of attractive green spaces in the city center and within
   relatively short train rides at its outskirts.`;
 
-  //fix breaks not displaying
-
   return (
     <div className="place">
+      <SetPageState pageState="explore" />
       <PlaceHero
         src="img/place-squares/tokyo-2.jpg"
         placeName="Tokyo, Japan"

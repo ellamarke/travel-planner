@@ -5,6 +5,7 @@ import JungleCaseStudy from "./JungleCaseStudy";
 import JungleCarousel from "./JungleCarousel";
 import WhereNext from "../HomePage/WhereNext";
 import TickerTape from "../Shared/TickerTape";
+import SetPageState from "../Shared/setPageState";
 
 import { jungles } from "../Reference/AllPlaces";
 
@@ -14,6 +15,7 @@ function JunglePage() {
   });
   return (
     <div className="curatedPlaces">
+      <SetPageState pageState="explore" />
       <CuratedPlaceIntro
         introTitle="Dark Jungles"
         introText={

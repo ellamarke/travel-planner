@@ -8,6 +8,7 @@ import { indiaPlaces } from "../Reference/AllPlaces";
 import TickerTape from "../Shared/TickerTape";
 import Spotlight from "../ExplorePlaces/Spotlight";
 import { articles } from "../Reference/Articles";
+import SetPageState from "../Shared/setPageState";
 
 function India() {
   useLayoutEffect(() => {
@@ -26,6 +27,7 @@ function India() {
 
   return (
     <div className="place">
+      <SetPageState pageState="explore" />
       <PlaceHero
         placeName="India"
         imgCaption="Jaipur"

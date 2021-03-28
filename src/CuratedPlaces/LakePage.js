@@ -7,6 +7,7 @@ import WhereNext from "../HomePage/WhereNext";
 
 import { lakes } from "../Reference/AllPlaces";
 import TickerTape from "../Shared/TickerTape";
+import SetPageState from "../Shared/setPageState";
 
 function LakePage() {
   useLayoutEffect(() => {
@@ -14,6 +15,7 @@ function LakePage() {
   });
   return (
     <div className="curatedPlaces">
+      <SetPageState pageState="explore" />
       <CuratedPlaceIntro
         introTitle="Great Lakes"
         introText={

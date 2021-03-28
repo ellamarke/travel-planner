@@ -7,6 +7,7 @@ import WhereNext from "../HomePage/WhereNext";
 import TickerTape from "../Shared/TickerTape";
 
 import { temples } from "../Reference/AllPlaces";
+import SetPageState from "../Shared/setPageState";
 
 function TemplePage() {
   useLayoutEffect(() => {
@@ -14,6 +15,7 @@ function TemplePage() {
   });
   return (
     <div className="curatedPlaces">
+      <SetPageState pageState="explore" />
       <CuratedPlaceIntro
         introTitle="Crumbling Temples"
         introText={

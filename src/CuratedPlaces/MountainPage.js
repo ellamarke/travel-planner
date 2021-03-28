@@ -7,6 +7,7 @@ import WhereNext from "../HomePage/WhereNext";
 import TickerTape from "../Shared/TickerTape";
 
 import { mountains } from "../Reference/AllPlaces";
+import SetPageState from "../Shared/setPageState";
 
 function MountainPage() {
   useLayoutEffect(() => {
@@ -14,6 +15,7 @@ function MountainPage() {
   });
   return (
     <div className="mountainPlaces">
+      <SetPageState pageState="explore" />
       <CuratedPlaceIntro
         introTitle="Misty Mountains"
         introText="A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. A mountain differs from a plateau in having a limited summit area, and is larger than a hill, typically rising at least 300 metres (1000 feet) above the surrounding land. A few mountains are isolated summits, but most occur in mountain ranges."

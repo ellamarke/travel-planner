@@ -5,6 +5,7 @@ import { useEffect, useLayoutEffect } from "react";
 import { Context } from "../Store";
 import { useHistory } from "react-router-dom";
 import TickerTape from "../Shared/TickerTape";
+import SetPageState from "../Shared/setPageState";
 
 function ListItems({ list }) {
   useLayoutEffect(() => {
@@ -90,6 +91,7 @@ function ListItems({ list }) {
 
   return (
     <div className="list-container">
+      <SetPageState pageState="profile" />
       <TickerTape tickerText="don't forget!" />
       <div className="list-items">
         <input

@@ -9,6 +9,7 @@ import { hardCodedPlaces, indiaPlaces } from "../Reference/AllPlaces";
 import PageIntro from "../Shared/PageIntro";
 import { articles } from "../Reference/Articles";
 import Spotlight from "./Spotlight";
+import SetPageState from "../Shared/setPageState";
 
 const petraArticle = articles[5];
 const jaipurSpotlight = indiaPlaces[0];
@@ -22,6 +23,7 @@ function ExplorePlacesPage() {
   });
   return (
     <div className="home-page">
+      <SetPageState pageState="explore" />
       <ExploreHero />
       <TickerTape tickerText="Let's go travelling" />
       <PageIntro pageIntroContent={pageIntroContent} />
