@@ -25,7 +25,11 @@ function NavBar({ pageState }) {
           >
             <li>Explore</li>
             <img
-              src="img/arrow-up.svg"
+              src={
+                pageState === "explore"
+                  ? "img/arrow-up-grey.svg"
+                  : "img/arrow-up.svg"
+              }
               className="arrow-icon"
               alt="arrow icon"
             ></img>
@@ -41,7 +45,13 @@ function NavBar({ pageState }) {
             data-cy="profile-nav"
           >
             <li>Profile</li>
-            <img src="img/star.svg" className="star-icon" alt="star icon"></img>
+            <img
+              src={
+                pageState === "profile" ? "img/star-grey.svg" : "img/star.svg"
+              }
+              className="star-icon"
+              alt="star icon"
+            ></img>
           </Link>
         </div>
       </ul>

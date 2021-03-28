@@ -57,6 +57,7 @@
 
     .profile-button-selected,
     .explore-button-selected {
-        color: red;
+        color: $grey;
+        background-color: $olive;
     }
 }
