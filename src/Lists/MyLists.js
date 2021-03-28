@@ -8,12 +8,11 @@ function MyLists({ lists }) {
   const history = useHistory();
 
   function AddNewList() {
-    // this is a closure!!
     const myLists = state.myLists;
     const anotherList = JSON.parse(JSON.stringify(newList)); // this is cloning newList
     myLists.push(anotherList); // this adds anotherList to myList
 
-    setState({ ...state, myLists: myLists, currentList: anotherList }); // this updates the state with the previous state and changes the current list to the newly made list
+    setState({ ...state, myLists, currentList: anotherList }); // this updates the state with the previous state and changes the current list to the newly made list
     history.push("/ListEdit");
   }
 
@@ -55,9 +54,7 @@ function ProfileListCard({ list }) {
 
   function handleClick() {
     const myLists = state.myLists;
-    const newMyLists = myLists.filter(
-      (myList) => myList.listName !== list.listName
-    );
+    const newMyLists = myLists.filter((myList) => myList.id !== list.id);
     setState({ ...state, myLists: newMyLists });
   }
 

@@ -9,6 +9,7 @@ const initialLists = [
       { text: "Walk around Shibuya", isComplete: true, id: 5 },
       { text: "Nezu Museum", isComplete: false, id: 6 },
     ],
+    id: Math.floor(Math.random() * 10000),
   },
   {
     listName: "Weekend Away Packing List",
@@ -26,6 +27,7 @@ const initialLists = [
       { text: "Toiletries", isComplete: false, id: 11 },
       { text: "Pyjamas", isComplete: false, id: 12 },
     ],
+    id: Math.floor(Math.random() * 10000),
   },
 ];
 
@@ -40,4 +42,5 @@ export const newList = {
       id: Math.floor(Math.random() * 10000),
     },
   ],
+  id: Math.floor(Math.random() * 10000),
 };
