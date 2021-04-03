@@ -42,12 +42,16 @@ function HomeSearch() {
       <div className="search-bar-container" data-cy="main-search-bar">
         <div className="colour-bar">
           <img src="img/search-icon-light.svg" alt="search icon" />
+          <label htmlFor="search-bar" className="visually-hidden">
+            Search for a country
+          </label>
           <input
             className="search-bar-main"
             key="search-bar-1"
             placeholder="Japan? Turkey? Morocco?"
             value={searchTerm}
             onChange={changeSearchTerm}
+            id="search-bar"
           />
         </div>
       </div>

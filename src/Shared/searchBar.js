@@ -45,12 +45,16 @@ function SearchBar() {
       onSubmit={(event) => onSubmit(event)}
     >
       <img src="img/search-icon.svg" alt="search icon"></img>
+      <label htmlFor="search-bar-header" className="visually-hidden">
+        Search for a country
+      </label>
       <input
         placeholder="Search for a country"
         value={searchTerm}
         onChange={changeSearchTerm}
         className="search-bar-input"
         data-cy="quick-search-bar"
+        id="search-bar-header"
       />
     </form>
   );
